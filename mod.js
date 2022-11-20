@@ -4,15 +4,15 @@
 // The offical 
 
 // To import your adventure:
-// 1: Use the MSPFA extra's script (https://greasyfork.org/en/scripts/396798-mspfa-extras) to download your adventure as a JSON
+// 1: Use the MSPFA extras script (https://greasyfork.org/en/scripts/396798-mspfa-extras) to download your adventure as a JSON
 // 2: Replace the adventure.json file in this with your json file, and rename it to adventure.json
-// 3: Place all the images used within your adventure in the assets/adventure folder, make sure they are named the same
+// 3: Place all the images or videos used within your adventure in the assets/adventure folder, make sure they are named the same as they are in your adventure, and that they are in the root
 // 4: Edit the mod info in the mod.js folder within the portSettings object
 
 // And that's it!
 // You can also add custom CSS in the custom.css file BUT
 // - All adventure CSS should be scoped under .mspfa, I recommend using complied SCSS for this
-// - MSPFA page range
+// - MSPFA page ranges (i.e. pX-Y classes) will not work
 
 // Porter settings
 const portSettings = {
@@ -227,7 +227,7 @@ module.exports = {
     api.logger.info(adventureData)
 
     // Create browsepages object
-    const adventureUrl = adventureData.n.toLowerCase().replace(/[^a-z]/g,'') + "-"
+    const adventureUrl = adventureData.n.toLowerCase().replace(/[^a-z0-9]/g,'') + "-"
     api.logger.info(adventureUrl)
 
     let adventurePages = {}
