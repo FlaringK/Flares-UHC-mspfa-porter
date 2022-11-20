@@ -1,7 +1,6 @@
 // FlaringK's MSPFA Porter
 // This is more of an experiment then something you should actually use, since adding MSPFAs to the UHC is an offically planned feature
 // But this was fun to code anyway, and it's basically done anyway
-// The offical 
 
 // To import your adventure:
 
