@@ -1,6 +1,6 @@
 # Flares-UHC-mspfa-porter
 
-Here's my version of a way to port MSFPA to the Unoffical Homestuck Collection. This is not the OFFICAL way, that is a (planned feature)[https://github.com/Bambosh/unofficial-homestuck-collection/pull/311/files] that is coming soon, that addition will make porting MSPFAs a lot smoother then this mod can provide, and will support features like arrow shortcuts and be compatible with the eventual updated MSPFA site. In saying that, this mod recreates the current (2022) MSPFA's look and feel, allowing adventures to be view completely offline.
+Here's my version of a way to port MSFPA to the Unoffical Homestuck Collection. This is not the OFFICAL way, that is a [planned feature](https://github.com/Bambosh/unofficial-homestuck-collection/pull/311/files) that is coming soon, that addition will make porting MSPFAs a lot smoother then this mod can provide, and will support features like arrow shortcuts and be compatible with the eventual updated MSPFA site. In saying that, this mod recreates the current (2022) MSPFA's look and feel, allowing adventures to be view completely offline.
 
 ## How to port your MSFPA
 This mod contains a template adventure that you can replace with your own.
