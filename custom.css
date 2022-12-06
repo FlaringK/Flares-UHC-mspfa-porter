@@ -1,0 +1,7228 @@
+/* Flare's CSS textboxes - 6 Dec 2022 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap');
+/* UHC Music */
+.mspfa .uhcmusic {
+  width: min-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  background-color: #ff9000;
+  border: 2px solid #ff9000;
+  transition: opacity 1s;
+  display: flex;
+}
+.mspfa .uhcmusic a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 5px;
+  background: #000;
+  border: 3px solid #ff0;
+  box-shadow: 0 0 0 2px #ff9000;
+  color: #fff;
+  font-family: Courier New, courier, monospace;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.mspfa .uhcmusic a:hover {
+  text-decoration: underline;
+}
+.mspfa .uhcmusic::before {
+  content: "♫";
+  line-height: 0.7;
+  font-size: 22px;
+  background: #000;
+  border: 3px solid #ff0;
+  margin-right: 4px;
+  padding: 4px;
+  color: white;
+  display: inline-block;
+  /* GameFAQ */
+}
+.mspfa .gameFaq {
+  background: white;
+  color: black;
+  margin: 0 -25px;
+  padding: 36px;
+  font-smooth: none;
+  font-family: lucida console, monospace;
+  font-weight: 400;
+  font-size: 11.5px;
+  line-height: 1.25em;
+  text-align: left;
+}
+.mspfa .gameHead {
+  margin: -36px;
+  margin-bottom: 20px;
+  background: black;
+  color: white;
+  padding: 2px 6px;
+  border-bottom: #FF6600 solid 2px;
+}
+.mspfa .gameHead b {
+  color: #FF6600;
+  cursor: pointer;
+}
+.mspfa .gameHead host {
+  float: right;
+  font-weight: 600;
+  /* Splatoon 2 */
+}
+@font-face {
+  font-family: splat;
+  src: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/splatoon/Splatoon2.otf);
+}
+@font-face {
+  font-family: splatname;
+  src: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/splatoon/Splatoon1.ttf);
+}
+.mspfa .splat2 {
+  width: 581px;
+  height: 108px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  border-radius: 0 16px 32px 32px;
+  margin: 30px auto 0;
+  font-family: splat, monospace;
+  background: #0f1012;
+  background-image: repeating-linear-gradient(120deg, #242527 0, #242527 25px, transparent 25px, transparent 50px);
+  font-weight: 400;
+  text-align: left;
+}
+.mspfa .splat2 div {
+  position: absolute;
+  left: 75px;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mspfa .splat2 p {
+  margin: none;
+  display: inline-block;
+}
+.mspfa .splat2 img {
+  width: 64px;
+  border-radius: 20px;
+  margin: 0;
+  position: absolute;
+  left: 4px;
+  top: 8px;
+}
+.mspfa .splat2 h1 {
+  position: absolute;
+  font-family: splatname, impact;
+  font-size: 20px;
+  margin: 0;
+  padding-left: 10px;
+  border-radius: 15px 15px 3px 3px;
+  bottom: 105px;
+  left: 0px;
+  width: 150px;
+  height: 28px;
+  border-bottom: dashed grey 3px;
+  background: #0f1012;
+  background-image: repeating-linear-gradient(120deg, #242527 0, #242527 25px, transparent 25px, transparent 50px);
+  background-repeat: repeat;
+  background-position: -42px;
+  background-size: 300px;
+  /* Custom MSPFA Ad */
+}
+.mspfa #customMSPFAAd {
+  content: "";
+  position: fixed;
+  top: 100px;
+  right: calc(50% + 510px);
+  width: 160px;
+  height: 612px;
+  background: var(--image);
+  /* OFF */
+}
+.mspfa .offgame {
+  background: #00500090;
+  font-family: 'pokefrlg';
+  color: white;
+  text-shadow: 0.1em 0.1em #444;
+  display: flex;
+  font-size: 20px;
+  padding: 1em;
+  text-align: left;
+  font-weight: 400;
+  /* Wind Waker */
+}
+@font-face {
+  font-family: rocknroll_one;
+  src: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Zelda/RocknRollOne-Regular.ttf);
+}
+.mspfa .windw, .mspfa .windwnat {
+  font-family: rocknroll_one;
+  color: white;
+  max-width: 600px;
+  min-height: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+  margin: auto;
+  z-index: 0;
+}
+.mspfa .windw .content, .mspfa .windwnat .content {
+  font-size: 1.3em;
+  padding: 2em;
+}
+.mspfa .windw .box, .mspfa .windw .shadow, .mspfa .windwnat .box, .mspfa .windwnat .shadow {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  filter: blur(1px);
+  z-index: -1;
+}
+.mspfa .windw .shadow {
+  filter: blur(8px);
+}
+.mspfa .windwnat .shadow {
+  filter: blur(10px);
+}
+.mspfa .windwnat .box {
+  filter: blur(6px);
+}
+.mspfa .windw .box::before, .mspfa .windw .shadow::before, .mspfa .windwnat .box::before, .mspfa .windwnat .shadow::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+.mspfa .windw .box::before, .mspfa .windw .shadow::before {
+  clip-path: polygon(0% 2%, 4% 3%, 7% 1%, 13% 4%, 17% 1%, 21% 4%, 23% 2%, 26% 4%, 28% 4%, 31% 4%, 36% 1%, 40% 4%, 45% 2%, 48% 1%, 51% 2%, 55% 0%, 58% 1%, 60% 4%, 62% 4%, 65% 1%, 68% 3%, 71% 1%, 73% 1%, 75% 1%, 79% 3%, 79% 2%, 84% 0%, 89% 4%, 92% 0%, 95% 4%, 99% 4%, 100% 1%, 100% 11%, 99% 29%, 99% 37%, 100% 48%, 100% 56%, 99% 70%, 100% 81%, 100% 90%, 100% 99%, 95% 96%, 93% 96%, 90% 98%, 86% 97%, 83% 99%, 80% 97%, 75% 99%, 70% 97%, 65% 98%, 63% 96%, 58% 100%, 57% 97%, 55% 95%, 53% 96%, 52% 96%, 48% 99%, 46% 97%, 43% 100%, 41% 99%, 38% 96%, 36% 98%, 33% 100%, 31% 100%, 28% 96%, 25% 97%, 19% 96%, 17% 97%, 15% 95%, 12% 97%, 9% 100%, 6% 98%, 2% 97%, 1% 96%, 0% 85%, 0% 76%, 0% 71%, 1% 55%, 0% 44%, 1% 33%, 0 22%, 0 11%);
+}
+.mspfa .windwnat .box::before, .mspfa .windwnat .shadow::before {
+  background: linear-gradient(135deg, #3854b5 0%, #42a0bd 100%);
+  clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
+  /* Tumblr */
+}
+.mspfa .tumblrpost {
+  font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  background: white;
+  border-radius: 3px;
+  margin-left: 86px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: left;
+  font-weight: 400;
+}
+.mspfa .tumblrpost > br {
+  display: none;
+}
+.mspfa .tumblrpost > img {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: -86px;
+}
+.mspfa .tumblrpost .header {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.mspfa .tumblrpost .header img {
+  width: 38px;
+  height: 38px;
+  margin-bottom: calc(-19px + 0.5em);
+  margin-right: 8px;
+}
+.mspfa .tumblrpost .content {
+  padding: 0 20px;
+}
+.mspfa .tumblrpost div ~ .header {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: solid 1px rgba(0, 0, 0, 0.13);
+  /* PS banners */
+}
+.mspfa .battletech, .mspfa .combatop {
+  background: white;
+  height: 70px;
+  margin: 0 -25px;
+  font-family: 'fontstuck';
+  text-align: center;
+  font-size: 40px;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+.mspfa .battletech > div {
+  background-color: red;
+  background-image: radial-gradient(circle, rgba(255, 0, 0, 0) 20%, yellow 20%, yellow 30%, red 30%, red 40%, yellow 40%, yellow 50%, red 50%, red 60%, yellow 60%, yellow 70%, rgba(255, 0, 0, 0) 70%), radial-gradient(circle, rgba(255, 0, 0, 0) 20%, yellow 20%, yellow 30%, red 30%, red 40%, yellow 40%, yellow 50%, red 50%, red 60%, yellow 60%, yellow 70%, rgba(255, 0, 0, 0) 70%);
+  background-size: 8px 8px, 5px 30px;
+  background-position: 10px, 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: battletech 0.1s infinite;
+}
+@keyframes battletech {
+  0% {
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    -webkit-text-fill-color: transparent;
+  }
+  51% {
+    -webkit-text-fill-color: red;
+  }
+  100% {
+    -webkit-text-fill-color: red;
+  }
+}
+.mspfa .combatop {
+  --time: 0.5s;
+  animation: combatopBg var(--time) infinite steps(1);
+}
+.mspfa .combatop l {
+  color: #d914ce;
+  animation: combatopText var(--time) infinite steps(1);
+  animation-delay: calc(var(--time) / 5);
+}
+.mspfa .combatop l:nth-of-type(3n + 1) {
+  animation-delay: calc(var(--time) / 5 * 4);
+}
+.mspfa .combatop l:nth-of-type(3n + 2) {
+  animation-delay: calc(var(--time) / 5 * 3);
+}
+@keyframes combatopBg {
+  0% {
+    background: #d914ce;
+  }
+  20% {
+    background: #6326c8;
+  }
+  40% {
+    background: #1850f0;
+  }
+  60% {
+    background: #f42d1e;
+  }
+  80% {
+    background: #f0ac18;
+  }
+  100% {
+    background: #d914ce;
+  }
+}
+@keyframes combatopText {
+  /* No paradox display */
+  0% {
+    color: #d914ce;
+  }
+  20% {
+    color: #6326c8;
+  }
+  40% {
+    color: #1850f0;
+  }
+  60% {
+    color: #f42d1e;
+  }
+  80% {
+    color: #f0ac18;
+  }
+  100% {
+    color: #d914ce;
+  }
+}
+.mspfa .pageHud {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  --bg: white;
+  --border: black;
+  z-index: 2;
+}
+.mspfa .pageHud > br {
+  display: none;
+}
+.mspfa .pageHud > div {
+  background: var(--bg);
+  border: var(--border) solid;
+  font-size: x-large;
+  padding: 0.25em 0.5em;
+  margin: 0.25em;
+  /* Casecade timer */
+}
+.mspfa countdown::after, .mspfa cascadeTimer::after {
+  content: "0";
+  animation: countdown 10s infinite;
+}
+.mspfa cascadeTimer {
+  font-family: "Verdana" !important;
+  color: red;
+  text-align: center;
+  font-weight: 100;
+  font-size: large;
+}
+@keyframes countdown {
+  /* UHC */
+  0% {
+    content: "0";
+  }
+  10% {
+    content: "9";
+  }
+  20% {
+    content: "8";
+  }
+  30% {
+    content: "7";
+  }
+  40% {
+    content: "6";
+  }
+  50% {
+    content: "5";
+  }
+  60% {
+    content: "4";
+  }
+  70% {
+    content: "3";
+  }
+  80% {
+    content: "2";
+  }
+  90% {
+    content: "1";
+  }
+  100% {
+    content: "0";
+  }
+}
+@font-face {
+  font-family: 'Fontstuck extended';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/fontstuck-extended.ttf');
+}
+@keyframes flicker {
+  0%, 100% {
+    color: var(--color_1);
+  }
+  50% {
+    color: var(--color_2);
+  }
+}
+@keyframes tricksterText {
+  0%, 100% {
+    color: #ffd1d1;
+  }
+  14.29% {
+    color: #ffe6d1;
+  }
+  28.57% {
+    color: #fff6d1;
+  }
+  42.86% {
+    color: #d1ffe3;
+  }
+  57.14% {
+    color: #d1f9ff;
+  }
+  71.43% {
+    color: #d1dcff;
+  }
+  85.71% {
+    color: #f0d1ff;
+  }
+}
+.mspfa trick {
+  font-family: 'Fontstuck extended';
+  font-size: 1.2em;
+  line-height: 0.8em;
+  font-weight: 400;
+  color: #ffd1d1;
+  animation: tricksterText 280ms step-end infinite;
+}
+.mspfa trick span::after {
+  content: "a";
+  opacity: 0;
+}
+.mspfa flicker {
+  --color_1: #00ed4f;
+  --color_2: #7fff66;
+  color: var(--color_1);
+  animation: flicker 100ms step-end infinite;
+}
+.mspfa gsun {
+  font-family: 'Fontstuck extended';
+  font-size: 1.2em;
+  line-height: 0.8em;
+  font-weight: 400;
+  --color_1: #00ed4f;
+  --color_2: #7fff66;
+  color: var(--color_1);
+  animation: flicker 100ms step-end infinite;
+  /* Side by side page */
+}
+.mspfa .sidepages {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+.mspfa .sidepages > br {
+  display: none;
+}
+.mspfa .sidepages > div {
+  background: #eeeeee;
+  width: 47%;
+  max-width: 650px;
+  padding: 0 25px 40px;
+  box-sizing: border-box;
+}
+.mspfa .sidepages img {
+  margin: 0 -25px;
+  max-width: calc(100% + 50px) !important;
+}
+.mspfa .pagetitle {
+  text-align: center;
+  font-size: xx-large;
+  padding: 14px 0;
+}
+.mspfa .pagetitle + br {
+  display: none;
+  /* Persona 5 IM */
+}
+.mspfa .persona5 {
+  font-family: 'Arsenal';
+  width: 580px;
+  background-color: #A40001;
+  transform: skewY(2deg);
+  border: solid white 1em;
+  outline: solid black 0.5em;
+  box-sizing: border-box;
+  padding: 10px 40px 10px 180px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  font-size: 16px;
+}
+.mspfa .persona5 > br {
+  display: none;
+}
+.mspfa .persona5 > div {
+  width: max-content;
+  max-width: 200px;
+  padding: 0.8em;
+  text-align: left;
+  margin-top: 10px;
+  position: relative;
+}
+.mspfa .persona5 > div > div {
+  padding: 1em;
+  position: relative;
+}
+.mspfa .p5self {
+  color: black;
+  background: black;
+  margin: 25px 10px 0 auto;
+  font-style: italic;
+  transform: skewX(30deg) rotate(2deg) scaleY(0.8);
+}
+.mspfa .p5self > div {
+  background: white;
+  font-style: italic;
+  transform: skewX(-8deg) rotate(0deg) scaleY(1.25);
+}
+.mspfa .p5self > div::after {
+  content: "";
+  position: absolute;
+  left: 99%;
+  top: calc(50% - 15px);
+  background: white;
+  width: 2em;
+  height: 2em;
+  clip-path: polygon(55% 14%, 100% 74%, 65% 65%, 54% 99%, 0 74%, 0 23%, 36% 39%);
+}
+.mspfa .p5self > div::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: calc(50% - 15px);
+  background: black;
+  width: 2.5em;
+  height: 2.5em;
+  clip-path: polygon(38% 0, 100% 71%, 56% 64%, 28% 95%, 0 74%, 0 14%, 27% 15%);
+  transform-origin: 0% 50%;
+  transform: scaleY(1.2);
+}
+.mspfa .p5other {
+  color: white;
+  background: white;
+  margin: 25px auto 0 10px;
+  transform: skewX(-30deg) rotate(-5deg) scaleY(0.8);
+  width: 200px !important;
+}
+.mspfa .p5other > div {
+  background: black;
+  transform: skewX(10deg) rotate(2deg) scaleY(1.1);
+}
+.mspfa .p5other > div::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: calc(50% - 19px);
+  background: black;
+  width: 2em;
+  height: 2em;
+  clip-path: polygon(55% 14%, 100% 74%, 65% 65%, 54% 99%, 0 74%, 0 23%, 36% 39%);
+  transform-origin: 0% 50%;
+  transform: scaleX(-1);
+}
+.mspfa .p5other > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 15px);
+  background: white;
+  width: 2.5em;
+  height: 2.5em;
+  clip-path: polygon(38% 0, 100% 71%, 56% 64%, 28% 95%, 0 74%, 0 14%, 27% 15%);
+  transform-origin: 0% 50%;
+  transform: scaleY(1.2) scaleX(-1);
+}
+.mspfa .p5self + .p5other, .mspfa .p5self + br + .p5other, .mspfa .p5other + .p5self, .mspfa .p5other + br + .p5self {
+  margin-top: 40px;
+}
+.mspfa .p5other img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  transform: skew(18deg) scaleY(1.25) translate(0, -50%);
+  right: calc(100% + 20px);
+  top: 50%;
+  margin: 0;
+  /* The fucking bar holy shit dude */
+}
+.mspfa .p5other::before, .mspfa .p5other::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: black;
+  width: 120px;
+  top: calc(-12% - 17px);
+  bottom: -12%;
+  right: calc(100% + 40px);
+  transform-origin: 0% 50%;
+  transform: rotate(4deg) skewX(24.5deg);
+  clip-path: polygon(50% 0, 100% 0, 60% 100%, 0% 100%);
+}
+.mspfa .p5other::before {
+  background: #740000;
+  transform: rotate(4deg) skewX(24.5deg) translate(10px, 20px);
+}
+.mspfa .p5other:nth-of-type(odd)::before, .mspfa .p5other:nth-of-type(odd)::after {
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 50% 100%);
+}
+.mspfa .p5self::before, .mspfa .p5self::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: black;
+  width: 120px;
+  top: calc(-12px - 13%);
+  bottom: -10px;
+  right: 150px;
+  transform: rotate(-5deg) skewX(-27.5deg);
+  clip-path: polygon(50% 0, 100% 0, 60% 100%, 0% 100%);
+}
+.mspfa .p5self::before {
+  background: #740000;
+  transform: rotate(-5deg) skewX(-27.5deg) translate(10px, 20px);
+}
+.mspfa .p5self:nth-of-type(odd)::before, .mspfa .p5self:nth-of-type(odd)::after {
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 50% 100%);
+}
+.mspfa .p5self:nth-of-type(even) + .p5other::before, .mspfa .p5self:nth-of-type(even) + .p5other::after, .mspfa .p5self:nth-of-type(even) + br + .p5other::before, .mspfa .p5self:nth-of-type(even) + br + .p5other::after {
+  clip-path: polygon(82.09% -12.24%, 101.08% -8.37%, 20.61% 49.35%, 34.55% 113.52%, 10.64% 114.17%, 1.13% 39.7%);
+  right: calc(100% - 125px);
+  top: calc(-12% - 76px);
+  bottom: calc(-12% - 2px);
+  width: 260px;
+}
+.mspfa .p5self:nth-of-type(odd) + .p5other::before, .mspfa .p5self:nth-of-type(odd) + .p5other::after, .mspfa .p5self:nth-of-type(odd) + br + .p5other::before, .mspfa .p5self:nth-of-type(odd) + br + .p5other::after {
+  clip-path: polygon(123.86% -18.09%, 131.39% -16.87%, 48.73% 25.73%, 27.45% 109.69%, 7.09% 112.98%, 27.89% 23.79%);
+  right: calc(100% - 150px);
+  top: calc(-12% - 82px);
+  bottom: calc(-12% + 4px);
+  width: 360px;
+}
+.mspfa .p5other:nth-of-type(odd) + .p5self::before, .mspfa .p5other:nth-of-type(odd) + .p5self::after, .mspfa .p5other:nth-of-type(odd) + br + .p5self::before, .mspfa .p5other:nth-of-type(odd) + br + .p5self::after {
+  clip-path: polygon(-5.77% -11.23%, 5.08% -18.51%, 96.93% 62.54%, 59.99% 130.77%, 47.27% 120.31%, 61.51% 65.07%);
+  right: 125px;
+  top: calc(-12% - 20px);
+  bottom: calc(-12% - 6px);
+  width: 300px;
+}
+.mspfa .p5other:nth-of-type(even) + .p5self::before, .mspfa .p5other:nth-of-type(even) + .p5self::after, .mspfa .p5other:nth-of-type(even) + br + .p5self::before, .mspfa .p5other:nth-of-type(even) + br + .p5self::after {
+  clip-path: polygon(-5.77% -11.23%, 9.6% -20.17%, 101.45% 109.83%, 90.91% 118.17%);
+  right: 125px;
+  top: calc(-12% - 20px);
+  bottom: calc(-12% - 6px);
+  width: 360px;
+  /* Zelda ootSign */
+}
+.mspfa .ootSign {
+  font-family: 'oot';
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
+  color: #eee;
+  padding: 32px 60px 28px 60px;
+  line-height: 24px;
+  margin: 0 calc(50% - 300px);
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Zelda/ZeldaSign.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 141px;
+  box-sizing: border-box;
+}
+.mspfa .ootSign2 {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Zelda/ZeldaSign.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 141px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+  margin: 0 calc(50% - 300px);
+}
+.mspfa .ootSign2 > div {
+  font-family: 'oot';
+  font-weight: 400;
+  text-align: left;
+  font-size: 24px;
+  color: #eee;
+  padding: 0;
+  line-height: 32px;
+}
+.mspfa .oot2 {
+  background-color: #333;
+  border-radius: 24px;
+  width: 600px;
+  height: 141px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+  margin: 0 calc(50% - 300px);
+}
+.mspfa .oot2 > div {
+  font-family: 'oot';
+  font-weight: 400;
+  text-align: left;
+  font-size: 24px;
+  color: #eee;
+  padding: 0;
+  line-height: 32px;
+  /* Image preview */
+}
+.mspfa .imgzoom {
+  position: relative;
+}
+.mspfa .imgzoom br {
+  display: none;
+}
+.mspfa .imgzoom img {
+  width: 650px;
+  transition: width 0.5s;
+}
+.mspfa .imgzoom input {
+  outline: solid blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.mspfa .imgzoom.pagesize input:checked ~ img {
+  width: 940px;
+}
+.mspfa .imgzoom.fullsize input:checked ~ img {
+  width: unset;
+  max-width: unset !important;
+  /* King for another day */
+}
+.mspfa .k4ad {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+}
+.mspfa .k4ad br {
+  display: none;
+}
+.mspfa .k4ad header {
+  background-image: url("https://mojo.highquality.rip/wp-content/themes/mojo/pinstripes.png");
+  color: #fff;
+  padding: 20px;
+  padding-left: 85px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+}
+.mspfa .k4ad header h2 {
+  margin: 0;
+}
+.mspfa .k4ad header img {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 64px;
+  height: 64px;
+}
+.mspfa .k4ad .dialog {
+  padding: 0 20px 20px 20px;
+  margin: 0;
+  background-color: #dde5f1;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: 25;
+  position: relative;
+}
+.mspfa .k4ad .dialog::before {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+.mspfa .k4ad .dialog div {
+  padding: 8px;
+  margin: 16px;
+  background-color: #a9bedc;
+  border-radius: 8px;
+  position: relative;
+}
+.mspfa .k4ad .dialog .left {
+  padding-left: 3em;
+  margin-right: 20%;
+}
+.mspfa .k4ad .dialog .right {
+  padding-right: 3em;
+  margin-left: 20%;
+}
+.mspfa .k4ad .dialog div p br {
+  display: block;
+}
+.mspfa .k4ad .dialog p {
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0px;
+}
+.mspfa .k4ad .dialog .left p {
+  margin-left: 8px;
+}
+.mspfa .k4ad .dialog .right p {
+  margin-right: 8px;
+}
+.mspfa .k4ad .dialog div img {
+  display: block;
+  max-width: 48px !important;
+  max-height: 44px;
+  position: absolute;
+  top: 0;
+  margin: 0 0;
+}
+.mspfa .k4ad .dialog .left img {
+  left: 0;
+  transform: translate(-50%, -50%) translate(28px, 26px);
+}
+.mspfa .k4ad .dialog .right img {
+  right: 0;
+  transform: translate(50%, -50%) translate(-28px, 26px);
+}
+.mspfa .k4ad .dialog > img {
+  margin: auto;
+  /* Grant */
+}
+.mspfa .scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+  margin: auto;
+  --speed: 5;
+  --color: #ee0000;
+}
+.mspfa .scene > br, .mspfa .scene > * > br {
+  display: none;
+}
+.mspfa .scene > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  --animation_length: calc(var(--speed) * 1s);
+}
+.mspfa .cube_face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 1em;
+  background: var(--color);
+  --axis_offset: rotateZ(-15deg) rotateY(0deg) rotateX(-25deg) rotateY(-90deg);
+  transform: var(--axis_offset) rotateY(-10deg) translateZ(100px);
+  --animation_offset: 0;
+  animation: rotate_cube var(--animation_length) linear infinite;
+}
+.mspfa .cube_face::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0008;
+  animation: darken_cube_one var(--animation_length) linear infinite;
+}
+.mspfa .cube_face.one {
+  animation-name: rotate_cube_one;
+}
+.mspfa .cube_face.two {
+  animation-name: rotate_cube_two;
+}
+.mspfa .cube_face.two::before {
+  animation-delay: calc(var(--animation_length) / 2);
+}
+@keyframes rotate_cube_one {
+  from {
+    transform: var(--axis_offset) rotateY(-10deg) translateZ(100px);
+  }
+  to {
+    transform: var(--axis_offset) rotateY(170deg) translateZ(100px);
+  }
+}
+@keyframes darken_cube_one {
+  from {
+    background: #000d;
+  }
+  to {
+    background: #0002;
+  }
+}
+@keyframes rotate_cube_two {
+  0% {
+    transform: var(--axis_offset) rotateY(80deg) translateZ(100px);
+  }
+  50% {
+    transform: var(--axis_offset) rotateY(170deg) translateZ(100px);
+  }
+  50.1% {
+    transform: var(--axis_offset) rotateY(-10deg) translateZ(100px);
+  }
+  100% {
+    transform: var(--axis_offset) rotateY(80deg) translateZ(100px);
+  }
+}
+.mspfa .cube_top {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background: var(--color);
+  --axis_offset: rotateZ(-15deg) rotateY(0deg) rotateX(-25deg) rotateX(90deg);
+  transform: var(--axis_offset) rotateZ(10deg) translateZ(100px);
+  animation: rotate_cube_top var(--animation_length) linear infinite;
+}
+@keyframes rotate_cube_top {
+  /* AOL instant Messenger */
+  to {
+    transform: var(--axis_offset) rotateZ(-170deg) translateZ(100px);
+  }
+}
+.mspfa .aol {
+  --app: "Instant Messenger";
+  text-align: left;
+  padding: 4px;
+  padding-top: 0;
+  line-height: 30px;
+  border-radius: 5px 5px 1px 1px;
+  box-shadow: inset 0 0 20px #001acf, inset 0 9999px #0058e6;
+  color: white;
+  border: solid #014cd0 1px;
+  border-top-color: #0058eb;
+  position: relative;
+  overflow: hidden;
+  font-family: Tahoma;
+  font-size: 12.5px;
+  font-weight: bold;
+}
+.mspfa .aol::before {
+  content: var(--app);
+  text-indent: 4px;
+  display: block;
+  background: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/xp/Xpincons.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 2px) 50%;
+}
+.mspfa .aol::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  top: -10px;
+  box-shadow: 0 0px 16px white;
+}
+.mspfa .aol > div {
+  color: black;
+  box-shadow: -2px 0px 2px 0px #fff5, 0px -32px 4px #0144d0, 0px -38px 12px -2px #fff9;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 6px;
+  margin-top: 30px;
+  outline: #ECE9D7 solid 6px;
+  border-top: grey solid 2px;
+  border-left: grey solid 2px;
+  box-sizing: border-box;
+  background: white;
+  padding: 0 2px;
+  position: relative;
+}
+.mspfa .aol > div::before {
+  content: "File\3000 Edit\3000 Insert\3000 People";
+  position: absolute;
+  top: -32px;
+  left: -7px;
+  width: calc(100% + 12.5px);
+  height: 22px;
+  background: #ECE9D7;
+  border-bottom: solid #c9c6b6 1px;
+  font-size: 12.5px;
+  text-indent: 4px;
+  border-radius: 1px 1px 0 0;
+}
+.mspfa .aol > div::after {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: -7px;
+  width: calc(100% + 12.5px);
+  height: 4px;
+  background: #ECE9D7;
+  /* Mid page turn */
+}
+.mspfa .midpageturn {
+  --img1: url(https://www.homestuck.com/images/storyfiles/hs2/00004.gif);
+  --img2: url(https://www.homestuck.com/images/storyfiles/hs2/00005.gif);
+  width: 650px;
+  height: 450px;
+  background: var(--img1);
+  background-color: lightblue;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  perspective: 90rem;
+  position: relative;
+  margin: 0 -25px;
+}
+.mspfa .midpageturn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: var(--img1);
+  background-repeat: no-repeat;
+  transform-origin: 0 50%;
+  transform: rotateY(0deg);
+  animation: midpageturn 2s linear 1s both;
+}
+.mspfa .midpageturn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: var(--img2);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+@keyframes midpageturn {
+  /* Reddit 2017 */
+  0% {
+    transform: rotateY(0deg);
+    background: var(--img1);
+    background-position: 100% 50%;
+  }
+  50% {
+    background: var(--img1);
+    background-position: 100% 50%;
+    transform: rotateY(-90deg);
+  }
+  50.1% {
+    background: var(--img2);
+    background-position: 0% 50%;
+    transform: rotateY(-90deg) scaleX(-1) translate(-100%);
+  }
+  100% {
+    transform: rotateY(-180deg) scaleX(-1) translate(-100%);
+    background: var(--img2);
+    background-position: 100% 50%;
+    background-position: 0% 50%;
+  }
+}
+.mspfa .redthread {
+  padding-left: 1.7em;
+  font-weight: 400;
+  text-align: left;
+  background: white;
+}
+.mspfa .redthread > br {
+  display: none;
+}
+.mspfa #content > span > .redthread {
+  padding: 0.5em;
+  padding-left: 2.5em;
+}
+.mspfa .redcom {
+  font: normal x-small verdana, arial, helvetica, sans-serif;
+  color: #222222;
+  font-size: 14px;
+  line-height: 1.4285714286em;
+  position: relative;
+}
+.mspfa .redcom::first-line {
+  line-height: 1.6em;
+}
+.mspfa .redcom::before {
+  content: "";
+  position: absolute;
+  background: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Reddit/updownvotes.png);
+  width: 30px;
+  height: 52px;
+  right: 100%;
+  top: 4px;
+  image-rendering: pixelated;
+}
+.mspfa .redcom::after {
+  content: "permalink\3000 embed\3000 save\3000 parent\3000 report\3000 reply";
+  display: block;
+  color: #888;
+  font-weight: bold;
+  line-height: 1.6em;
+  padding: 0 1px;
+  font-size: x-small;
+}
+.mspfa #content > span > .redthread > .redcom::after {
+  content: "permalink\3000 embed\3000 save\3000 report\3000 reply";
+}
+.mspfa .redcom > stats {
+  font-size: x-small;
+}
+.mspfa .redcom > name {
+  font-size: x-small;
+  font-weight: bold;
+  color: #369;
+}
+.mspfa .redcom > name::before {
+  content: "[–] ";
+  font-weight: 400;
+  /* Picto chat */
+}
+@font-face {
+  font-family: 'DSware';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/Personal%20Sites/Fonts/NDS12.ttf');
+  /* Pixel size 2px */
+}
+.mspfa .picto {
+  background: linear-gradient(0deg, #aaa 75%, #bababa 75%);
+  background-size: 100% 8px;
+  border-top: #f2f2f2 solid 2px;
+  padding: 0.1px;
+  line-height: 32px;
+  font-size: 18px;
+  font-family: 'DSware';
+  padding-left: 38px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  image-rendering: pixelated;
+}
+.mspfa .picto:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 100%;
+  background: white;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/Personal%20Sites/DS%20images/a.png), url(https://file.garden/X1htvgJ0DEp_tp-Z/Personal%20Sites/DS%20images/Connected.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+}
+.mspfa .picto > br {
+  display: none;
+}
+.mspfa .picto > div {
+  --col1: white;
+  --col: #0049cb;
+  margin: 4px 4px;
+  padding: 6px 12px;
+  text-indent: 120px;
+  background: #fff0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+.mspfa .picto > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--col1);
+  z-index: -1;
+  clip-path: polygon(0 8px, 2px 8px, 2px 6px, 4px 6px, 4px 4px, 6px 4px, 6px 2px, 8px 2px, 8px 0, calc(100% - 8px) 0px, calc(100% - 8px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 8px, calc(100% - 0px) 8px, calc(100% - 0px) calc(100% - 8px), calc(100% - 2px) calc(100% - 8px), calc(100% - 2px) calc(100% - 6px), calc(100% - 4px) calc(100% - 6px), calc(100% - 4px) calc(100% - 4px), calc(100% - 6px) calc(100% - 4px), calc(100% - 6px) calc(100% - 2px), calc(100% - 8px) calc(100% - 2px), calc(100% - 8px) calc(100% - 0px), 8px calc(100% - 0px), 8px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 8px), 0px calc(100% - 8px));
+}
+.mspfa .picto > div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--col);
+  z-index: -1;
+  clip-path: polygon(4px 8px, 4px 6px, 6px 6px, 6px 4px, 8px 4px, 8px 2px, calc(100% - 8px) 2px, calc(100% - 8px) 4px, calc(100% - 6px) 4px, calc(100% - 6px) 6px, calc(100% - 4px) 6px, calc(100% - 4px) 8px, calc(100% - 2px) 8px, calc(100% - 2px) calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 6px), calc(100% - 6px) calc(100% - 6px), calc(100% - 6px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) calc(100% - 2px), 8px calc(100% - 2px), 8px calc(100% - 4px), 6px calc(100% - 4px), 6px calc(100% - 6px), 4px calc(100% - 6px), 4px calc(100% - 8px), 2px calc(100% - 8px), 2px 8px, 4px 8px, 4px calc(100% - 8px), 6px calc(100% - 8px), 6px calc(100% - 6px), 8px calc(100% - 6px), 8px calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) calc(100% - 6px), calc(100% - 6px) calc(100% - 6px), calc(100% - 6px) calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) 8px, calc(100% - 6px) 8px, calc(100% - 6px) 6px, calc(100% - 8px) 6px, calc(100% - 8px) 4px, 8px 4px, 8px 6px, 6px 6px, 6px 8px, 4px 8px);
+}
+.mspfa .picto > div.enter {
+  color: Yellow;
+  --col1: black;
+  --col: white;
+  text-indent: 0;
+}
+.mspfa .picto > div > div:first-of-type {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 116px;
+  height: 36px;
+  text-indent: 10px;
+  z-index: 0;
+  color: var(--col);
+}
+.mspfa .picto > div > div:first-of-type::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--col);
+  opacity: 0.4;
+  z-index: -1;
+  clip-path: polygon(0px 4px, 2px 4px, 2px 2px, 4px 2px, 4px 0px, 100% 0, calc(100% - 0px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 0px), 4px calc(100% - 0px), 4px calc(100% - 2px), 2px calc(100% - 2px), 2px calc(100% - 4px), 0px calc(100% - 4px));
+}
+.mspfa .picto > div > div:first-of-type::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--col);
+  outline: var(--col) solid 2px;
+  z-index: -1;
+  clip-path: polygon(100% 0, calc(100% + 2px) 0, calc(100% + 2px) calc(100% + -4px), calc(100% + 0px) calc(100% + -4px), calc(100% + 0px) calc(100% + -2px), calc(100% + -2px) calc(100% + -2px), calc(100% + -2px) calc(100% + 0px), calc(100% + -4px) calc(100% + 0px), calc(100% + -4px) calc(100% + 2px), 4px calc(100% + 2px), 4px calc(100% + 0px), 2px calc(100% + 0px), 2px calc(100% + -2px), 0 calc(100% + -2px), 0 calc(100% + -4px), 0px calc(100% - 4px), 2px calc(100% - 4px), 2px calc(100% - 2px), 4px calc(100% - 2px), 4px calc(100% - 0px), calc(100% - 4px) calc(100% - 0px), calc(100% - 4px) calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) calc(100% - 4px), calc(100% - 0px) calc(100% - 4px));
+}
+.mspfa .picto > div img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  width: 468px;
+  pointer-events: none;
+  /* Family guy? */
+}
+@font-face {
+  font-family: 'famguy';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Family%20guysss/Famig___.TTF');
+  /* Night in the woods */
+}
+@font-face {
+  font-family: 'nitw1';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/nitw/NITW_DIAL1.ttf');
+}
+.mspfa .nitw {
+  font-family: 'nitw1';
+  font-size: 32px;
+  background: black;
+  color: white;
+  width: max-content;
+  padding: 0.2em 1em;
+  border-radius: 10% 20% 10% 20% / 50% 40% 50% 40%;
+  text-align: center;
+  margin: auto;
+  font-weight: 400;
+  /* Fsim intros */
+}
+.mspfa .fsimroll {
+  --col1: limegreen;
+  --col2: green;
+  width: 300px;
+  height: 380px;
+  position: relative;
+  background: linear-gradient(0deg, #464646 0%, var(--col1) 100%);
+  border-radius: 16px;
+  border: var(--col1) solid;
+  z-index: 0;
+  font-weight: 400;
+  text-align: left;
+  font-family: 'Berlinsans';
+  color: #fffd;
+  margin: 0 40px;
+  display: inline-block;
+}
+.mspfa .fsimroll::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 300px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) translate(0px, -300px);
+  --s: 20px;
+  --m: 1.2px;
+  /* shape size */
+  --blend: #ccc;
+  /* space */
+  --col2: #999;
+  --v1: var(--col2) 119.5deg, transparent 120.5deg;
+  --v2: var(--blend) 119.5deg, transparent 120.5deg;
+  border-radius: 16px;
+  background: conic-gradient(at var(--m) calc(var(--s)*0.5777), transparent 270deg, var(--blend) 0deg), conic-gradient(at calc(100% - var(--m)) calc(var(--s)*0.5777), var(--blend) 90deg, transparent 0deg), conic-gradient(from -60deg at 50% calc(var(--s)*0.8662), var(--v1)), conic-gradient(from -60deg at 50% calc(var(--s)*0.8662 + 2*var(--m)), var(--v2)), conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + 3*var(--m)), var(--v1)), conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 +   var(--m)), var(--v2)), linear-gradient(90deg, var(--col2) calc(50% - var(--m)), var(--blend) 0 calc(50% + var(--m)), var(--col2) 0);
+  /* 6 */
+  background-size: calc(var(--s) + 2*var(--m)) calc(var(--s)*1.732 + 3*var(--m));
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+.mspfa .fsimroll img {
+  margin: 0;
+}
+.mspfa .fsimroll .fsiminfo {
+  position: absolute;
+  top: 25px;
+  left: 100px;
+  width: 230px;
+  height: 165px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mspfa .fsimroll .fsiminfo::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--col2);
+  border: var(--col1) solid;
+  z-index: -1;
+  transform: rotate(4deg);
+}
+.mspfa .fsimroll .fsiminfo::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: var(--col1) solid;
+  z-index: -1;
+  transform: rotate(8deg);
+}
+.mspfa .fsimroll.left .fsiminfo {
+  right: 100px;
+  left: unset;
+}
+.mspfa .fsimroll.left .fsiminfo::before {
+  transform: rotate(-4deg);
+}
+.mspfa .fsimroll.left .fsiminfo::after {
+  transform: rotate(-8deg);
+}
+.mspfa .fsimroll .fsimtitle {
+  position: absolute;
+  top: 210px;
+  right: 12px;
+  width: 160px;
+  font-weight: 600;
+  text-align: right;
+  font-size: 42px;
+  line-height: 36px;
+  text-shadow: 0 0 4px var(--col1);
+  text-transform: uppercase;
+}
+.mspfa .fsimroll.left .fsimtitle {
+  right: unset;
+  left: 12px;
+  text-align: left;
+}
+.mspfa .fsimtitle br {
+  display: none;
+}
+.mspfa .fsimroll img:first-of-type {
+  position: absolute;
+  bottom: 30px;
+  left: -20px;
+  max-height: 315px;
+}
+.mspfa .fsimroll.left img:first-of-type {
+  right: -20px;
+  left: unset;
+}
+.mspfa .fsimroll img:last-of-type {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  max-height: 315px;
+}
+.mspfa .fsimroll.left img:last-of-type {
+  left: 20px;
+  right: unset;
+  /* Mr saturn font */
+}
+@font-face {
+  font-family: 'mrsaturn';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/SenorSaturno-Aw9g.ttf');
+  /* SUPER CARD */
+}
+.mspfa .Scard {
+  /* Change these variables to make a card */
+  --col1: #FF067C;
+  --col2: black;
+  --dentsize: 100px;
+  --stepsize: 2px;
+  --midscale: 0.5;
+  width: 300px;
+  height: 390px;
+  /* Don't touch these */
+  position: relative;
+  background: var(--col1);
+  box-shadow: var(--stepsize) var(--stepsize) var(--col2), calc(var(--stepsize) * 2) calc(var(--stepsize) * 2) var(--col2), calc(var(--stepsize) * 3) calc(var(--stepsize) * 3) var(--col2), calc(var(--stepsize) * 4) calc(var(--stepsize) * 4) var(--col2), calc(var(--stepsize) * 5) calc(var(--stepsize) * 5) var(--col2);
+  clip-path: polygon(calc(100% - var(--dentsize)) 0%, calc(100% - var(--dentsize) + var(--stepsize) * 0) calc(var(--stepsize) * 1), calc(100% - var(--dentsize) + var(--stepsize) * 1) calc(var(--stepsize) * 1), calc(100% - var(--dentsize) + var(--stepsize) * 1) calc(var(--stepsize) * 2), calc(100% - var(--dentsize) + var(--stepsize) * 2) calc(var(--stepsize) * 2), calc(100% - var(--dentsize) + var(--stepsize) * 2) calc(var(--stepsize) * 3), calc(100% - var(--dentsize) + var(--stepsize) * 3) calc(var(--stepsize) * 3), calc(100% - var(--dentsize) + var(--stepsize) * 3) calc(var(--stepsize) * 4), calc(100% - var(--dentsize) + var(--stepsize) * 4) calc(var(--stepsize) * 4), calc(100% - var(--dentsize) + var(--stepsize) * 4) calc(var(--stepsize) * 5), calc(100% - var(--dentsize) + var(--stepsize) * 5) calc(var(--stepsize) * 5), calc(100% - var(--dentsize) + var(--stepsize) * 5) calc(var(--dentsize) * var(--midscale)), calc(100% - var(--dentsize) * var(--midscale)) calc(var(--dentsize) * var(--midscale)), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 0) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 1), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 1) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 1), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 1) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 2), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 2) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 2), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 2) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 3), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 3) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 3), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 3) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 4), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 4) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 4), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 4) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 5), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 5) calc(var(--dentsize) * var(--midscale) + var(--stepsize) * 5), calc(100% - var(--dentsize) * var(--midscale) + var(--stepsize) * 5) var(--dentsize), 100% var(--dentsize), calc(100% + var(--stepsize) * 0) calc(var(--dentsize) + var(--stepsize) * 1), calc(100% + var(--stepsize) * 1) calc(var(--dentsize) + var(--stepsize) * 1), calc(100% + var(--stepsize) * 1) calc(var(--dentsize) + var(--stepsize) * 2), calc(100% + var(--stepsize) * 2) calc(var(--dentsize) + var(--stepsize) * 2), calc(100% + var(--stepsize) * 2) calc(var(--dentsize) + var(--stepsize) * 3), calc(100% + var(--stepsize) * 3) calc(var(--dentsize) + var(--stepsize) * 3), calc(100% + var(--stepsize) * 3) calc(var(--dentsize) + var(--stepsize) * 4), calc(100% + var(--stepsize) * 4) calc(var(--dentsize) + var(--stepsize) * 4), calc(100% + var(--stepsize) * 4) calc(var(--dentsize) + var(--stepsize) * 5), calc(100% + var(--stepsize) * 5) calc(var(--dentsize) + var(--stepsize) * 5), calc(100% + var(--stepsize) * 5) calc(100% + var(--stepsize) * 5), 0 calc(100% + var(--stepsize) * 5), 0 0);
+}
+.mspfa .Scard:before {
+  content: '';
+  position: absolute;
+  background: var(--col2);
+  width: var(--dentsize);
+  height: var(--dentsize);
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 calc(var(--midscale) * 100%), 0 0, 100% 0, 100% 100%, calc(100% - var(--midscale) * 100%) 100%, calc(100% - var(--midscale) * 100%) calc(var(--midscale) * 100%));
+  /* DOAWK */
+}
+@font-face {
+  font-family: 'wimpy';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/wimp/WimpyKidCured%20(1).otf');
+}
+.mspfa .wimp {
+  font-family: 'wimpy';
+  width: 650px;
+  box-sizing: border-box;
+  padding: 2.4em 2.5em 2em;
+  position: relative;
+  line-height: 2em;
+  background: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 -25px;
+}
+.mspfa .wimp::before {
+  content: '';
+  position: absolute;
+  top: 0.05em;
+  bottom: 1em;
+  left: 2.5em;
+  right: 2.5em;
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 95%, #91e0f8 95%);
+  background-size: auto 2em;
+  pointer-events: none;
+  /* genshin impact */
+}
+@font-face {
+  font-family: 'genshin';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/genshin%20impact/ja-jp.ttf');
+}
+.mspfa .gimpact {
+  font-family: 'genshin';
+  text-align: center;
+  font-weight: 200;
+  min-height: 7em;
+  padding: 0 25px;
+  margin: 0 -25px;
+  color: white;
+  padding-bottom: 10px;
+  background: black;
+  background: radial-gradient(at top, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+  background-position: center top;
+  position: relative;
+}
+.mspfa .gimpact h1 {
+  font-size: 1.2em;
+  color: #F1C53A;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.mspfa .gimpact h2 {
+  font-size: 0.7em;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #F1C53A;
+  position: relative;
+}
+.mspfa .gimpact::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -100px;
+  left: 0;
+  transform-origin: 50% 100%;
+  transform: scaleY(0.05);
+  background: radial-gradient(at bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+}
+.mspfa .gimpact h2::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  top: calc(50% - 3px);
+  background: linear-gradient(90deg, rgba(241, 197, 58, 0) 0%, #f1c53a 10%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0) 55%, #f1c53a 90%, rgba(241, 197, 58, 0) 100%);
+  /* TF2 Chat*/
+}
+.mspfa .tf2chat {
+  --sidebarwidth: 3.5em;
+  text-align: left;
+  position: relative;
+  font-family: Verdana;
+  font-weight: bold;
+  padding: 0.5em;
+  padding-right: var(--sidebarwidth);
+  color: #ECE3CB;
+  background: #4B4B4B;
+  border-radius: 0.5em;
+  border: solid #696969 1.8em;
+  border-top-width: 3.2em;
+  border-bottom-width: 1em;
+  text-shadow: 0.1em 0.1em black;
+}
+.mspfa .tf2chat::before {
+  content: 'Filters';
+  color: #eee;
+  text-shadow: none;
+  font-weight: 400;
+  display: block;
+  box-sizing: border-box;
+  height: 3em;
+  width: 200px;
+  padding-top: 0.7em;
+  border: solid #ACACAC 0.2em;
+  border-color: #ACACAC #424242 #424242 #ACACAC;
+  text-align: center;
+  position: absolute;
+  top: -3.1em;
+  right: 0;
+}
+.mspfa .tf2chat::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(var(--sidebarwidth) - 0.2em);
+  background: #969696;
+}
+.mspfa .tf2chat > div::before {
+  content: '▲';
+  text-align: center;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  height: var(--sidebarwidth);
+  width: var(--sidebarwidth);
+  padding-top: calc(var(--sidebarwidth) / 3);
+  background: #4B4B4B;
+  z-index: 2;
+  border: solid #ACACAC 0.2em;
+  border-color: #ACACAC #424242 #424242 #ACACAC;
+}
+.mspfa .tf2chat > div::after {
+  content: '▼';
+  text-align: center;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+  height: var(--sidebarwidth);
+  width: var(--sidebarwidth);
+  padding-top: calc(var(--sidebarwidth) / 3);
+  background: #4B4B4B;
+  z-index: 2;
+  border: solid #ACACAC 0.2em;
+  border-color: #ACACAC #424242 #424242 #ACACAC;
+  /* Minecraft button */
+}
+.mspfa .mcBtn {
+  --pxsize: 0.1em;
+  margin: 0.3em 0;
+  font-family: 'mcnorm';
+  background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center/cover;
+  outline: var(--pxsize) solid #000;
+  padding: 0.2em 2em;
+  text-align: center;
+  width: 100%;
+  padding-bottom: calc(var(--pxsize) * 4);
+  line-height: 1em;
+  white-space: nowrap;
+  color: #DDD;
+  text-shadow: calc(var(--pxsize) * 0.5) calc(var(--pxsize) * 0.5) #000a;
+  border: solid var(--pxsize) #B3B3B3;
+  border-right: solid var(--pxsize) #424242;
+  box-sizing: border-box;
+  position: relative;
+  font-size: unset;
+}
+.mspfa .mcBtn::before {
+  content: '';
+  position: absolute;
+  bottom: calc(var(--pxsize) * -1);
+  left: calc(var(--pxsize) * -1);
+  right: calc(var(--pxsize) * -1);
+  height: calc(var(--pxsize) * 3);
+  background: #0006;
+}
+.mspfa .mcBtn:hover {
+  background-color: rgba(100, 100, 255, 0.45);
+  text-shadow: var(--pxsize) var(--pxsize) #202013CC;
+  color: #FFFFA0;
+}
+.mspfa .mcBtn:hover::after {
+  content: '';
+  position: absolute;
+  top: calc(var(--pxsize) * -1);
+  bottom: calc(var(--pxsize) * -1);
+  left: calc(var(--pxsize) * -1);
+  right: calc(var(--pxsize) * -1);
+  padding: 0.3em 0;
+  text-align: center;
+  padding-bottom: calc(var(--pxsize) * 4);
+  background: rgba(100, 100, 255, 0.25);
+  /* Roblox */
+}
+.mspfa .roblox {
+  position: relative;
+  font-family: Verdana;
+  font-weight: 400;
+  text-align: left;
+  width: 300px;
+  margin-left: auto;
+}
+.mspfa .roblox br {
+  display: none;
+}
+.mspfa .roblox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.mspfa .roblox * {
+  color: white;
+  background: rgba(20, 0, 0, 0.25);
+  padding: 0.25em;
+}
+.mspfa .roblox th {
+  color: #C9C8C1;
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-align: center;
+}
+.mspfa .roblox th:first-of-type {
+  text-align: left;
+}
+.mspfa .roblox td {
+  padding: 0.6em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.mspfa .roblox td:first-of-type {
+  padding: 0.6em 2em;
+  text-align: left;
+}
+.mspfa .roblox #head td {
+  background: var(--color1);
+  padding: 0.25em 0.6em;
+  color: white;
+}
+.mspfa .roblox #head td:first-of-type {
+  background: var(--color1);
+  padding: 0.25em 0.8em;
+  /* Poke frlg */
+}
+@font-face {
+  font-family: 'pokefrlg';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Pokemon%20textboxes/pokemon-firered-leafgreen-font-recreation.ttf');
+}
+.mspfa .pokefrlg {
+  font-size: 20px;
+  position: relative;
+  background: white;
+  padding: 0.15em 0.9em 0.25em;
+  border: #A5D6E7 solid 0.25em;
+  border-radius: 1.1em;
+  box-shadow: 1px 1px #4870a0, 1px -1px #4870a0, -1px 1px #4870a0, -1px -1px #4870a0;
+  font-family: 'pokefrlg';
+  color: #3152CE;
+  text-shadow: 0.1em 0.1em #D6D6CE, 0em 0.1em #D6D6CE, 0.1em 0em #D6D6CE;
+  line-height: 1.3em;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  text-align: left;
+}
+.mspfa .pokefrlg::before {
+  content: '';
+  position: absolute;
+  background: #E0F0F8;
+  top: 0.6em;
+  bottom: 0.6em;
+  left: 0.15em;
+  width: 0.4em;
+  border-radius: 100px;
+}
+.mspfa .pokefrlg::after {
+  content: '';
+  position: absolute;
+  background: #E0F0F8;
+  top: 0.6em;
+  bottom: 0.6em;
+  right: 0.15em;
+  width: 0.4em;
+  border-radius: 100px;
+  /* sidebar */
+}
+.mspfa .sidebox {
+  background: #EEEEEE;
+  position: fixed;
+  bottom: 120px;
+  right: -400px;
+  top: 120px;
+  width: 400px;
+  transition: right 0.5s;
+  overflow-y: auto;
+  z-index: 5;
+}
+.mspfa .sidebar {
+  --num: 1;
+  position: relative;
+}
+.mspfa .sidebar > br {
+  display: none;
+}
+.mspfa .sidebar input {
+  position: fixed;
+  right: 400px;
+  bottom: -100px;
+}
+.mspfa .sidebar input::before {
+  position: fixed;
+  content: '';
+  width: 75px;
+  height: 75px;
+  right: 0px;
+  top: calc(var(--num) * 80px + 50px);
+  transition: right 0.5s;
+  background: #C6C6C6;
+  background-image: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: centre;
+}
+.mspfa .sidebar input:checked::before {
+  right: 400px;
+}
+.mspfa .sidebar input:checked ~ .sidebox {
+  right: 0;
+}
+.mspfa .sidebox .pchum {
+  position: absolute;
+  top: 38px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mspfa .sidebox .pchum > div {
+  overflow-y: auto;
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 8px;
+  top: 22px;
+  /* Real terminal */
+}
+.mspfa .realTerminal {
+  padding: 1em;
+  text-align: left;
+  font-weight: 400;
+  min-height: 450px;
+  margin: 0 -25px;
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  color: white;
+  font: 1rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+  position: relative;
+}
+.mspfa .realTerminal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 2px 3px;
+  pointer-events: none;
+  animation: flicker 5s infinite steps(2);
+}
+@keyframes flicker {
+  /* Upper and lower case */
+  to {
+    background-position: 2px 3px;
+  }
+}
+.mspfa upcase {
+  text-transform: uppercase;
+}
+.mspfa lowcase {
+  text-transform: lowercase;
+  /* The MSPFA button */
+}
+.mspfa .mspfaBtn {
+  width: max-content;
+  content: "Translate";
+  font-family: "Press Start 2P";
+  padding: 8px;
+  font-size: 16px;
+  color: #aaaaaa;
+  text-shadow: 0 2px #777777;
+  background-color: #dddddd;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: #dddddd #898989 #898989 #dddddd;
+}
+.mspfa .mspfaBtn:checked {
+  border-color: #898989 #dddddd #dddddd #898989;
+  background-color: #cccccc;
+  /* Cruelty Squad */
+}
+@font-face {
+  font-family: 'MINGLIU';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Cruelty%20Squad/MINGLIU.ttf');
+}
+.mspfa .CrueltySquad br {
+  display: none;
+}
+.mspfa .CrueltySquad p br {
+  display: block;
+}
+.mspfa .CrueltySquad {
+  --scale: 0.5;
+  font-family: 'MINGLIU';
+  text-align: left;
+  font-weight: 400;
+  font-size: 0;
+  display: flex;
+  width: calc(var(--scale) * (645px + 720px));
+}
+.mspfa .CSitems {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Cruelty%20Squad/CSbg.png);
+  background-size: calc(var(--scale) * 90px) calc(var(--scale) * 84px);
+  height: calc(var(--scale) * 672px);
+  width: calc(var(--scale) * 720px);
+}
+.mspfa .CSitems > div > img, .mspfa .CSitems > div {
+  height: calc(var(--scale) * 84px);
+  width: calc(var(--scale) * 90px);
+  background: black;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.mspfa .CSbody > div > img, .mspfa .CSbody > div {
+  height: calc(var(--scale) * 72px);
+  width: calc(var(--scale) * 65px);
+  background: black;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.mspfa .CSitems > div > p, .mspfa .CSbody > div > p {
+  position: absolute;
+  background: black;
+  margin: 0;
+  height: calc(var(--scale) * 360px);
+  width: calc(var(--scale) * 600px);
+  top: calc(var(--scale) * 84px);
+  left: calc(var(--scale) * 90px);
+  font-size: calc(var(--scale) * 24px);
+  padding: calc(var(--scale) * 2px);
+  color: #24BD1E;
+  display: none;
+}
+.mspfa .CSitems > div > img:hover ~ p, .mspfa .CSbody > div > img:hover ~ p {
+  display: block;
+}
+.mspfa .CSbody {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Cruelty%20Squad/Body.png);
+  background-size: contain;
+  height: calc(var(--scale) * 672px);
+  width: calc(100% - var(--scale) * 720px);
+  color: red;
+  font-size: calc(var(--scale) * 32px);
+  position: relative;
+}
+.mspfa .CSbody > div {
+  position: absolute;
+}
+.mspfa .CSbody > div:nth-of-type(1) {
+  left: calc(var(--scale) * 290px);
+  top: calc(var(--scale) * 37px);
+}
+.mspfa .CSbody > div:nth-of-type(2) {
+  left: calc(var(--scale) * 290px);
+  top: calc(var(--scale) * 145px);
+}
+.mspfa .CSbody > div:nth-of-type(3) {
+  left: calc(var(--scale) * 150px);
+  top: calc(var(--scale) * 240px);
+}
+.mspfa .CSbody > div:nth-of-type(4) {
+  left: calc(var(--scale) * 150px);
+  top: calc(var(--scale) * 432px);
+  /* UT menu 3 */
+}
+.mspfa .UTmenu3 br {
+  display: none;
+}
+.mspfa .UTmenu3info br, .mspfa .UTmenu3stats br {
+  display: block;
+}
+.mspfa .UTmenu3 {
+  color: white;
+  position: relative;
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 156px;
+}
+.mspfa .UTmenu3stats {
+  padding: 8px 10px;
+  line-height: 18px;
+  font-family: 'utname';
+  font-size: 10px;
+  text-align: left;
+  background: black;
+  width: 140px;
+  border: white solid 6px;
+  box-sizing: border-box;
+}
+.mspfa .UTmenu3stats::first-line {
+  line-height: 28px;
+  font-family: 'UTDetermination';
+  font-size: 24px;
+}
+.mspfa .UTmenu3items {
+  text-align: right;
+  background: black;
+  width: 140px;
+  border: white solid 6px;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: 'UTDetermination';
+  padding: 16px 24px 12px;
+  box-sizing: border-box;
+  margin: 6px 0;
+}
+.mspfa .UTmenu3info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 80px;
+  left: 160px;
+  background: black;
+  border: white solid 6px;
+  text-align: left;
+  line-height: 30px;
+  padding: 35px 23px;
+  display: none;
+}
+.mspfa .UTmenu3 input {
+  display: none;
+}
+.mspfa .UTmenu3 label {
+  cursor: pointer;
+}
+.mspfa .UTmenu3 label:hover {
+  color: yellow;
+}
+.mspfa .UTmenu3 input:checked ~ .UTmenu3info {
+  display: block;
+  /* Ut battle menu */
+}
+@font-face {
+  font-family: 'UTDetermination';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/undertale-determination-overworld.ttf');
+}
+@font-face {
+  font-family: 'UTMercy';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/mercy.ttf');
+}
+@font-face {
+  font-family: 'UTName';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/Battle%20name.tff');
+}
+@font-face {
+  font-family: 'UTHP';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/ut-hp-font.ttf');
+}
+@font-face {
+  font-family: 'UTTitle';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/undertale.ttf');
+}
+.mspfa .Utfighter br {
+  display: none;
+}
+.mspfa .UTinfobox br {
+  display: block;
+}
+.mspfa .Utfighter a:hover {
+  color: yellow;
+}
+.mspfa .Utfighter {
+  text-align: center;
+  position: relative;
+  color: white;
+  padding-top: 140px;
+  font-weight: 400;
+}
+.mspfa .Utfighter > div {
+  display: inline-block;
+}
+.mspfa .UTstats {
+  width: 100%;
+  font-family: UTname;
+  padding: 14px 0;
+  font-size: 14px;
+  position: relative;
+}
+.mspfa .UTstats::before {
+  content: var(--name, "Chara    lv 1");
+  white-space: pre;
+  position: absolute;
+  left: 0;
+}
+.mspfa .UTstats > div {
+  --hp: 20;
+  --max: 20;
+  display: inline-block;
+  height: 21px;
+  margin: 0 0 -3px 0;
+  width: calc(1.5px*var(--max));
+  background: red;
+  position: relative;
+}
+.mspfa .UTstats > div::after {
+  content: "";
+  display: block;
+  height: 21px;
+  margin-bottom: -3px;
+  width: calc(1.5px*var(--hp));
+  background: yellow;
+}
+.mspfa .UTstats > div::before {
+  content: "HP";
+  display: block;
+  font-family: "UThp";
+  font-size: 10px;
+  position: absolute;
+  top: 5px;
+  left: -100%;
+}
+.mspfa .UTinfobox, .mspfa .UTflavourbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  box-sizing: border-box;
+  border: solid white 5px;
+  background: black;
+  text-align: left;
+  font-family: UTdetermination;
+  line-height: 32px;
+  font-size: 20px;
+  padding: 18px;
+  display: none;
+}
+.mspfa .Utfighter label {
+  --color: orange;
+  color: var(--color);
+  display: inline-block;
+  font-family: 'UTMercy';
+  font-size: 27px;
+  width: 110px;
+  box-sizing: border-box;
+  text-align: right;
+  border: 3px solid var(--color);
+  padding: 0px 4px 2px 0px;
+  margin: 0 21px;
+}
+.mspfa .Utfighter label:hover {
+  --color: yellow;
+}
+.mspfa .Utfighter input {
+  display: none;
+}
+.mspfa .Utfighter input:checked ~ .UTinfobox {
+  display: flex;
+}
+.mspfa .UTinfobox p {
+  margin: 0;
+  flex: 50%;
+}
+.mspfa .Utfighter div:last-of-type label {
+  margin-right: 0;
+}
+.mspfa .Utfighter div:nth-of-type(3) label {
+  margin-left: 0;
+  /* Command Mimic */
+}
+.mspfa .cmdmimic {
+  font-weight: normal;
+  font-size: x-large;
+  font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+  text-align: left;
+  margin-bottom: calc(-1em - 5px);
+  /* Gam shop */
+}
+.mspfa .Gamshop br {
+  display: none;
+}
+.mspfa .Gamshop .info br {
+  display: block;
+}
+.mspfa .Gamshop {
+  --bgimg: url(https://www.homestuck.com/images/storyfiles/hs2/03730.gif);
+  --color1: #391E71;
+  --color2: #7E42B3;
+  height: 450px;
+  width: 650px;
+  box-sizing: border-box;
+  margin: auto -25px;
+  padding: 10px 20px;
+  font-family: 'fontstuck';
+  font-weight: 400;
+  background: black;
+  background-image: linear-gradient(90deg, white 25%, rgba(255, 0, 0, 0) 0%), var(--bgimg);
+  position: relative;
+}
+.mspfa .Gamshopitemwrap {
+  height: 56px;
+  width: 180px;
+  background: #898889;
+  border-radius: 5px;
+  margin: 3px 0;
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 28px;
+}
+.mspfa .Gamshopitemwrap img {
+  background: #B3B3B3;
+  height: 50px;
+  width: 50px;
+  padding: 1px;
+  border-radius: 5px;
+  margin-bottom: -12px;
+}
+.mspfa .Gamshopitemwrap input {
+  display: none;
+}
+.mspfa .Gamshopitemwrap cost::before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 2px -8px 6px;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/boon%20dollar2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mspfa .Gamshopitemwrap .info {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 220px;
+  font-family: Courier New;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0.5em;
+  border-radius: 8px;
+  text-align: left;
+  background: var(--color1);
+  color: var(--color2);
+  border: solid 4px var(--color2);
+  transform: scale(0);
+  pointer-events: none;
+  transition: transform 0.1s steps(4);
+  z-index: 2;
+}
+.mspfa .Gamshopitemwrap input:checked ~ label .info, .mspfa .Gamshopitemwrap input:checked ~ label::before {
+  transform: scale(1);
+  pointer-events: auto;
+}
+.mspfa .Gamshopitemwrap label::before {
+  content: "";
+  background: transparent;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scale(0);
+  pointer-events: none;
+  transition: transform 0.1s steps(4);
+  /* PS inventory */
+}
+.mspfa .PSinventory {
+  --scale: 1;
+  position: fixed;
+  top: calc(var(--scale) * 17px);
+  right: calc(var(--scale) * 34px);
+  width: calc(var(--scale) * 333px);
+  height: calc(var(--scale) * 158px);
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/PSmenu/PSinventory.png);
+  background-size: cover;
+}
+.mspfa .PSinventory img {
+  position: absolute;
+  max-height: calc(var(--scale) * 50px);
+}
+.mspfa .PSinventory img:nth-of-type(2) {
+  bottom: calc(var(--scale) * 26px);
+  right: calc(var(--scale) * 21px);
+}
+.mspfa .PSinventory img:nth-of-type(1) {
+  bottom: calc(var(--scale) * 21px);
+  right: calc(var(--scale) * 122px);
+}
+.mspfa .PSinventory img:nth-of-type(3) {
+  top: calc(var(--scale) * 8px);
+  left: calc(var(--scale) * 12px);
+}
+.mspfa .PSinventory img:nth-of-type(4) {
+  top: calc(var(--scale) * 10px);
+  left: calc(var(--scale) * 76px);
+}
+.mspfa .PSinventory img:nth-of-type(5) {
+  top: calc(var(--scale) * 9px);
+  left: calc(var(--scale) * 140px);
+}
+.mspfa .PSinventory img:nth-of-type(6) {
+  top: calc(var(--scale) * 9px);
+  left: calc(var(--scale) * 204px);
+}
+.mspfa .PSinventory img:nth-of-type(7) {
+  top: calc(var(--scale) * 7px);
+  left: calc(var(--scale) * 267px);
+  /* better Freindsim */
+}
+.mspfa .fsimB {
+  --color1: #6A006A;
+  --color2: #A63EBC;
+  font-family: 'Berlinsans';
+  font-size: 28px;
+  text-shadow: 0 0 10px var(--color2);
+  color: white;
+  position: relative;
+  z-index: 0;
+  text-align: left;
+  font-weight: 600;
+  text-indent: 100px;
+}
+.mspfa .fsimB > div {
+  text-indent: 0;
+  font-weight: 400;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: var(--color1);
+  border: solid var(--color2) 10px;
+  border-style: solid hidden solid hidden;
+  margin: 0 80px;
+  height: 160px;
+  position: relative;
+  padding: 10px 24px 10px 24px;
+}
+.mspfa .fsimB > div::before {
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  --size: 112px;
+  width: var(--size);
+  height: var(--size);
+  background: var(--color1);
+  border: solid var(--color2) 7px;
+  top: 14px;
+  left: -56px;
+  z-index: -1;
+}
+.mspfa .fsimB > div::after {
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  --size: 112px;
+  width: var(--size);
+  height: var(--size);
+  background: var(--color1);
+  border: solid var(--color2) 7px;
+  top: 14px;
+  right: -56px;
+  z-index: -1;
+  /* Troll book */
+}
+.mspfa .trollbook {
+  font-size: 16px;
+  border: #be1304 solid 0.6em;
+  padding: 0.5em 0.75em;
+  position: relative;
+  text-align: left;
+  margin-top: 1em;
+  background: white;
+}
+.mspfa .trollbook::before {
+  content: 'TROLLLOG';
+  font-family: 'fontstuck';
+  font-size: 12px;
+  position: absolute;
+  background: #FF2612;
+  border: #be1304 solid 0.3em;
+  padding: 0.4em 0.25em 0.2em 0.5em;
+  width: 9em;
+  text-align: center;
+  top: -2.6em;
+  left: 50%;
+  margin-left: -4.5em;
+  font-weight: 400;
+  /* Pchum bookVr */
+}
+.mspfa .pchumbook {
+  font-size: 16px;
+  border: #F5BD10 solid 0.6em;
+  padding: 0.5em 0.75em;
+  position: relative;
+  text-align: left;
+  margin-top: 1em;
+  background: white;
+}
+.mspfa .pchumbook::before {
+  content: 'PESTERLOG';
+  font-family: 'fontstuck';
+  font-size: 12px;
+  position: absolute;
+  background: #F3E50C;
+  border: #F5BD10 solid 0.3em;
+  padding: 0.4em 0.25em 0.2em 0.5em;
+  width: 9em;
+  text-align: center;
+  top: -2.6em;
+  left: 50%;
+  margin-left: -4.5em;
+  font-weight: 400;
+  /* Terraria */
+}
+@font-face {
+  font-family: 'AndyB';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/terraria/ANDYB.TTF');
+}
+.mspfa .terraria {
+  font-family: 'AndyB';
+  background: #484E9D;
+  color: white;
+  font-size: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  padding: 0.85em;
+  border-radius: 0.5em;
+  border: solid #272C46 0.1em;
+  line-height: 1.4em;
+  font-weight: 400;
+  text-align: left;
+}
+.mspfa .terraria a {
+  color: gold;
+  text-decoration: none;
+}
+.mspfa .terraria a::before {
+  content: "\3000";
+  /* Quirk mode */
+}
+.mspfa #quirkmode {
+  text-align: left;
+  display: block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin: 0 -20px;
+  cursor: pointer;
+}
+.mspfa #quirkmode::after {
+  content: '';
+  width: 100%;
+}
+.mspfa #quirkmode + br {
+  display: none;
+}
+.mspfa lable[for="quirkmode"], .mspfa label[for="quirkmode"] {
+  position: aboslute;
+  display: block;
+  text-align: left;
+  height: 0;
+  transform: translate(1.4em);
+  margin: 0 -20px;
+  margin-top: -1em;
+}
+.mspfa .quirkoff {
+  display: none;
+  font-family: Verdana;
+}
+.mspfa .quirkoff ~ br, .mspfa .quirkon ~ br {
+  display: none;
+}
+.mspfa #quirkmode:checked ~ .quirkon, .mspfa #quirkmode:checked ~ * .quirkon {
+  display: none;
+}
+.mspfa #quirkmode:checked ~ .quirkoff, .mspfa #quirkmode:checked ~ * .quirkoff {
+  display: block;
+  /* Cookie run */
+}
+@font-face {
+  font-family: 'Cookierun';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Cookierun/CookieRun%20Bold.ttf');
+}
+.mspfa .cookierun {
+  --color: #643B10;
+  font-family: 'Cookierun';
+  background: #FFF3EE;
+  border-radius: 100px;
+  position: relative;
+  padding: 1.2em 2em;
+  min-height: 3em;
+  margin-top: 1em;
+  color: #555;
+  font-weight: 400;
+  text-align: left;
+}
+.mspfa .cookierun h1 {
+  font-size: 0.95em;
+  position: absolute;
+  background: var(--color);
+  color: white;
+  padding: 0.2em 0.75em;
+  border-radius: 1000px;
+  border: solid #FFF3EE;
+  top: -1.5em;
+  left: 2.5em;
+}
+.mspfa .cookierun h1 ~ br {
+  display: none;
+  /* Youtube comments */
+}
+@font-face {
+  font-family: 'Trade_Gothic_LT';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Youtube/Trade_Gothic_LT.ttf');
+}
+.mspfa .ytcom {
+  --icon: url(https://i.stack.imgur.com/34AD2.jpg);
+  font-family: 'Trade_Gothic_LT';
+  padding-left: 5.5em;
+  padding-top: 0.6em;
+  position: relative;
+  text-align: left;
+  font-weight: 400;
+  background: white;
+}
+.mspfa .ytcom::before {
+  content: '';
+  display: block;
+  width: 4.25em;
+  height: 4.25em;
+  position: absolute;
+  background-image: var(--icon);
+  background-size: contain;
+  left: 0.5em;
+  top: 0.5em;
+}
+.mspfa .ytcom::after {
+  content: '\A Reply\3000∙';
+  white-space: pre;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #ABABA8;
+  line-height: 2em;
+}
+.mspfa .ytcom:first-line {
+  font-size: 0.75em;
+  color: #A4A4A4;
+}
+.mspfa .ytcom h1 {
+  font-size: 1em;
+  color: #4F7D9B;
+  display: inline-block;
+  margin: 0;
+  width: max-content;
+  padding-right: 1em;
+  letter-spacing: 0.5px;
+}
+.mspfa .ytcom p {
+  position: absolute;
+  font-size: 0.8em;
+  color: #4F7D9B;
+  bottom: 0.4em;
+  margin: 0;
+  left: 12em;
+  background: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Youtube/YTdilike.png);
+  background-repeat: no-repeat;
+  width: 5.5em;
+  background-position: right;
+  /* HOMESTUCK MAP */
+}
+.mspfa .Amapsec br {
+  display: none;
+}
+.mspfa .Amaphead br {
+  display: block;
+}
+.mspfa .Amaphead img {
+  margin: 0 !important;
+}
+.mspfa .Amapsec {
+  font-family: Verdana;
+  --color: #4BE24F;
+  border-left: solid 8px var(--color);
+  padding-left: 60px;
+  position: relative;
+  margin-left: 32px;
+  font-weight: 400;
+}
+.mspfa .Amapsec .Amapsec {
+  margin-left: -10px;
+}
+.mspfa .Amapsec::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 20px;
+  top: 0;
+  background: var(--color);
+  left: -6px;
+}
+.mspfa .Amapsec::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 20px;
+  bottom: 0;
+  background: var(--color);
+  left: -6px;
+}
+.mspfa .Amaphead {
+  --color1: #F3F3F2;
+  --color2: #fff;
+  --color3: #F6F6F5;
+  font-family: Verdana;
+  font-weight: 400;
+  width: 588px;
+  height: 161px;
+  box-sizing: border-box;
+  border: solid 5px var(--color1);
+  border-radius: 6px;
+  position: relative;
+  padding-left: 150px;
+  text-align: center;
+  margin: 10px 0 10px -30px;
+  background: white;
+  background: linear-gradient(180deg, var(--color2) 15%, var(--color3) 85%);
+}
+.mspfa .Amaphead:first-of-type {
+  margin-top: 0;
+}
+.mspfa .Amaphead:first-line {
+  color: #C9C9C9;
+  font-size: 20px;
+  line-height: 42px;
+}
+.mspfa .Amaphead img:first-of-type {
+  background: #71E874;
+  position: absolute;
+  height: 144px;
+  width: 144px;
+  border: #71E874 solid 2px;
+  border-radius: 6px;
+  top: 1px;
+  left: 4px;
+}
+.mspfa .Amapsecname {
+  color: white;
+  font-family: fontstuck;
+  width: 27px;
+  word-wrap: break-word;
+  position: absolute;
+  left: -35px;
+  top: 24px;
+  padding: 7px 0;
+  background: var(--color);
+}
+.mspfa .Amapsecname p {
+  margin: 0;
+  margin-left: 8px;
+  width: 16px;
+  text-align: center;
+}
+.mspfa .Amapsecname p:first-of-type {
+  font-size: 10px;
+}
+.mspfa .Amapsecname p:last-child {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.mspfa .Amapsecname img {
+  position: absolute;
+  width: 24px;
+  left: 1px;
+  top: 102%;
+}
+.mspfa .Amapsec > a {
+  text-decoration: none;
+}
+.mspfa .Amapsec > a img {
+  width: 94px;
+  height: 94px;
+  border: #71E874 solid 2px;
+  border-radius: 6px;
+  margin: 4px 2px;
+  /* Pokedex SS */
+}
+.mspfa .pokessdex img {
+  margin: 0;
+}
+.mspfa .pokessdex br {
+  display: none;
+}
+.mspfa .pokessdex {
+  --scale: 0.73;
+  font-size: calc(var(--scale) * 20px);
+  position: relative;
+  width: calc(var(--scale) * 1280px);
+  height: calc(var(--scale) * 720px);
+  margin: 0 -25px;
+  font-family: Trebuchet MS;
+  font-weight: 400;
+  text-align: left;
+  background: #e0d7d8;
+  background: linear-gradient(120deg, #e0d7d8 5%, #f4523b 5%, #f4523b 16%, #fa7248 16%, #fa7248 84%, #f4523b 84%, #f4523b 95%, #e0d7d8 95%);
+}
+.mspfa .pokessdex .pokedexdetails {
+  width: 46.875%;
+  top: 26.38%;
+  right: 5.7%;
+  position: absolute;
+}
+.mspfa .pokessdex .pokedexdetails p {
+  --title: "Error";
+  background: white;
+  margin: 0;
+  padding: 0.9em;
+  padding-left: 52.5%;
+  position: relative;
+  box-sizing: border-box;
+  border-top: solid 0.25em #F2F2F2;
+}
+.mspfa .pokessdex .pokedexdetails p::before {
+  content: var(--title);
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  height: calc(100% + 0.25em);
+  padding: 0.9em;
+  box-sizing: border-box;
+  left: 0;
+  top: -0.25em;
+  background: #DBDBD9;
+  border-top: solid 0.25em #D3D3D3;
+}
+.mspfa .pokessdex .pokedexdetails p:first-child {
+  border: none;
+  padding: 0.9em 0;
+  text-align: center;
+  margin-bottom: 0.25em;
+  background: #DBDBD9;
+}
+.mspfa .pokessdex .pokedexdetails p:last-child {
+  border: none;
+  padding: 0.9em 1em;
+  text-align: left;
+  margin-top: 0.25em;
+}
+.mspfa .pokessdex .pokedexdetails p:first-child::before, .mspfa .pokessdex .pokedexdetails p:last-child::before {
+  opacity: 0;
+}
+.mspfa .pokessdex .pokedexdetails p:nth-child(2) {
+  --title: "Type";
+  border: none;
+}
+.mspfa .pokessdex .pokedexdetails p:nth-child(2)::before {
+  border: none;
+  top: 0;
+}
+.mspfa .pokessdex .pokedexdetails p:nth-child(3) {
+  --title: "Height";
+}
+.mspfa .pokessdex .pokedexdetails p:nth-child(4) {
+  --title: "Weight";
+}
+.mspfa .pokessdex .pokedexdetails p:nth-child(5) {
+  --title: "Number Battled";
+}
+.mspfa .pokessdex .pokedexname {
+  position: absolute;
+  width: 51.5625%;
+  background: black;
+  color: white;
+  padding: 0.8em 0;
+  padding-left: 20%;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  top: 13.19%;
+  right: 3.5%;
+  background: linear-gradient(120deg, #f1501c 35%, black 35%);
+}
+.mspfa .pokessdex .pokedexname p {
+  position: absolute;
+  top: -0.2em;
+  left: 15%;
+}
+.mspfa .pokessdex .pokedexname img {
+  position: absolute;
+  bottom: 10%;
+  left: 1%;
+  max-width: 13% !important;
+}
+.mspfa .pokessdex > img {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  /* Underbound */
+}
+.mspfa #ub2 {
+  font-family: 'underdt';
+  color: white;
+  padding: 15px calc(15px + 0.5em);
+  line-height: 30px;
+  /* Go back new */
+}
+.mspfa .gback {
+  font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+  font-size: 10px;
+  font-weight: bold;
+  /* Pokemon SS */
+}
+.mspfa .pokess {
+  font-size: 17px;
+  font-family: Trebuchet MS;
+  background: black;
+  color: white;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 0.5em 1.85em;
+  background: #252422;
+  background: linear-gradient(110deg, #252422 5%, #333 5%, #333 90%, #252422 90%);
+  box-sizing: border-box;
+  text-align: left;
+}
+.mspfa .pokesschat {
+  font-size: 17px;
+  font-family: Trebuchet MS;
+  background: black;
+  color: black;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 0.5em 1.85em;
+  border-radius: 1000px;
+  background: #252422;
+  background: linear-gradient(110deg, #ECECEA 5%, #FEFEFE 5%, #FEFEFE 90%, #ECECEA 90%);
+  box-sizing: border-box;
+  text-align: left;
+  /* Psycholonials */
+}
+.mspfa .psycol {
+  height: 450px;
+  width: 280px;
+  background: black;
+  padding: 4px;
+  z-index: 1;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  margin: 0 -25px -450px -25px;
+  font-weight: 400;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 4px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "psychat" "psymenu";
+}
+.mspfa .psycol + br, .mspfa .psycol > br {
+  display: none;
+}
+.mspfa .psychat {
+  grid-area: psychat;
+  border: solid 4px #323232;
+  padding: 0.25em;
+  font-family: Verdana;
+  font-size: 14px;
+}
+.mspfa .psymenu {
+  grid-area: psymenu;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Phycol/Pcymenu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Clock tier */
+}
+.mspfa .clock {
+  --scale: 3.13;
+  --just: #4A1E85;
+  --hero: #C32423;
+  --nice: transparent;
+  width: calc(var(--scale) * 208px);
+  height: calc(var(--scale) * 540px);
+  position: relative;
+  margin: 0 -25px;
+}
+.mspfa .clock br {
+  display: none;
+}
+.mspfa .clock div:nth-of-type(5) {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #b0f;
+  background: linear-gradient(90deg, var(--nice) 0%, rgba(0, 0, 255, 0) 10%, rgba(248, 60, 60, 0) 90%, var(--nice) 100%);
+  animation: clkfix var(--time) linear infinite;
+  animation-delay: 2s;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.mspfa .clock > div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  --time: 12s;
+}
+.mspfa .clock > div:nth-of-type(1) {
+  background: red;
+  height: 60%;
+  top: 26%;
+  width: 30%;
+  left: 35%;
+  z-index: auto;
+  animation: clkbg var(--time) linear infinite;
+  animation-delay: 2s;
+}
+.mspfa .clock > div:nth-of-type(1) img {
+  width: 100%;
+  margin: 0;
+}
+.mspfa .clock > div:nth-of-type(1)::after {
+  content: '';
+  background: red;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 10%;
+  top: -10%;
+  left: 0%;
+  background: #bb01ff;
+  background: linear-gradient(90deg, #BB01FF 50%, #FF8926 50%);
+}
+.mspfa .clock > div:nth-of-type(2) {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Clocks/image_32.png);
+  height: 40%;
+  top: 30%;
+  animation: clkhand var(--time) linear infinite;
+  animation-delay: 2s;
+}
+.mspfa .clock > div:nth-of-type(3) {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Clocks/image_36.png);
+}
+.mspfa .clock > div:nth-of-type(4) {
+  animation: clkhero var(--time) linear infinite;
+  animation-delay: 2s;
+}
+.mspfa .clock > div:nth-of-type(3)::after {
+  content: '';
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Clocks/Omgitsskaia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 7%;
+  height: 2.7%;
+  position: absolute;
+  z-index: 2;
+  left: 45%;
+  top: 7.5%;
+  animation: clkspin calc(var(--time)*2) linear infinite;
+  animation-delay: 2s;
+}
+@keyframes clkhero {
+  0% {
+    opacity: 1;
+    filter: saturate(2);
+    background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Clocks/image_68.png);
+  }
+  10% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  49.9% {
+    opacity: 0;
+    filter: saturate(1);
+    background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Clocks/image_68.png);
+  }
+  50% {
+    opacity: 1;
+    filter: saturate(2);
+    background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Clocks/image_48.png);
+  }
+  60% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    filter: saturate(2);
+    background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Clocks/image_48.png);
+  }
+}
+@keyframes clkhand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-6deg);
+  }
+  15% {
+    transform: rotate(-8deg);
+  }
+  28% {
+    transform: rotate(-10deg);
+  }
+  35% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(6deg);
+  }
+  65% {
+    transform: rotate(8deg);
+  }
+  78% {
+    transform: rotate(10deg);
+  }
+  85% {
+    transform: rotate(8deg);
+  }
+  90% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes clkbg {
+  0% {
+    background: #381973;
+    filter: saturate(2);
+  }
+  49.9% {
+    background: #381973;
+    filter: saturate(0.5);
+  }
+  50% {
+    background: #640002;
+    filter: saturate(2);
+  }
+  100% {
+    background: #640002;
+    filter: saturate(0.5);
+  }
+}
+@keyframes clkface {
+  0% {
+    filter: saturate(2);
+  }
+  49.9% {
+    filter: saturate(0.75);
+  }
+  50% {
+    filter: saturate(2);
+  }
+  100% {
+    filter: saturate(0.75);
+  }
+}
+@keyframes clkfix {
+  0% {
+    opacity: 0.75;
+    --nice: var(--just);
+  }
+  49.9% {
+    opacity: 0;
+    --nice: var(--just);
+  }
+  50% {
+    opacity: 0.75;
+    --nice: var(--hero);
+  }
+  100% {
+    opacity: 0;
+    --nice: var(--hero);
+  }
+}
+@keyframes clkspin {
+  /* Read mode */
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.mspfa #readmode {
+  text-align: left;
+  display: block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin: 0 -20px;
+  cursor: pointer;
+}
+.mspfa #readmode::after {
+  content: '';
+  width: 100%;
+}
+.mspfa #readmode + br {
+  display: none;
+}
+.mspfa lable[for="readmode"], .mspfa label[for="readmode"] {
+  position: aboslute;
+  display: block;
+  text-align: left;
+  height: 0;
+  transform: translate(1.4em);
+  margin: 0 -20px;
+  margin-top: -1em;
+}
+.mspfa .readmode {
+  --font: Verdana;
+}
+.mspfa #readmode:checked ~ .readmode, .mspfa #readmode:checked ~ .readmode * {
+  font-family: var(--font) !important;
+  /* Text grad */
+}
+.mspfa .textgrad {
+  --rgb: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet, red, orange, yellow, green, cyan, blue, violet);
+  --troll: linear-gradient(to right, #a10000, #a15000, #a1a100, #626262, #416600, #008141, #008282, #005682, #000056, #2b0057, #6a006a, #77003c, #a10000, #a15000, #a1a100, #626262, #416600, #008141, #008282, #005682, #000056, #2b0057, #6a006a, #77003c);
+  --noct: linear-gradient(to right, #d81426, #960018, #b14100, #cfac00, #81a40f, #41740d, #397149, #69cebf, #739de2, #2f3359, #6b378a, #c02baa, #de3163, #f15676, #d81426, #960018, #b14100, #cfac00, #81a40f, #41740d, #397149, #69cebf, #739de2, #2f3359, #6b378a, #c02baa, #de3163, #f15676);
+  --di: linear-gradient(to right, #a00000, #d16002, #ffbf00, #e4d00a, #9dc209, #1e4d2b, #022d36, #000056, #330c5b, #601a35, #b94278, #f4bbff, #a00000, #d16002, #ffbf00, #e4d00a, #9dc209, #1e4d2b, #022d36, #000056, #330c5b, #601a35, #b94278, #f4bbff);
+  --bg: var(--rgb);
+  background: var(--bg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: max-content;
+  display: inline;
+  animation: bgmove 1s linear infinite;
+  background-size: 200% 200%;
+}
+@keyframes bgmove {
+  /* Strife specibus */
+  0% {
+    background-position: -5% 0%;
+  }
+  100% {
+    background-position: 105% 0%;
+  }
+}
+.mspfa .specibus {
+  --color3: #00E371;
+  --color2: #0E6037;
+  --color1: #008C45;
+  --scale: 1;
+  width: calc(var(--scale) * 323px);
+  height: calc(var(--scale) * 410px);
+  position: relative;
+  font-weight: 400;
+  font-family: 'sylladex';
+  color: var(--color3);
+  font-size: calc(var(--scale) * 40px);
+  margin: auto;
+  text-align: left;
+}
+.mspfa .specibus br {
+  display: none;
+}
+.mspfa .specibus::before {
+  content: '';
+  display: block;
+  background: black;
+  width: calc(var(--scale) * 323px);
+  height: calc(var(--scale) * 410px);
+  clip-path: polygon(69.6% 0%, 72.2% 2.12%, 72.2% 10.7%, 83% 10.7%, 85.5% 12.7%, 85.5% 21.2%, 97.3% 21.2%, 100% 23.1%, 100% 100%, 2.7% 100%, 0% 97.6%, 0% 0%);
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.mspfa .specibus > div {
+  background: var(--color1);
+  width: calc(var(--scale) * 314px);
+  height: calc(var(--scale) * 401px);
+  clip-path: polygon(0% 0%, 71.7% 0%, 71.7% 10.8%, 85.3% 10.8%, 85.3% 21.6%, 100% 21.6%, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 4px 14px;
+}
+.mspfa .specibus > div::before {
+  content: '';
+  height: calc(var(--scale) * 211px);
+  width: calc(var(--scale) * 11px);
+  background: var(--color2);
+  position: absolute;
+  transform: skewY(45deg);
+  top: calc(var(--scale) * 52px);
+  left: calc(var(--scale) * 152px);
+}
+.mspfa .specibus > div > * {
+  position: absolute;
+}
+.mspfa .spicon {
+  width: calc(var(--scale) * 202px);
+  height: calc(var(--scale) * 233px);
+  top: calc(var(--scale) * 47px);
+  left: calc(var(--scale) * 21px);
+}
+.mspfa .spicon > div {
+  background: white;
+  height: 100%;
+  clip-path: polygon(0% 0%, 65% 0%, 65% 10%, 100% 10%, 100% 100%, 0% 100%);
+}
+.mspfa .spicon img {
+  position: absolute;
+  width: calc(var(--scale) * 202px);
+  bottom: calc(var(--scale) * 5px);
+}
+.mspfa .spicon::after {
+  content: '';
+  height: calc(var(--scale) * 211px);
+  width: calc(var(--scale) * 11px);
+  background: var(--color2);
+  position: absolute;
+  transform: skewY(45deg);
+  right: calc(var(--scale) * -11px);
+  bottom: calc(var(--scale) * -5.5px);
+}
+.mspfa .spicon::before {
+  content: '';
+  height: calc(var(--scale) * 11px);
+  width: calc(var(--scale) * 202px);
+  background: var(--color2);
+  position: absolute;
+  transform: skewX(45deg);
+  right: calc(var(--scale) * -5.5px);
+  bottom: calc(var(--scale) * -11px);
+}
+.mspfa .spnav {
+  width: calc(var(--scale) * 266px);
+  height: calc(var(--scale) * 65px);
+  bottom: calc(var(--scale) * 51px);
+  left: calc(var(--scale) * 21px);
+  background: var(--color3);
+  color: white;
+  text-align: center;
+}
+.mspfa .spnav h1 {
+  font-weight: 400;
+  margin: 0;
+  font-size: calc(var(--scale) * 15px);
+  background: #00C661;
+  padding: calc(var(--scale) * 1px);
+  text-indent: calc(var(--scale) * 5px);
+  text-align: left;
+}
+.mspfa .spnav::after {
+  content: '';
+  height: calc(var(--scale) * 65px);
+  width: calc(var(--scale) * 11px);
+  background: var(--color2);
+  position: absolute;
+  transform: skewY(45deg);
+  right: calc(var(--scale) * -11px);
+  bottom: calc(var(--scale) * -5.5px);
+}
+.mspfa .spnav::before {
+  content: '';
+  height: calc(var(--scale) * 11px);
+  width: calc(var(--scale) * 266px);
+  background: var(--color2);
+  position: absolute;
+  transform: skewX(45deg);
+  right: calc(var(--scale) * -5.5px);
+  bottom: calc(var(--scale) * -11px);
+}
+.mspfa .spbox {
+  --bot: 121px;
+  width: calc(var(--scale) * 56px);
+  height: calc(var(--scale) * 53px);
+  right: calc(var(--scale) * 27px);
+  bottom: calc(var(--scale) * var(--bot));
+  background: var(--color3);
+}
+.mspfa .spbox::after {
+  content: '';
+  height: calc(var(--scale) * 53px);
+  width: calc(var(--scale) * 11px);
+  background: var(--color2);
+  position: absolute;
+  transform: skewY(45deg);
+  bottom: calc(var(--scale) * -5.5px);
+  right: calc(var(--scale) * -11px);
+}
+.mspfa .spbox::before {
+  content: '';
+  height: calc(var(--scale) * 11px);
+  width: calc(var(--scale) * 57px);
+  background: var(--color2);
+  position: absolute;
+  transform: skewX(45deg);
+  bottom: calc(var(--scale) * -11px);
+  left: calc(var(--scale) * 5.5px);
+}
+.mspfa .spbox:nth-of-type(4) {
+  --bot: 121px;
+}
+.mspfa .spbox:nth-of-type(3) {
+  --bot: 179px;
+}
+.mspfa .spbox:nth-of-type(2) {
+  --bot: 237px;
+}
+.mspfa .spkind {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: calc(var(--scale) * 50px);
+  /* captchaimg */
+}
+.mspfa .spdeck {
+  --scal: calc(var(--scale) * 0.125);
+  position: relative;
+  display: inline-block;
+  height: calc(var(--scal) * 323px);
+  width: calc(var(--scal) * 233px);
+  top: calc(var(--scal) * 39px);
+  left: calc(var(--scal) * 28px);
+  margin: 0 calc(var(--scal) * 20px);
+}
+.mspfa .spdeck::before {
+  content: '';
+  background: var(--color2);
+  display: block;
+  position: absolute;
+  height: calc(var(--scal) * 323px);
+  width: calc(var(--scal) * 233px);
+  clip-path: polygon(57% 0%, 61.8% 4.7%, 61.8% 7.4%, 84.1% 7.4%, 88.8% 11.7%, 88.8% 28%, 95.7% 28%, 100% 31.2%, 100% 100%, 2.7% 100%, 0% 97.6%, 0% 0%);
+}
+.mspfa .spdeck > div {
+  background: white;
+  width: 95.7%;
+  height: 97.2%;
+  clip-path: polygon(0% 0%, 59.6% 0%, 59.6% 7.6%, 87.8% 7.6%, 87.8% 28.9%, 100% 28.9%, 100% 100%, 0% 100%);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mspfa .spdeck > div img {
+  position: absolute;
+  width: calc(var(--scal) * 170px);
+  left: calc(var(--scal) * 20px);
+  bottom: calc(var(--scal) * 30px);
+  pointer-events: none;
+}
+.mspfa .spdeck:hover > div {
+  position: absolute;
+  animation: spimgtickback 50ms steps(1, end) forwards;
+}
+.mspfa .spdeck:hover {
+  --color2: transparent;
+}
+@keyframes spimgtickback {
+  /* Kind abstractor */
+  0% {
+    left: calc(var(--scal) * 12px);
+    top: calc(var(--scal) * 12px);
+  }
+  100% {
+    left: calc(var(--scal) * 8px);
+    top: calc(var(--scal) * 8px);
+  }
+}
+.mspfa .kabstra br {
+  display: none;
+}
+.mspfa .kabstra {
+  --colorback: #434343;
+  --scale: 1;
+  width: calc(var(--scale) * 323px);
+  height: calc(var(--scale) * 410px);
+  position: relative;
+  font-weight: 400;
+  margin: auto;
+  font-family: 'sylladex';
+  color: #AFAFAF;
+  line-height: calc(var(--scale) * 760px);
+  font-size: calc(var(--scale) * 50px);
+  text-indent: calc(var(--scale) * 40px);
+  transform: scaleX(-1);
+  /* Captcha back */
+}
+.mspfa .kabstra::before {
+  content: '';
+  display: block;
+  background: black;
+  width: calc(var(--scale) * 323px);
+  height: calc(var(--scale) * 410px);
+  clip-path: polygon(69.6% 0%, 72.2% 2.12%, 72.2% 10.7%, 83% 10.7%, 85.5% 12.7%, 85.5% 21.2%, 97.3% 21.2%, 100% 23.1%, 100% 100%, 2.7% 100%, 0% 97.6%, 0% 0%);
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.mspfa .kabstra > div {
+  background: var(--colorback);
+  width: calc(var(--scale) * 314px);
+  height: calc(var(--scale) * 401px);
+  clip-path: polygon(0% 0%, 71.7% 0%, 71.7% 10.8%, 85.3% 10.8%, 85.3% 21.6%, 100% 21.6%, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mspfa .kabstra > div::after {
+  line-height: 20px;
+  content: 'kind abstrata';
+  position: absolute;
+  transform: scaleX(-1) rotate(-90deg);
+  right: calc(var(--scale) * -105px);
+  top: calc(var(--scale) * 250px);
+  /* captchaimg */
+}
+.mspfa .kabstra2 {
+  --colorimg: #000;
+  position: absolute;
+  height: calc(var(--scale) * 323px);
+  width: calc(var(--scale) * 233px);
+  top: calc(var(--scale) * 39px);
+  left: calc(var(--scale) * 28px);
+}
+.mspfa .kabstra2::before {
+  content: '';
+  background: var(--colorimg);
+  display: block;
+  position: absolute;
+  height: calc(var(--scale) * 323px);
+  width: calc(var(--scale) * 233px);
+  clip-path: polygon(57% 0%, 61.8% 4.7%, 61.8% 7.4%, 84.1% 7.4%, 88.8% 11.7%, 88.8% 28%, 95.7% 28%, 100% 31.2%, 100% 100%, 2.7% 100%, 0% 97.6%, 0% 0%);
+}
+.mspfa .kabstra2 > div {
+  background: black;
+  width: 95.7%;
+  height: 97.2%;
+  clip-path: polygon(0% 0%, 59.6% 0%, 59.6% 7.6%, 87.8% 7.6%, 87.8% 28.9%, 100% 28.9%, 100% 100%, 0% 100%);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+}
+.mspfa .kabstra2 > div img {
+  position: absolute;
+  width: calc(var(--scale) * 170px);
+  left: calc(var(--scale) * 20px);
+  bottom: calc(var(--scale) * 30px);
+  pointer-events: none;
+}
+.mspfa .kabstra2 .kinds {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50px;
+  line-height: 1em;
+  margin: 0;
+  height: calc(var(--scale) * 270px);
+  font-size: calc(var(--scale) * 10.35px);
+  text-indent: 0;
+  transform: scaleX(-1) translate(35px, 40px);
+  column-count: 3;
+  clear: both;
+}
+.mspfa .kabstra2 .kinds ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.mspfa .kabstra2 .kinds li {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.mspfa .kabstra2 .kinds li:hover {
+  background: #AFAFAF;
+  color: black;
+  /* Message messages */
+}
+.mspfa .msg {
+  font-size: 0;
+  display: inline;
+}
+.mspfa .msg + span {
+  color: black !important;
+  /* DTHUMAN */
+}
+.mspfa .dthuman {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  perspective: 250px;
+  perspective-origin: 0 50%;
+  font-size: 20px;
+  font-weight: 200;
+  margin: auto;
+  width: 40%;
+}
+.mspfa .dthuman > div {
+  transform-origin: 0 50%;
+  transform: rotateY(15deg) rotateZ(-5deg);
+  perspective: 250px;
+  perspective-origin: 0 50%;
+}
+.mspfa .dthuman > div > div {
+  background: rgba(0, 0, 0, 0.4);
+  width: max-content;
+  padding: 0.35em 0.5em;
+  margin: 0.25em;
+  perspective: 250px;
+  perspective-origin: 0 50%;
+}
+.mspfa .dthuman > div > div:hover {
+  background: #144B7B;
+}
+.mspfa .dthuman > div > div:nth-of-type(odd) {
+  transform: translateZ(-10px) translateX(-10px);
+}
+.mspfa .dthuman > div > div:first-of-type {
+  transform: translateZ(10px) translateX(10px);
+}
+.mspfa .dthuman p {
+  color: #96CED0;
+  margin: 0;
+  transform: translateZ(20px);
+}
+.mspfa .dthuman a {
+  text-decoration: none;
+  color: white;
+}
+.mspfa .dthuman > div > div:hover a {
+  font-weight: 700;
+  color: #399BE5;
+}
+.mspfa .dthuman br {
+  display: none;
+  /* Clickertale3 */
+}
+.mspfa .clicker {
+  position: relative;
+  --icon: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/sans/Swink4.png);
+  font-weight: normal;
+  font-family: 'underdt';
+  font-size: 14px;
+  text-align: left;
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+  padding: 0 10px 10px 120px;
+  line-height: 1.5em;
+  min-height: 96px;
+}
+.mspfa .clicker:first-line {
+  font-family: 'utname';
+  font-size: 16px;
+  line-height: 2.5em;
+}
+.mspfa .clicker::before {
+  content: '';
+  background: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 98px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  /* Shake */
+}
+@keyframes shake {
+  /* Overlay */
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.mspfa .overlay {
+  position: fixed;
+  z-index: 6;
+}
+.mspfa .overlay + br {
+  display: none;
+  /* Cue card */
+}
+.mspfa .cuecard {
+  --height: 450;
+  margin: 0;
+  margin-bottom: calc(var(--height)*-1px);
+  padding: 0;
+  height: calc(var(--height)*1px);
+  width: max-content;
+  position: relative;
+}
+.mspfa .cuecard img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 50% 50%;
+  box-sizing: border-box;
+  animation: cuecardfall 1.2s ease-in 0.5s forwards;
+}
+.mspfa .cuecard br, .mspfa .cuecard + br {
+  display: none;
+}
+@keyframes cuecardfall {
+  /* Page turn */
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  70% {
+    opacity: 0;
+  }
+  99% {
+    transform: translate(0, calc(var(--height)*1.2px)) rotate(-40deg);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 0;
+  }
+}
+.mspfa .pageturn {
+  --height: 450;
+  margin: 0;
+  margin-bottom: calc(var(--height)*-1px);
+  padding: 0;
+  height: calc(var(--height)*1px);
+  width: max-content;
+  position: relative;
+  perspective: 90rem;
+}
+.mspfa .pageturn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0% 0;
+  box-sizing: border-box;
+}
+.mspfa .pageturn br, .mspfa .pageturn + br {
+  display: none;
+}
+@keyframes bookOpen {
+  0% {
+    opacity: 1;
+    box-shadow: none;
+  }
+  30% {
+    z-index: 5;
+    box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    z-index: 5;
+    opacity: 0;
+  }
+}
+.mspfa .pageturn img:first-of-type {
+  animation: bookOpenfront 2.5s ease-in 0.5s forwards;
+}
+.mspfa .pageturn img:last-of-type {
+  animation: bookOpenback 2.5s ease-in 0.5s forwards;
+  opacity: 0;
+}
+.mspfa .pageturn img:only-of-type {
+  animation: bookOpen 2.5s ease-in 0.5s forwards;
+  opacity: 1;
+}
+@keyframes bookOpenback {
+  0% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  30% {
+    z-index: 5;
+  }
+  65% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    z-index: 5;
+    opacity: 0;
+  }
+}
+@keyframes bookOpenfront {
+  /* Charater select */
+  0% {
+    opacity: 1;
+    box-shadow: none;
+  }
+  30% {
+    z-index: 5;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    z-index: 5;
+    opacity: 0;
+  }
+}
+.mspfa .charaselect {
+  background: #EAEAEA;
+  padding: 35px 5px 6px 5px;
+  text-align: center;
+  font-family: Verdana;
+  margin: 40px -21px 0 -21px;
+  position: relative;
+  border-radius: 0 5px 5px 5px;
+}
+.mspfa .charaselect::before {
+  content: '';
+  background: #EAEAEA;
+  display: block;
+  width: 102px;
+  height: 40px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  border-radius: 6px;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Charater%20select.png);
+  background-repeat: no-repeat;
+}
+.mspfa .charaselect::after {
+  content: 'Choose your character';
+  font-family: "fontstuck";
+  color: red;
+  position: absolute;
+  top: -30px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  font-size: 8px;
+  font-weight: 400;
+  animation: charaswap 200ms infinite;
+}
+@keyframes charaswap {
+  0% {
+    color: red;
+  }
+  100% {
+    color: orange;
+  }
+}
+.mspfa .charaselect br {
+  display: none;
+}
+.mspfa .charaselect > div {
+  ackground: white;
+  background: white;
+  background: linear-gradient(180deg, white 0%, #e4e4e4 100%);
+  padding: 6px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  height: 370px;
+}
+.mspfa .charaselect a div {
+  display: inline-block;
+  height: 144px;
+  width: 144px;
+  border: solid 2px #E2E2E2;
+  border-radius: 8px;
+  background: #f7f7f6;
+  background: linear-gradient(180deg, #f7f7f6 0%, white 100%);
+  position: relative;
+  z-index: 2;
+  margin: 0px 3px;
+}
+.mspfa .charaselect img {
+  max-width: 72px !important;
+  position: absolute;
+  bottom: 21px;
+  left: calc(50% - 32.5px);
+}
+.mspfa .charabg {
+  --bg: url();
+  position: absolute;
+  background-image: var(--bg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background-position: center;
+  z-index: 1;
+}
+.mspfa .charaselect a + .charabg {
+  opacity: 0;
+}
+.mspfa .charaselect a:hover + .charabg {
+  opacity: 1;
+  /* ~ATH */
+}
+.mspfa .ATH {
+  --blood: #B2B2B2;
+  background: var(--blood);
+  font-family: Lucida Console;
+  padding: 0.5em 0.6em;
+  padding-top: 0.7em;
+  border-radius: 0.5em;
+  position: relative;
+  font-weight: 400;
+  text-align: left;
+}
+.mspfa .ATH > div {
+  background: white;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: -0.1em;
+}
+.mspfa .ATH::before {
+  content: "_ x";
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  /* SERIOUS BUISNESS */
+}
+.mspfa .sbusy {
+  font-family: Tahoma;
+  background: #BABABA;
+  font-size: 14px;
+}
+.mspfa .sbusy > br {
+  display: none;
+}
+.mspfa .sbusy p {
+  padding: 0.5em;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  font-weight: 400;
+}
+.mspfa .sbusy p:nth-child(odd) {
+  background: #C6C6C6;
+}
+.mspfa .sbusy user {
+  color: white;
+}
+.mspfa .sbusy user::after {
+  content: '𝆑';
+  color: black;
+  font-size: 1.75em;
+  position: absolute;
+  left: 0.3em;
+  top: 0.05em;
+}
+.mspfa .sbusy user::before {
+  content: '\3000 ';
+}
+.mspfa .sbusy h1 {
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  padding: 0.05em 0 0.15em 0;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #949494;
+  border-top: solid 4px #686868;
+  transform: scale(1, 1.5);
+  transform-origin: top;
+  margin-bottom: 22px;
+  /* Ace A 3DS */
+}
+@font-face {
+  font-family: 'AceA3DS';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Ace%20A/KozGoPro-Regular.otf');
+}
+.mspfa .acea3DS {
+  font-family: 'AceA3DS';
+  color: white;
+  z-index: auto;
+  position: relative;
+  text-align: left;
+  font-weight: 400;
+}
+.mspfa .acea3DS p {
+  font-size: 20px;
+  background: #221d52;
+  background: linear-gradient(180deg, #221d52 0%, #3d4083 90%, #27276b 100%);
+  margin: 0;
+  width: max-content;
+  min-width: 150px;
+  padding: 0.1em 0.5em;
+  border: solid 3px rgba(200, 200, 200, 0.75);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: -3px;
+  z-index: 1;
+  position: relative;
+  line-height: 1.5em;
+}
+.mspfa .acea3DS p::after {
+  content: '';
+  position: absolute;
+  background: #221d52;
+  background: linear-gradient(180deg, #221d52 0%, #3d4083 90%, #27276b 100%);
+  width: 12px;
+  right: -8px;
+  top: 1px;
+  height: calc(1.5em + 2.5px);
+  border: solid 3px rgba(200, 200, 200, 0.75);
+  border-style: hidden solid hidden hidden;
+  transform: skew(20deg);
+}
+.mspfa .acea3DS > div {
+  font-size: 22px;
+  text-align: left;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.3em 0.6em;
+  border: solid rgba(200, 200, 200, 0.75);
+  border-radius: 0 8px 8px 8px;
+  line-height: 1.5em;
+  /* Ace A DS */
+}
+@font-face {
+  font-family: 'AceAGB';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Ace%20A/Igiari.ttf');
+}
+.mspfa .aceaDS {
+  font-family: 'AceAGB';
+  color: white;
+  z-index: auto;
+  position: relative;
+  text-align: left;
+  font-weight: 400;
+}
+.mspfa .aceaDS p {
+  font-size: 20px;
+  background: rgba(0, 0, 128, 0.5);
+  margin: 0;
+  width: max-content;
+  padding: 0.1em 0.5em;
+  border: solid 2px rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+  margin-bottom: -4px;
+  z-index: 1;
+  position: relative;
+}
+.mspfa .aceaDS > div {
+  font-size: 24px;
+  background: rgba(40, 20, 5, 0.75);
+  padding: 0.25em 0.5em;
+  border: solid rgba(255, 255, 255, 0.75);
+  border-radius: 2px;
+}
+.mspfa .aceaDS > br {
+  display: none;
+  /* Hylics 2 */
+}
+.mspfa .hylics2 {
+  border: solid #5A61AB;
+  border-radius: 5px;
+  padding: 0.5em;
+  padding-top: 0.4em;
+  background: #15172D;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: Times New Roman;
+  text-shadow: 0 0 1px #aaaaaa, 0.1em 0.1em black;
+  font-weight: 100;
+  text-align: left;
+  box-shadow: 0 0 2px #1E255E;
+  /* Fallout Vagas */
+}
+@font-face {
+  font-family: 'fallout';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Fallout/monofonto.ttf');
+}
+.mspfa .falloutvg {
+  --color1: #E3A950;
+  padding: 3px;
+  font-family: 'fallout';
+  background: var(--color1);
+  background: linear-gradient(180deg, var(--color1) 0%, black 30%, black 70%, var(--color1) 100%);
+  box-shadow: 0px 0px 8px #000;
+  font-weight: 400;
+  text-align: left;
+  font-size: 16px;
+}
+.mspfa .falloutvg > div {
+  background: black;
+  color: #805724;
+  padding: 5px 10px;
+}
+.mspfa .falloutvg a {
+  color: var(--color1);
+  text-decoration: none;
+}
+.mspfa .falloutvg p {
+  margin: 5px;
+  padding: 2px;
+}
+.mspfa .falloutvg p:hover {
+  outline: solid 2px #5E0304;
+  background: #220901;
+}
+.mspfa .falloutvg br {
+  display: none;
+}
+.mspfa .falloutvgnorm {
+  --color1: #E3A950;
+  padding: 8px 13px;
+  font-family: 'fallout';
+  background: black;
+  font-weight: 400;
+  text-align: left;
+  font-size: 16px;
+  color: var(--color1);
+  box-shadow: 0px 0px 6px black, 0px 0px 8px black;
+  border-radius: 5px;
+  /* Jazztronauts */
+}
+@font-face {
+  font-family: 'Jazzy';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Jazzzy/kgshakeitoffchunky.ttf');
+}
+.mspfa .jazztronauts {
+  --border: 26px;
+  font-family: 'Jazzy';
+  color: black;
+  text-indent: 1em;
+  position: relative;
+  font-weight: 400;
+  text-align: left;
+  z-index: 1;
+  margin-left: 10px;
+}
+.mspfa .jazztronauts > div {
+  font-family: Arial;
+  text-indent: 0.5em;
+  background: #E0D1B0;
+  padding: 0.25em 1em 0.25em 0.7em;
+  border-radius: calc(var(--border)*1.5) var(--border) var(--border) calc(var(--border)/2) / var(--border) var(--border) calc(var(--border)/2) calc(var(--border)/2);
+  font-size: 1.3em;
+  z-index: 2;
+}
+.mspfa .jazztronauts > div::after {
+  content: 'right to continue';
+  display: block;
+  text-align: right;
+  font-size: 0.75em;
+}
+.mspfa .jazztronauts::before {
+  content: '';
+  position: absolute;
+  background: #EE137B;
+  top: 0.2em;
+  left: -0.7em;
+  z-index: -1;
+  border-radius: calc(var(--border)*1.5) var(--border) var(--border) calc(var(--border)/2) / var(--border) var(--border) calc(var(--border)/2) calc(var(--border)/2);
+  width: 100%;
+  height: calc(100% - 1.65em);
+  transform: rotate(2deg) skew(-2deg);
+}
+.mspfa .jazztronautsR {
+  --border: 20px;
+  font-family: 'Jazzy';
+  color: black;
+  text-indent: 1em;
+  position: relative;
+  font-weight: 400;
+  text-align: right;
+  z-index: 1;
+  margin-right: 10px;
+}
+.mspfa .jazztronautsR > div {
+  text-align: left;
+  font-family: Arial;
+  text-indent: 0.5em;
+  background: #E0D1B0;
+  padding: 0.25em 1em 0.1em 0.7em;
+  border-radius: calc(var(--border)*1.5) var(--border) var(--border) calc(var(--border)/2) / var(--border) var(--border) calc(var(--border)/2) calc(var(--border)/2);
+  font-size: 1.3em;
+  z-index: 2;
+}
+.mspfa .jazztronautsR > div::after {
+  content: 'right to continue';
+  display: block;
+  text-align: right;
+  font-size: 0.75em;
+}
+.mspfa .jazztronautsR::before {
+  content: '';
+  position: absolute;
+  background: #EE137B;
+  top: 0.2em;
+  right: -0.7em;
+  z-index: -1;
+  border-radius: calc(var(--border)*1.5) var(--border) var(--border) calc(var(--border)/2) / var(--border) var(--border) calc(var(--border)/2) calc(var(--border)/2);
+  width: 100%;
+  height: calc(100% - 1.65em);
+  transform: rotate(-2deg) skew(2deg);
+  /* Pesterchum Enamel */
+}
+@font-face {
+  font-family: 'Peml';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/GOTHIC.TTF');
+}
+.mspfa .pchumeml {
+  font-weight: 400;
+  text-align: left;
+  font-size: 18px;
+  background: #ffe712;
+  background: linear-gradient(180deg, #ffe712 0%, #ffd902 49%, #ffce00 50%, #ffd204 60%, #ffe712 100%);
+  padding: 1.2em 1.8em;
+  border-radius: 1em;
+  font-family: 'Peml';
+  text-shadow: -0.5px 0px 0 currentcolor;
+  box-shadow: -2px 2px #FFD310, -4px 4px #FFD310, -6px 6px #FFD310, -8px 8px #FFD310, -10px 10px #FFD310;
+}
+.mspfa .pchumeml > div {
+  background: white;
+  padding: 0.75em;
+  border-radius: 0.3em;
+  border: solid 2px yellow;
+  /* Pesterchum 7.0 (Dave) */
+}
+.mspfa .pchum7 {
+  background: #ffc532;
+  background: linear-gradient(180deg, #ffc532 0%, #fb7a00 65%, #ffc532 100%);
+  padding: 8px;
+  border: solid 3px #FAF505;
+  border-radius: 20px;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+.mspfa .pchum7 > div {
+  margin-top: 5px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  border: solid 3px #C89111;
+  border-radius: 10px;
+  padding: 4px 6px;
+  text-align: left;
+  text-shadow: -0.5px 0px 0 currentcolor;
+}
+.mspfa .pchum7 > br {
+  display: none;
+  /* Vriska's Octet */
+}
+.mspfa .octet {
+  position: relative;
+  width: max-content;
+  --items: 8;
+  --time: 0.5;
+  --color1: #0057FA;
+  --rgbcolor: 0, 0, 0;
+}
+.mspfa .octet > div {
+  font-size: 10px;
+  height: 18em;
+  width: max-content;
+  overflow: hidden;
+  color: white;
+  font-family: 'fontstuck';
+  padding: 0 0.5em;
+  font-weight: 400;
+  text-align: left;
+  background: rgb(var(--rgbcolor));
+  background: linear-gradient(180deg, rgba(var(--rgbcolor)) 11.11%, rgba(var(--rgbcolor)) 11.11%, rgba(var(--rgbcolor)) 22.22%, rgba(var(--rgbcolor)) 22.22%, rgba(var(--rgbcolor)) 33.33%, rgba(var(--rgbcolor)) 33.33%, rgba(var(--rgbcolor)) 44.44%, rgba(var(--rgbcolor)) 44.44%, rgba(var(--rgbcolor)) 55.55%, rgba(var(--rgbcolor)) 55.55%, rgba(var(--rgbcolor)) 66.66%, rgba(var(--rgbcolor)) 66.66%, rgba(var(--rgbcolor)) 77.77%, rgba(var(--rgbcolor)) 77.77%, rgba(var(--rgbcolor)) 88.88%, rgba(var(--rgbcolor)) 88.88%);
+}
+.mspfa .octet br {
+  display: none;
+}
+.mspfa .octet > div ul {
+  margin: 0;
+  padding: 0;
+  animation: upscrolloctet;
+  animation-timing-function: steps(var(--items));
+  animation-iteration-count: infinite;
+  animation-duration: calc(var(--time) * 1s);
+  animation-direction: normal;
+  font-weight: 400;
+}
+.mspfa .octet > div ul li {
+  opacity: 1;
+  height: 2em;
+  padding: 5px 20px 5px 5px;
+  box-sizing: border-box;
+  list-style: none;
+}
+@keyframes upscrolloctet {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-2em * var(--items)));
+  }
+}
+.mspfa .octet::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.5em 1em 0.5em 0;
+  border-color: transparent var(--color1) transparent transparent;
+  top: calc(50% - 0.5em);
+  right: -18px;
+}
+.mspfa .octetattack {
+  --color1: #0057FA;
+  --color2: #0E8FFF;
+  font-size: 24px;
+  font-family: 'fontstuck';
+  color: white;
+  background: var(--color1);
+  border: solid 0.25em var(--color2);
+  padding: 0.5em;
+  padding-bottom: 0.25em;
+  width: max-content;
+  font-weight: 400;
+  margin: auto;
+  /* Consort shop */
+}
+.mspfa .shopsort {
+  --color1: #3CB29A;
+  --color2: #52DEC0;
+  background: var(--color2);
+  background-image: linear-gradient(45deg, var(--color1) 25%, transparent 25%), linear-gradient(-45deg, var(--color1) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--color1) 75%), linear-gradient(-45deg, transparent 75%, var(--color1) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  padding: 20px;
+  font-family: 'fontstuck';
+  font-size: 10px;
+  text-align: center;
+  height: 450px;
+  font-weight: 400;
+}
+.mspfa .shopsort > div {
+  background: black;
+  color: white;
+  line-height: 20px;
+  padding: 20px;
+  padding-bottom: 5px;
+  height: calc(100% - 25px);
+  position: relative;
+}
+.mspfa .shopsort > div::after {
+  content: 'Escape to EXit';
+  position: absolute;
+  bottom: 5px;
+  width: 140px;
+  text-align: center;
+  left: 50%;
+  margin-left: -70px;
+}
+.mspfa .shopsort > div:first-line {
+  font-size: 24px;
+}
+.mspfa .shopsort br {
+  display: none;
+}
+.mspfa .shopsort ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px -10px;
+}
+.mspfa .shopsort li {
+  margin: 0;
+  outline: solid 1px #555;
+  padding: 16px 5px;
+  position: relative;
+  text-indent: 60px;
+  margin-bottom: 1px;
+}
+.mspfa .shopsort li img {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 12px;
+  left: 15px;
+}
+.mspfa .shopsort li::after {
+  content: attr(boon);
+  letter-spacing: 2px;
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/boon%20dollar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 30px;
+}
+.mspfa .shopsort li:hover {
+  background: var(--color1);
+}
+.mspfa .wvcommand {
+  color: white;
+  background: black;
+  border: solid 3px yellow;
+  outline: solid 5px orange;
+  text-align: left;
+  width: max-content;
+  margin: auto;
+  padding: 0 5px;
+  /* Shaky text */
+}
+.mspfa .shake {
+  --time: 300ms;
+  display: inline-block;
+  animation: shaky var(--time) steps(2) infinite;
+}
+@keyframes shaky {
+  /* Image on hover */
+  0% {
+    transform: translate(0.1em, 0.1em) rotate(-2deg);
+  }
+  25% {
+    transform: translate(-0.1em, -0.1em);
+  }
+  50% {
+    transform: translate(-0.1em, 0.1em) rotate(2deg);
+  }
+  75% {
+    transform: translate(0.1em, -0.1em);
+  }
+  100% {
+    transform: translate(0.1em, 0.1em) rotate(2deg);
+  }
+}
+.mspfa .imghov {
+  margin: auto;
+  width: calc(100% + 50px);
+  --img: url(https://www.homestuck.com/images/storyfiles/hs2/00016.gif);
+  margin: 0 -25px;
+}
+.mspfa .imghov > div {
+  background-image: var(--img);
+  background-size: cover;
+  width: max-content;
+  margin: auto;
+}
+.mspfa .imghov img {
+  opacity: 0;
+  margin: 0 !important;
+}
+.mspfa .imghov img:hover {
+  opacity: 1;
+  /* Image popout */
+}
+.mspfa .imgpop {
+  text-align: center;
+  width: 0px;
+  margin: 0 -170px;
+}
+.mspfa .imgpop > div {
+  width: 940px;
+}
+.mspfa .imgpop img {
+  margin: 0 auto !important;
+  /* Enter name */
+}
+.mspfa .entername {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/Entername.png);
+  width: 650px;
+  height: 450px;
+  position: relative;
+  margin: 0 -25px -450px -25px;
+}
+.mspfa .entername + br {
+  display: none;
+}
+.mspfa .entername textarea, .mspfa .entername input {
+  font-weight: 400;
+  font-family: 'fontstuck';
+  position: absolute;
+  top: 48px;
+  left: 50px;
+  resize: none;
+  width: 560px !important;
+  height: 42px !important;
+  overflow: hidden;
+  font-size: 35px;
+  border: none;
+  outline: none;
+  text-align: center;
+  /* Apple Phone text */
+}
+@font-face {
+  font-family: 'apple';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Phone/SF-Pro-Text-Regular.otf');
+}
+.mspfa .phone {
+  --color1: #dd0000;
+  --color2: #E5E5EA;
+  --colorbg: white;
+  background: var(--colorbg);
+  width: 400px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: 'apple';
+  font-weight: 400;
+  margin: auto;
+  font-size: 16px;
+}
+.mspfa .phone br {
+  display: none;
+}
+.mspfa .phother p, .mspfa .phself p {
+  box-sizing: border-box;
+  padding: 0.4em 0.7em;
+  width: max-content;
+  max-width: 85%;
+  word-wrap: break-word;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+.mspfa .phother p br, .mspfa .phself p br {
+  display: block;
+}
+.mspfa .phother, .mspfa .phself {
+  padding: 5px 0;
+}
+.mspfa .phother > p {
+  background: var(--color2);
+  text-align: left;
+  color: black;
+  margin-right: auto;
+  border-radius: 0 1em 1em 0;
+}
+.mspfa .phother > p:first-of-type {
+  border-radius: 1em 1em 1em 0;
+}
+.mspfa .phother > p:last-of-type {
+  border-radius: 0 1em 1em 1em;
+  position: relative;
+}
+.mspfa .phother > p:last-of-type::before {
+  content: '';
+  background: var(--color2);
+  position: absolute;
+  bottom: 1px;
+  left: -0.5em;
+  width: 1em;
+  height: 1em;
+  border-radius: 0 0 0.5em 0;
+}
+.mspfa .phother > p:last-of-type::after {
+  content: '';
+  background: var(--colorbg);
+  position: absolute;
+  bottom: 0;
+  left: -0.5em;
+  width: 0.5em;
+  height: 1.1em;
+  border-radius: 0 0 1em 0;
+}
+.mspfa .phother > p:only-of-type {
+  border-radius: 1em;
+}
+.mspfa .phself > p {
+  background: var(--color1);
+  text-align: left;
+  margin-left: auto;
+  color: white;
+  border-radius: 1em 0 0 1em;
+}
+.mspfa .phself > p:first-of-type {
+  border-radius: 1em 1em 0 1em;
+}
+.mspfa .phself > p:last-of-type {
+  border-radius: 1em 0 1em 1em;
+  position: relative;
+}
+.mspfa .phself > p:last-of-type::before {
+  content: '';
+  background: var(--color1);
+  position: absolute;
+  bottom: 1px;
+  right: -0.5em;
+  width: 1em;
+  height: 1em;
+  border-radius: 0 0 0 0.5em;
+}
+.mspfa .phself > p:last-of-type::after {
+  content: '';
+  background: var(--colorbg);
+  position: absolute;
+  bottom: 0;
+  right: -0.5em;
+  width: 0.5em;
+  height: 1.1em;
+  border-radius: 0 0 0 1em;
+}
+.mspfa .phself > p:only-of-type {
+  border-radius: 1em;
+}
+.mspfa .phhead {
+  background: var(--color2);
+  margin: -12px;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 12px 12px 6px 12px;
+  font-size: 14px;
+  position: relative;
+}
+.mspfa .phhead img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.mspfa .phhead::before {
+  content: '<';
+  font-family: Courier New;
+  position: absolute;
+  left: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: 0.6;
+  top: 50%;
+  line-height: 0;
+  /* Source Subtitles */
+}
+.mspfa .sourcesub {
+  font-family: Tahoma;
+  font-weight: 500;
+  background: black;
+  color: white;
+  opacity: 0.6;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 16px;
+}
+.mspfa .sourcesub > div {
+  opacity: 1;
+  /* Exiles terminal */
+}
+.mspfa .hsterminal {
+  --scale: 1;
+  --size: calc(var(--scale) * 600px);
+  --gap: calc(var(--scale) * 5px);
+  width: var(--size);
+  height: var(--size);
+  background: #616161;
+  margin: auto;
+  margin-top: calc(var(--gap)*2);
+  font-family: Courier New;
+  font-weight: bold;
+  /* Grid layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: calc(var(--gap)*4);
+  grid-auto-flow: row;
+  grid-template-areas: "panelone paneltwo" "panelthree panelfour";
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+}
+.mspfa .hsterminal > br {
+  display: none;
+}
+.mspfa .hsterminal::after {
+  content: '';
+  left: -5px;
+  top: 295px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 10px 0;
+  border-color: transparent #616161 transparent transparent;
+}
+.mspfa .hsterminal::before {
+  content: '';
+  right: -10px;
+  top: 295px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 0;
+  border-color: #616161 transparent transparent transparent;
+}
+.mspfa .hsterminal > div {
+  background: #454545;
+  padding: calc(var(--gap)*2);
+  margin: calc(var(--gap)*-1);
+  overflow: hidden;
+}
+.mspfa .hsterminal > div > div {
+  box-sizing: border-box;
+  height: 100%;
+  border: solid var(--gap) #3C3C3C;
+  border-radius: calc(var(--gap)*2);
+  background: black;
+  color: white;
+  padding: calc(var(--gap)*2);
+  text-align: left;
+  overflow-y: auto;
+  background-size: cover;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+.mspfa .hsterminal > div > div::-webkit-scrollbar {
+  display: none;
+}
+.mspfa .panelone {
+  grid-area: panelone;
+}
+.mspfa .paneltwo {
+  grid-area: paneltwo;
+  /* Edit margin */
+  padding: calc(var(--gap)*2) !important;
+  margin: calc(var(--gap)*-2) calc(var(--gap)*-2) calc(var(--gap)*-1) calc(var(--gap)*-1) !important;
+}
+.mspfa .panelthree {
+  grid-area: panelthree;
+}
+.mspfa .panelfour {
+  grid-area: panelfour;
+}
+.mspfa .hstertop {
+  --height: 150px;
+  --width: 750px;
+  display: block;
+  height: var(--height);
+  width: var(--width);
+  margin: auto calc(var(--height)/-2);
+  position: relative;
+}
+.mspfa .hstertop > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 calc(var(--height) - 10px) calc(var(--width)/2);
+  border-color: transparent transparent #454545 transparent;
+  z-index: 2;
+}
+.mspfa .hstertop > div::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: calc(var(--height) - 5px) 0 0 calc(var(--width)/2);
+  border-color: transparent transparent transparent #454545;
+}
+.mspfa .hstertop > div > div::before {
+  content: '';
+  left: 250px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 0 10px;
+  border-color: transparent transparent transparent #616161;
+}
+.mspfa .hstertop::before {
+  content: "";
+  position: absolute;
+  background: #616161;
+  display: block;
+  width: calc(var(--width)/2 + 10px);
+  left: 4px;
+  height: 10px;
+  bottom: -10px;
+  transform: skew(45deg);
+}
+.mspfa .hstertop::after {
+  content: "";
+  position: absolute;
+  background: #616161;
+  display: block;
+  width: calc(var(--width)/2 + 10px);
+  right: 4px;
+  height: 10px;
+  bottom: -5px;
+  transform: skew(-45deg);
+}
+.mspfa .hstertop > div > div::after {
+  content: '';
+  position: absolute;
+  background: #454545;
+  display: block;
+  left: 125px;
+  width: 125px;
+  height: 100%;
+  box-shadow: 10px 10px 0 #616161;
+  z-index: 1;
+}
+.mspfa .hstertop + br {
+  display: none;
+  /* Tablogs */
+}
+.mspfa .tab {
+  --icon: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Amongus/Orangemong.png);
+  width: 80px;
+  height: 40px;
+}
+.mspfa .tab + br, .mspfa .tablog + br {
+  display: none;
+}
+.mspfa .tab::after {
+  display: block;
+  width: 60px;
+  height: 20px;
+  content: '';
+  padding: 8px;
+  background-color: #dddddd;
+  background-image: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: #dddddd #898989 #898989 #dddddd;
+}
+.mspfa .tab:checked::after {
+  border-color: #898989 #dddddd #dddddd #898989;
+  background-color: #cccccc;
+}
+.mspfa .tablog {
+  display: none;
+}
+.mspfa .tab.one:checked ~ .tablog.one, .mspfa .tab.one:checked ~ * .tablog.one {
+  display: block;
+}
+.mspfa .tab.two:checked ~ .tablog.two, .mspfa .tab.two:checked ~ * .tablog.two {
+  display: block;
+}
+.mspfa .tab.three:checked ~ .tablog.three, .mspfa .tab.three:checked ~ * .tablog.three {
+  display: block;
+}
+.mspfa .tab.four:checked ~ .tablog.four, .mspfa .tab.four:checked ~ * .tablog.four {
+  display: block;
+}
+.mspfa .tab.five:checked ~ .tablog.five, .mspfa .tab.five:checked ~ * .tablog.five {
+  display: block;
+}
+.mspfa .tab.six:checked ~ .tablog.six, .mspfa .tab.six:checked ~ * .tablog.six {
+  display: block;
+}
+.mspfa .tab.seven:checked ~ .tablog.seven, .mspfa .tab.seven:checked ~ * .tablog.seven {
+  display: block;
+}
+.mspfa .tab.eight:checked ~ .tablog.eight, .mspfa .tab.eight:checked ~ * .tablog.eight {
+  display: block;
+}
+.mspfa .tab.nine:checked ~ .tablog.nine, .mspfa .tab.nine:checked ~ * .tablog.nine {
+  display: block;
+}
+.mspfa .tab.ten:checked ~ .tablog.ten, .mspfa .tab.ten:checked ~ * .tablog.ten {
+  display: block;
+  /* Facepalm combo */
+}
+.mspfa .combo {
+  --shadow: #9A9A9A;
+  display: inline;
+  font-weight: 400;
+  font-family: 'fontstuck';
+  font-size: 2em;
+  text-shadow: 0 0 var(--shadow), 1px 1px var(--shadow), 2px 2px var(--shadow), 3px 3px var(--shadow), 4px 4px var(--shadow), 5px 5px var(--shadow), 6px 6px var(--shadow);
+  animation: flicker 150ms linear infinite;
+}
+@keyframes flicker {
+  /* True Troillian */
+  50% {
+    filter: brightness(100%);
+  }
+  51% {
+    filter: brightness(95%);
+  }
+}
+.mspfa .trollian {
+  --blood: #BD46FF;
+  font-family: Arial;
+  font-weight: 400;
+  background: linear-gradient(165deg, #e90013 20%, #be1304 45%);
+  background-image: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Trollbanner.png'), linear-gradient(165deg, #e90013 20%, #be1304 45%);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  border-radius: 15px 15px 10px 10px;
+  text-align: left;
+  color: white;
+  padding: 30px 4px 6px 4px;
+  border: solid 2px #525252;
+  border-top: hidden;
+  border-bottom: solid 4px #525252;
+  position: relative;
+}
+.mspfa .trollian::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  background: white;
+  left: 10px;
+  right: 10px;
+  height: 8px;
+  border-radius: 8px;
+  opacity: 0.2;
+}
+.mspfa .trollian > div {
+  position: relative;
+  background: #C2C2C2;
+  padding: 0px 0px 0px 1px;
+  outline: solid 2px #be1304;
+  overflow-y: scroll;
+}
+.mspfa .trollian > div > br {
+  display: none;
+}
+.mspfa .trollian h1 {
+  background: #FF2612;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 26px;
+  padding-left: 6px;
+  border-radius: 10px 4px 0 0;
+  border-top: 1px solid #C2C2C2;
+  border-right: 1px solid #C2C2C2;
+  outline: 2px solid #A3A3A3;
+  text-indent: 10px;
+  z-index: -1;
+  margin-top: 0px;
+}
+.mspfa .trollian textarea {
+  margin: 6px 0 -2px 4px;
+  resize: none;
+  width: calc(100% - 60px);
+  height: 1.3em;
+}
+.mspfa .trollianchat {
+  margin: -4px 4.5px 0px 4px;
+  text-indent: 0;
+  z-index: 1;
+}
+.mspfa .trollianchat::before {
+  content: '';
+  background: var(--blood);
+  border-left: solid 1px #C2C2C2;
+  border-right: solid 1px #C2C2C2;
+  position: absolute;
+  left: 0;
+  width: 3.5px;
+  top: 0;
+  height: 40px;
+  z-index: 1;
+}
+.mspfa .trollianchat::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  height: 18px;
+  width: 24px;
+  border: dotted 2px #929292;
+  border-top: none;
+  border-bottom: none;
+}
+.mspfa .trollianchat > div {
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  outline: 4px solid var(--blood);
+  border: solid 1px #C2C2C2;
+  font-weight: 100;
+  font-size: 15px;
+  padding: 10px;
+  /* Doc yelling */
+}
+.mspfa .docyell {
+  font-size: 1.5em;
+  --color: #00FF36;
+  font-family: 'fontstuck';
+  animation: yellingdoc 1000ms infinite;
+  display: inline;
+}
+@keyframes yellingdoc {
+  /* Eladder */
+  0% {
+    color: white;
+  }
+  16% {
+    color: white;
+    text-shadow: 0 0 0 #000000;
+  }
+  24% {
+    color: white;
+  }
+  28% {
+    color: var(--color);
+    text-shadow: 0.5em 0 2.5px #000000;
+  }
+  32% {
+    color: black;
+    text-shadow: 0em 0 0 #000000;
+  }
+  36% {
+    color: black;
+  }
+  40% {
+    color: white;
+  }
+  44% {
+    color: black;
+  }
+  48% {
+    color: white;
+  }
+  56% {
+    color: white;
+    text-shadow: 0em 0 0 #000000;
+  }
+  60% {
+    color: var(--color);
+  }
+  64% {
+    color: var(--color);
+    text-shadow: 0 -0.5em 2.5px #000000;
+  }
+  68% {
+    color: black;
+    text-shadow: -0.25em -0.25em 0px var(--color);
+  }
+  72% {
+    color: black;
+    text-shadow: 0 0 0 var(--color);
+  }
+  76% {
+    color: black;
+    text-shadow: 0.25em -0.25em 0 black;
+  }
+  80% {
+    text-shadow: 0 0.25em 0 black;
+  }
+  84% {
+    text-shadow: 0 0 0 black;
+  }
+  88% {
+    text-shadow: 0 0 0 black;
+  }
+  92% {
+    text-shadow: 0.25em 0 0 black;
+  }
+  96% {
+    text-shadow: 0 0 0 black;
+  }
+  100% {
+    color: var(--color);
+  }
+}
+.mspfa .eladder {
+  --color1: #4A92F7;
+  --color2: #93D0FF;
+  --color3: #C7E6FF;
+  position: relative;
+  font-weight: 400;
+  margin: auto;
+  width: 248px;
+}
+.mspfa .eladder > div {
+  padding: 15px 15px 0 0;
+  position: relative;
+}
+.mspfa .eladder br {
+  display: none;
+}
+.mspfa .eladder::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 16px 15px 0 0;
+  border-color: var(--color2) transparent transparent transparent;
+  bottom: 0;
+  right: 0;
+}
+.mspfa .eladder::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 0 0 15px 15px;
+  border-color: transparent transparent #CFCFCF transparent;
+  top: 0;
+  left: 0;
+}
+.mspfa .eladder > div::before {
+  content: '';
+  width: 233px;
+  height: 15px;
+  position: absolute;
+  background: var(--color2);
+  background: linear-gradient(135deg, #CFCFCF 7%, var(--color3) 7%, var(--color3) 93.5%, var(--color2) 93.5%);
+  top: 0;
+  left: 15px;
+}
+.mspfa .eladder > div::after {
+  content: '';
+  width: 5px;
+  height: 59px;
+  position: absolute;
+  background: black;
+  background: linear-gradient(135deg, var(--color2) 7%, black 7%, black 93%, var(--color2) 93%);
+  top: 29px;
+  right: 5px;
+}
+.mspfa .eladderblock {
+  font-family: 'fontstuck';
+  height: 323px;
+  width: 233px;
+  overflow: auto;
+  direction: rtl;
+  box-shadow: 15px -15px var(--color2);
+}
+.mspfa .eladderblock > div {
+  direction: ltr;
+  border: solid 9px var(--color1);
+  border-style: hidden solid;
+  text-align: center;
+  background: var(--color1);
+}
+.mspfa .eladderblock > div li {
+  border: solid 2px var(--color1);
+  border-style: solid hidden;
+  font-size: 8px;
+  padding: 5px 0 4px 0;
+  background: black;
+  color: white;
+}
+.mspfa .eladderblock > div ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 -4px 0 -4px;
+  border: solid 2px var(--color1);
+  border-style: solid hidden;
+}
+.mspfa .eladderblock #lva {
+  color: yellow;
+  background: #4FD400;
+}
+.mspfa .eladderblock #lvb {
+  color: #FF9D2B;
+  background: #FDFF2B;
+}
+.mspfa .eladderblock #lvc {
+  color: #FF2B8F;
+  background: black;
+}
+.mspfa .eladderblock #lvd {
+  color: #8AFF33;
+  background: #A120AC;
+}
+.mspfa .eladderblock #lve {
+  color: #008EA0;
+  background: #24D9D7;
+}
+.mspfa .eladderblock #lvf {
+  color: #F80000;
+  background: #FFAE00;
+}
+.mspfa .eladderblock #lvg {
+  color: #FFB8AF;
+  background: #A8FFA8;
+  /* Alchemy menu */
+}
+.mspfa .albg {
+  background: white;
+  padding: 2px;
+  margin: 0 -25px;
+}
+.mspfa .alchemy {
+  font-weight: 400;
+  background: #EAEAEA;
+  padding: 28px 4px 0px 4px;
+  text-align: center;
+  font-family: Verdana;
+  margin: 39px 0 0 0;
+  position: relative;
+  border-radius: 0 5px 0 0;
+}
+.mspfa .alchemy > div > br {
+  display: none;
+}
+.mspfa .alchemy::before {
+  content: '';
+  background: #EAEAEA;
+  display: block;
+  width: 102px;
+  height: 60px;
+  position: absolute;
+  top: -39px;
+  left: 0;
+  border-radius: 6px 6px 0 0;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/AlchIcon.png);
+  background-repeat: no-repeat;
+}
+.mspfa .alchemy > div {
+  ackground: white;
+  background: linear-gradient(180deg, white 15%, #edecec 85%);
+  padding: 18px;
+  border-radius: 4px 4px 0 0;
+}
+.mspfa .alelements {
+  --characterheight: 38px;
+  border: solid 2px #E1E1E1;
+  border-radius: 5px;
+  background: #f7f7f6;
+  background: linear-gradient(180deg, #f7f7f6 15%, white 85%);
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  padding: 0 0 var(--characterheight) 0;
+  color: #18B2F1;
+  font-stretch: 150%;
+}
+.mspfa .alelements > img {
+  background: #ebebeb;
+  background: linear-gradient(180deg, #ebebeb 15%, #f2f2f2 85%);
+  width: 78px;
+  height: 78px;
+  border: solid 2px #E1E1E1;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 7px 7px calc(var(--characterheight)*-1) 7px;
+}
+.mspfa .aloutput {
+  margin: auto;
+  width: 70%;
+  border: solid 4px #F3F3F2;
+  border-radius: 6px;
+  background: white;
+  color: #18B2F1;
+  padding: 10px;
+  font-size: 20px;
+}
+.mspfa .aloutput::first-line {
+  color: #C6C7C7;
+}
+.mspfa .aloutput img {
+  width: 21px;
+  height: 21px;
+  margin: 0 0 -4px 0;
+  /* Translater */
+}
+.mspfa .translator {
+  --content: 'Error: no translation';
+  display: inline;
+  position: relative;
+  margin: 0;
+}
+.mspfa .translator::after {
+  width: auto;
+  height: 100%;
+  font-size: 0px;
+  text-align: center;
+  content: var(--content);
+  opacity: 0;
+  margin: -14px 0 0 0;
+  transition: opacity 0.2s ease-out, margin 0.2s ease-out, font-size 0.2s ease-out;
+  transition-delay: 0.1s;
+  background: white;
+  border: solid 0.15em black;
+  top: -0.075em;
+  left: -0.075em;
+  right: -0.075em;
+  display: block;
+}
+.mspfa .translator:hover::after, .mspfa .translator:active::after {
+  opacity: 0.85;
+  margin: 0 0 -14px 0;
+  font-size: 14px;
+}
+.mspfa input[name=pagetrans]:checked ~ .translator::after, .mspfa input[name=pagetrans]:checked ~ * .translator::after {
+  opacity: 0.85;
+  margin: 0 0 -14px 0;
+  font-size: 14px;
+}
+.mspfa input[look=mspfa] {
+  width: 170px;
+}
+.mspfa input[look=mspfa]::before {
+  width: max-content;
+  content: "Translate";
+  font-family: "Press Start 2P";
+  padding: 8px;
+  font-size: 16px;
+  color: #aaaaaa;
+  text-shadow: 0 2px #777777;
+  background-color: #dddddd;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: #dddddd #898989 #898989 #dddddd;
+}
+.mspfa input[look=mspfa]:checked::before {
+  border-color: #898989 #dddddd #dddddd #898989;
+  background-color: #cccccc;
+  /* Cave Story */
+}
+@font-face {
+  font-family: 'cstory';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Cavestory/Cave-Story.ttf');
+}
+.mspfa .caves {
+  text-align: left;
+  font-weight: 400;
+  font-family: 'cstory';
+  background: #161C39;
+  color: white;
+  outline: solid 3px #FFB500;
+  font-size: 2rem;
+  padding: 8px 16px;
+  line-height: 1em;
+}
+.mspfa .cavesicon {
+  text-align: left;
+  font-weight: 400;
+  --icon: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/sans/Snormal);
+  font-family: 'cstory';
+  background: #161C39;
+  color: white;
+  outline: solid 3px #FFB500;
+  font-size: 2rem;
+  line-height: 1em;
+  padding: 8px 8px 8px 123px;
+  position: relative;
+}
+.mspfa .cavesicon::before {
+  content: '';
+  background: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  /* Vertical scrolling */
+}
+.mspfa .vertscroll {
+  --items: 4;
+  --itemcalc: calc(-100% + (100% / var(--items)));
+  --time: 2;
+  height: 2em;
+  width: max-content;
+  overflow: hidden;
+  position: relative;
+  color: black;
+  display: inline-block;
+  margin: -0.75em 0;
+}
+.mspfa .vertscroll br {
+  display: none;
+}
+.mspfa .vertscroll > ul {
+  margin: 0;
+  padding: 0;
+  animation: upscroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: calc(var(--time) * 1s);
+  animation-direction: normal;
+}
+.mspfa .vertscroll > ul li {
+  opacity: 1;
+  height: 1em;
+  padding: 5px;
+  list-style: none;
+}
+@keyframes upscroll {
+  /* dcord headers */
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(var(--itemcalc));
+  }
+}
+@font-face {
+  font-family: 'Helvet';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/Helvetica-Bold.ttf');
+}
+.mspfa .dcordfriend, .mspfa .dcordchannel {
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  font-family: 'Helvet';
+  color: white;
+  font-size: 16px;
+  background-color: #36393F;
+  padding: 12px 44px;
+  border-bottom: 1px solid #2D2F34;
+}
+.mspfa .dcordfriend > div, .mspfa .dcordchannel > div {
+  display: inline;
+  font-family: 'Whitney';
+  font-size: 14px;
+  color: #b9bbbe;
+  position: relative;
+}
+.mspfa .dcordchannel > div::before {
+  content: ' ｜ ';
+  font-family: 'Whitneylight';
+  font-size: 20px;
+  line-height: 16px;
+  color: #42454A;
+  margin: -15px 0px;
+}
+.mspfa .dcordfriend > status {
+  color: #3BA55D;
+  font-size: 22px;
+  line-height: 16px;
+}
+.mspfa .dcordfriend > status::before {
+  content: ' ';
+}
+.mspfa .dcordfriend > div::before {
+  content: ' ｜ \3000\3000';
+  font-family: 'Whitneylight';
+  font-size: 20px;
+  line-height: 16px;
+  color: #42454A;
+  margin: -15px 0px;
+}
+.mspfa .dcordfriend > div::after {
+  content: "AKA";
+  background: #2F3136;
+  font-size: 12px;
+  position: absolute;
+  line-height: 12px;
+  padding: 2px 6px;
+  border-radius: 100px;
+  top: 0.5px;
+  left: 28px;
+}
+.mspfa .dcordfriend {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/dcordfren.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 420px;
+}
+.mspfa .dcordchannel {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/dcordchannel.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 370px;
+}
+.mspfa .dcordfriend::before {
+  position: absolute;
+  content: '';
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/Dcordat.png);
+  width: 35px;
+  height: 35px;
+  left: 2px;
+  top: 4px;
+}
+.mspfa .dcordchannel::before {
+  position: absolute;
+  content: '';
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/dcordhash.png);
+  width: 35px;
+  height: 35px;
+  left: 2px;
+  top: 4px;
+  /* DDLC */
+}
+@font-face {
+  font-family: 'Riffic';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/DDLC/RifficFree-Bold.ttf');
+}
+.mspfa .ddlc {
+  margin: auto;
+  font-family: 'Riffic';
+  color: white;
+  position: relative;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/DDLC/DDLC.png);
+  --scale: 1;
+  --hpadding: calc(var(--scale) * 12px);
+  --wpadding: calc(var(--scale) * 58px);
+  height: calc(var(--scale) * 152px - var(--hpadding) * 2);
+  width: calc(var(--scale) * 623px - var(--wpadding) * 2);
+  padding: var(--hpadding) var(--wpadding);
+  font-size: calc(var(--scale) * 20px);
+  font-weight: 400;
+  text-align: left;
+  background-size: contain;
+  text-shadow: 0px 0px 4px #AF5F91, 0px 0px 4px #AF5F91, 0px 0px 4px #AF5F91;
+}
+.mspfa .ddlc > div {
+  color: #eee;
+  font-family: arial;
+  display: inline-block;
+  position: absolute;
+  left: calc(var(--scale) * 32px);
+  top: calc(var(--scale) * 48px);
+  width: calc(var(--scale) * 560px);
+  font-size: calc(var(--scale) * 16px);
+  line-height: calc(var(--scale) * 24px);
+  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+  /* PSmenu */
+}
+.mspfa .PSmenu {
+  margin: auto;
+  background: white;
+  --scale: 1;
+  font-family: 'fontstuck';
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: calc(var(--scale) * 187px) calc(var(--scale) * 463px);
+  grid-template-rows: calc(var(--scale) * 253px);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "PSstats PSaction";
+}
+.mspfa .PSaction {
+  grid-area: PSaction;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/PSmenu/PSactions.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px 0px 0px calc(var(--scale) * -5px);
+  font-size: calc(var(--scale) * 25px);
+  line-height: calc(var(--scale) * 34px);
+  padding: calc(var(--scale) * 28px) calc(var(--scale) * 26px);
+  text-align: left;
+}
+.mspfa .PSstats {
+  font-size: calc(var(--scale) * 7px);
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: calc(var(--scale) * 145px) calc(var(--scale) * 22px) calc(var(--scale) * 84px);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "PShead PShead" "PSinsul PSinsul" "PSanimal PSelf";
+  grid-area: PSstats;
+}
+.mspfa .PShead {
+  grid-area: PShead;
+  text-align: left;
+  padding: 0px;
+}
+.mspfa .PSinsul {
+  grid-area: PSinsul;
+  text-align: right;
+  position: relative;
+}
+.mspfa .PSinsul > div {
+  position: absolute;
+  left: 4px;
+  top: 0;
+  text-align: left;
+}
+.mspfa .PSanimal {
+  grid-area: PSanimal;
+  text-align: center;
+  position: relative;
+  padding: 7px 0px 0px 0px;
+}
+.mspfa .PSanimal > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.mspfa .PSelf {
+  position: relative;
+  grid-area: PSelf;
+  text-align: center;
+  padding: 12px 0px 0px 0px;
+}
+.mspfa .PSelf > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.mspfa .PSmenu {
+  height: 100%;
+  margin: 0;
+}
+.mspfa .PSmenu > br, .mspfa .PSstats > br {
+  display: none;
+  /* UDG dangan */
+}
+.mspfa .udg {
+  margin: auto;
+  font-family: 'dang3';
+  color: white;
+  position: relative;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/drangonphobia/Blank%20SDG%20textbox.png);
+  --scale: 0.6;
+  --hpadding: calc(var(--scale) * 7px);
+  --wpadding: calc(var(--scale) * 25px);
+  height: calc(var(--scale) * 188px - var(--hpadding) * 2);
+  width: calc(var(--scale) * 1224px - var(--wpadding) * 2);
+  padding: var(--hpadding) var(--wpadding);
+  font-size: calc(var(--scale) * 46px);
+  font-weight: 400;
+  text-align: left;
+  background-size: contain;
+}
+.mspfa .udg > div {
+  display: inline-block;
+  position: absolute;
+  left: calc(var(--scale) * 50px);
+  top: calc(var(--scale) * 66px);
+  width: calc(var(--scale) * 1000px);
+  font-size: calc(var(--scale) * 32px);
+  line-height: calc(var(--scale) * 52px);
+  /* Dcord 2 */
+}
+@font-face {
+  font-family: 'Whitneylight';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/whitneylight.otf');
+}
+.mspfa .dcord2 {
+  text-align: left;
+  font-weight: 400;
+  font-family: 'Whitneylight';
+  line-height: 20px;
+  font-size: 16px;
+  background-color: #36393F;
+  color: white;
+  padding: 0px 0px 8px 0px;
+}
+.mspfa .dcord2 > br {
+  display: none;
+}
+.mspfa .dcord2 time {
+  color: #6E7679;
+  font-size: 11px;
+}
+.mspfa .dcord2 time, .mspfa .dcord2 user {
+  line-height: 22px;
+  font-family: 'Whitney';
+}
+.mspfa .dcord2 user:after {
+  content: ' ';
+  color: #36393F;
+  font-size: 30px;
+}
+.mspfa .dcord2 > div {
+  padding: 2px 8px 6px 70px;
+  position: relative;
+}
+.mspfa .dcord2 > div:hover {
+  background-color: #32353B;
+}
+.mspfa .dcord2 > div:hover::after {
+  content: '';
+  background: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/Dcordedit);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 80px;
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: -32px;
+}
+.mspfa .dcord2 user {
+  --icon: url(https://www.shitpostbot.com/resize/585/400?img=%2Fimg%2Fsourceimages%2Fdefault-discord-icon-5b254285e1034.png);
+}
+.mspfa .dcord2 user::before {
+  content: '';
+  background: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 8px;
+}
+.mspfa .mention, .mspfa at {
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: bolder;
+  unicode-bidi: -moz-plaintext;
+  unicode-bidi: plaintext;
+  background: hsla(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%, 0.3);
+  color: hsl(236, calc(var(--saturation-factor, 1)*83.3%), 92.9%);
+  position: relative;
+  cursor: pointer;
+}
+.mspfa .dcord2 input {
+  width: 96%;
+  background: #40444B;
+  border: none;
+  height: 40px;
+  margin: 0 2%;
+  color: white;
+  border-radius: 10px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 16px;
+  font-family: unset;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/add);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 12px 4px;
+}
+.mspfa .dcord2 .bot {
+  background: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/bot);
+  display: inline-block;
+  width: 3em;
+  height: 1.2em;
+  background-size: contain;
+  margin-bottom: -0.2em;
+  /* Undertale Icon */
+}
+.mspfa .underticon {
+  position: relative;
+  --icon: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/sans/Swink4.png);
+  font-weight: normal;
+  font-family: 'underdt';
+  font-size: 20px;
+  text-align: left;
+  border: 7px solid white;
+  background-color: black;
+  color: white;
+  padding: 16px 16px 16px 140px;
+  line-height: 32px;
+  min-height: 96px;
+}
+.mspfa .underticon::before {
+  content: '';
+  background: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 98px;
+  height: 98px;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  /* Zelda oot and mm */
+}
+@font-face {
+  font-family: 'oot';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Zelda/FOT-ChiaroStd-B.otf');
+}
+.mspfa .oot {
+  font-family: 'oot';
+}
+.mspfa .oot > div {
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
+  color: #eee;
+  background-color: #333;
+  padding: 32px 60px 28px 60px;
+  line-height: 24px;
+  border-radius: 24px;
+  /* Zelda lttp botw */
+}
+@font-face {
+  font-family: 'botw';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Zelda/Calamity-Bold.otf');
+}
+@font-face {
+  font-family: 'lttp';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Zelda/ReturnofGanon.ttf');
+}
+.mspfa .botw {
+  text-align: left;
+  color: #EDEBD5;
+  font-family: 'botw';
+  position: relative;
+  font-size: 12px;
+  padding: 0 0 0 65px;
+}
+.mspfa .botw > div {
+  z-index: 5;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 20px 20%;
+  inset: 15px 0px;
+  border-radius: 1000px;
+  background: #333333;
+  margin: -16px 0 0 -65px;
+}
+.mspfa .lttp {
+  text-align: left;
+  font-weight: 400;
+  color: white;
+  font-family: 'lttp';
+  border: 15px solid transparent;
+  padding: 5px 40px;
+  font-size: 25px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Zelda/Zeldaborder5.png) 36 round;
+  text-shadow: 0px 0px 6px #000073, 0px 0px 6px #000073, 0px 0px 6px #000073, 0px 0px 6px #000073;
+  /* Dangan3 */
+}
+@font-face {
+  font-family: 'dang3';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/drangonphobia/Atartida-Light.otf');
+}
+.mspfa .dangan3 {
+  margin: auto;
+  font-family: 'dang3';
+  color: white;
+  position: relative;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/drangonphobia/_danganronpa_v3__text_box___transparent_by_thenameszel_dcir3bp-fullview.png);
+  --scale: 0.7;
+  --hpadding: calc(var(--scale) * 25px);
+  --wpadding: calc(var(--scale) * 90px);
+  height: calc(var(--scale) * 166px - var(--hpadding) * 2);
+  width: calc(var(--scale) * 1024px - var(--wpadding) * 2);
+  padding: var(--hpadding) var(--wpadding);
+  font-weight: 400;
+  text-align: left;
+  background-size: contain;
+}
+.mspfa .dangan3 > div {
+  display: inline-block;
+  position: absolute;
+  left: calc(var(--scale) * 180px);
+  top: calc(var(--scale) * 66px);
+  font-size: calc(var(--scale) * 24px);
+  line-height: calc(var(--scale) * 32px);
+  /* Befriend us */
+}
+.mspfa befriend {
+  display: block;
+  text-align: left;
+  line-height: 28px;
+  font-size: calc(42px + 1px);
+  font-family: Courier New, Courier, Monospace;
+  font-weight: bold;
+  /* -webkit-text-stroke: 1px #fff; */
+  text-shadow: -2px -2px 0 #fff, 0 -2px 0 #fff, 2px -2px 0 #fff, 2px 0 0 #fff, 2px 2px 0 #fff, 0 2px 0 #fff, -2px 2px 0 #fff, -2px 0 0 #fff;
+  margin-bottom: 3px;
+}
+.mspfa div[style="text-align: left;"] ~ div.openbhashalt {
+  border: 7px solid #C4C4C4;
+  border-radius: 16px;
+  margin: -18px 0px 0px 0px;
+  padding: unset;
+  background: none;
+}
+.mspfa div[style="text-align: left;"] ~ .openbhashalt > div {
+  text-align: left;
+  padding: 8px 20px;
+  /* Overlap with outer outline to prevent aliasing bugs*/
+  margin: -1px;
+  background: #cfcfcf;
+  background: linear-gradient(180deg, rgba(207, 207, 207, 0.81) 6px, rgba(238, 238, 238, 0.81) calc(100% - 6px));
+  border: 6px solid #B6B6B6;
+  border-radius: 10px;
+}
+.mspfa div[style="text-align: left;"] ~ div.openbhash {
+  border: 7px solid #C4C4C4;
+  border-radius: 16px;
+  margin: 0;
+  margin-top: -21px;
+  padding: unset;
+}
+.mspfa div[style="text-align: left;"] ~ .openbhash > div {
+  text-align: left;
+  padding: 4px 20px;
+  /* Overlap with outer outline to prevent aliasing bugs*/
+  margin: -1px;
+  background: #EEE;
+  border: 6px solid #B6B6B6;
+  border-radius: 10px;
+  /* Hollow Knight */
+}
+@font-face {
+  font-family: 'hollow';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Hknight/FontsFree-Net-Riven.ttf');
+}
+.mspfa .hknight {
+  font-family: 'hollow';
+  padding: 30px 0px;
+  position: relative;
+}
+.mspfa .hknight:before {
+  content: '';
+  background: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Hknight/HKtop.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 350px;
+  height: 60px;
+  background-size: 350px;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 350px/2);
+  top: -5px;
+}
+.mspfa .hknight:after {
+  content: '';
+  background: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Hknight/HKbottom.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 210px;
+  height: 60px;
+  background-size: 210px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 210px/2);
+}
+.mspfa .hknight > div {
+  text-align: left;
+  font-family: 'hollow';
+  padding: 15px 35px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 200;
+  color: white;
+  background-color: #333;
+  box-shadow: 0 0 5px 2px #333;
+  /* AMONGUS */
+}
+.mspfa .among {
+  border: solid 5px #39424A;
+  background-color: #AFBAC8;
+  border-radius: 10px;
+  padding: 0px 12px;
+  font-weight: 400;
+  position: relative;
+}
+.mspfa .among > br {
+  display: none;
+}
+.mspfa .us {
+  --icon: url("https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Amongus/purplemong.png");
+  text-align: left;
+  background-color: #E9F1F8;
+  padding: 6px 0px 10px 86px;
+  border-radius: 8px;
+  box-shadow: 4px 4px #6F7A88;
+  font-family: Arial;
+  font-size: 19px;
+  width: 80%;
+  margin: 16px 0px;
+}
+.mspfa .us name {
+  color: white;
+  font-size: 20px;
+  text-shadow: 0px 0px 3px #000000, 0px 0px 4px #000000, 0px 0px 3px #000000;
+}
+.mspfa .us name::before {
+  content: '';
+  background: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 65px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+}
+.mspfa .you {
+  --icon: url("https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Amongus/Orangemong.png");
+  text-align: right;
+  background-color: #E9F1F8;
+  padding: 6px 86px 10px 0px;
+  border-radius: 8px;
+  box-shadow: 4px 4px #6F7A88;
+  font-family: Arial;
+  font-size: 19px;
+  width: 80%;
+  margin: 16px 0px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.mspfa .you name {
+  color: white;
+  font-size: 20px;
+  text-shadow: 0px 0px 3px #000000, 0px 0px 4px #000000, 0px 0px 3px #000000;
+}
+.mspfa .you name::before {
+  content: '';
+  background: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 65px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+.mspfa .among:after {
+  content: '';
+  display: inline-block;
+  background-color: #EEF4FB;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Amongus/AMONGARROW.png);
+  background-repeat: no-repeat;
+  background-position: 101%;
+  background-size: contain;
+  width: 99%;
+  height: 60px;
+  border: solid 4px #2B333A;
+  border-radius: 10px;
+  margin: 5px 0px;
+  /* GBsea */
+}
+@font-face {
+  font-family: 'MSgothic';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/MS%20Gothic.ttf');
+}
+.mspfa .gbsblue {
+  text-align: left;
+  font-weight: 400;
+  font-family: 'MSgothic';
+  background-color: #0049E7;
+  opacity: 1;
+  padding: 20px 50px;
+  font-size: 22px;
+  background-image: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS1.png'), url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS3.png'), url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS2.png'), url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS4.png'), linear-gradient(180deg, #2b4280 30%, #0f2254 70%);
+  color: white;
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  border: 3px solid #94B7FF;
+  outline: 3px solid #1C224B;
+}
+.mspfa .gbspage {
+  text-align: left;
+  font-weight: 400;
+  font-family: 'MSgothic';
+  background-color: #D6D6D6;
+  opacity: 1;
+  padding: 20px 50px;
+  font-size: 22px;
+  background-image: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS8.png'), url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS7.png'), url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS5.png'), url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/GBSother/GBS6.png');
+  color: #181F4B;
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  border: 3px solid #6B6B70;
+  outline: 3px solid #181F4B;
+  /* Minecraft sign */
+}
+.mspfa .mcsign {
+  margin: auto;
+  --scale: 1;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Minecraft/636163130158286359.png);
+  background-size: contain;
+  --padding: calc(var(--scale) * 5px);
+  height: calc(var(--scale) * (96px - 2 * var(--padding)));
+  width: calc(var(--scale) * (192px - 2 * var(--padding)));
+  font-family: 'mcnorm';
+  text-align: center;
+  font-size: calc(var(--scale) * 18px);
+  line-height: calc(var(--scale) * (96px - 2 * var(--padding))/4);
+  padding: var(--padding);
+  font-weight: 400;
+  /* Minecraft Chat */
+}
+@font-face {
+  font-family: 'mcnorm';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Minecraft/MinecraftRegular-Bmg3.otf');
+}
+.mspfa .mcchat {
+  font-family: 'mcnorm';
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+  padding: 0px 1px;
+  text-align: left;
+  font-weight: 400;
+  width: 75%;
+}
+.mspfa .mcchat div {
+  opacity: 1;
+  /* Undertale menu */
+}
+@font-face {
+  font-family: 'utname';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/Battle%20name.tff');
+}
+.mspfa .utgrid > br {
+  display: none;
+}
+.mspfa .utwrap {
+  --scale: 1;
+  width: calc(var(--scale) * 500px);
+  margin: 0 0 -1em 0;
+}
+.mspfa .utgrid {
+  height: 100%;
+  margin: 0;
+  color: white;
+  font-family: 'underdt';
+  font-weight: 400;
+}
+.mspfa .utgrid {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 3fr 4fr 4fr;
+  gap: calc(var(--scale) * 6px) calc(var(--scale) * 15px);
+  grid-template-areas: "utoverview utmain" "utselect utmain" ". utmain";
+}
+.mspfa .utoverview {
+  padding: 14px 10px;
+  grid-area: utoverview;
+  line-height: 18px;
+  font-family: 'utname';
+  font-size: 10px;
+  text-align: left;
+}
+.mspfa .utoverview name {
+  grid-area: utoverview;
+  line-height: 28px;
+  font-family: 'underdt';
+  font-size: 24px;
+}
+.mspfa .utselect {
+  grid-area: utselect;
+  text-align: right;
+  padding: 18px 20px;
+  line-height: 36px;
+  font-size: 24px;
+}
+.mspfa .utmain {
+  padding: 30px;
+  grid-area: utmain;
+  text-align: left;
+  font-size: 24px;
+}
+.mspfa .utmain, .mspfa .utoverview, .mspfa .utselect {
+  border: calc(var(--scale) * 6px) solid white;
+  background-color: black;
+  position: relative;
+  /* Stardew textbox */
+}
+@font-face {
+  font-family: 'sdv';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/Stardew_Valley.ttf');
+  font-weight: 400;
+}
+.mspfa .stargrid {
+  height: 100%;
+  margin: 0;
+}
+.mspfa .starwrap {
+  --size: 1;
+  font-weight: 400;
+  height: calc(var(--size) * 314px);
+  width: calc(var(--size) * 907px);
+  font-family: 'sdv';
+  font-size: calc(var(--size) * 32px);
+  color: #5B1B0F;
+  text-shadow: 0 0 calc(var(--size) * 10px) #C98146;
+}
+.mspfa .stargrid {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/SkypqsO.png);
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 10fr 7fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "startext starpic" "startext starname";
+}
+.mspfa .startext {
+  text-align: left;
+  grid-area: startext;
+  padding: calc(var(--size) * 25px) calc(var(--size) * 40px);
+}
+.mspfa .starpic {
+  grid-area: starpic;
+  text-align: center;
+  padding: calc(var(--size) * 40px) 0 0 0;
+}
+.mspfa .starpic img {
+  height: calc(var(--size) * 190px);
+  width: calc(var(--size) * 190px);
+}
+.mspfa .starname {
+  grid-area: starname;
+  text-align: center;
+  padding: calc(var(--size) * 10px);
+  /* Stardew item */
+}
+@font-face {
+  font-family: 'starde';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/svthin.ttf');
+  font-weight: 400;
+}
+.mspfa .stard {
+  border: solid 4px #B14E05;
+  background-color: #B14E05;
+  position: relative;
+  padding: 0px;
+  border-radius: 10px;
+}
+.mspfa .stard > div {
+  border: solid 4px #FA9305;
+  position: relative;
+  padding: 4px;
+  border-radius: 5px;
+}
+.mspfa .stard > div > div {
+  font-weight: 400;
+  position: static;
+  text-align: left;
+  border: solid 4px #D7996A;
+  outline: solid 4px #B14E05;
+  border-style: solid solid hidden hidden;
+  font-family: 'starde';
+  font-size: 18px;
+  border-radius: 0px;
+  padding: 8px;
+  background: #ffc576;
+  background: linear-gradient(180deg, #ffc576 0%, #ffc576 30%, #fdbc6e 30%, #fdbc6e 65%, #f5b567 65%, #f5b565 100%);
+  /* AceAttorney */
+}
+.mspfa .acewrap {
+  position: relative;
+  width: 100%;
+}
+.mspfa .acename {
+  position: absolute;
+  z-index: 1;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #2E87B9;
+  padding: 0px 5px;
+  width: 100px;
+  color: white;
+  margin: -13px 10%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 60px;
+  border: solid 1px white;
+}
+.mspfa .acea {
+  font-weight: 400;
+  position: static;
+  z-index: -1;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 40, 0.75);
+  padding: 12px 20%;
+  margin: -15px 0px;
+  border: solid 2px white;
+  border-style: hidden hidden solid hidden;
+  text-align: left;
+  line-height: 26px;
+  /* Mother 1 */
+}
+@font-face {
+  font-family: 'mother1';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/earthbound-beginnings.ttf');
+  font-weight: 400;
+}
+.mspfa .mom1 > div {
+  --letters: 6;
+  font-family: 'mother1';
+  color: white;
+  background-color: black;
+  padding: 2px 5px;
+  margin: -24px 0 0 -5px;
+  width: calc(14px*var(--letters));
+}
+.mspfa .mom1 {
+  font-size: 1em;
+  text-align: left;
+  font-family: 'mother1';
+  color: white;
+  background-color: black;
+  padding: 6px;
+  border: 20px solid transparent;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/RnK48UY_5x.png) 90 round;
+  /* Deltarune */
+}
+.mspfa .drune {
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Border/Deltanotch.png), url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Border/Deltanotch2.png), url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Border/Deltanotch3.png), url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Border/Deltanotch4.png);
+  background-repeat: no-repeat;
+  background-position: top left, top right, bottom left, bottom right;
+  white-space: pre;
+}
+.mspfa .drune::before {
+  content: "\A";
+}
+.mspfa .drune::after {
+  content: "\A";
+}
+.mspfa .drune > div {
+  background: black;
+  color: white;
+  padding: 15px 24px;
+  margin: 0px 19px;
+  border: 3px solid #959BBC;
+  outline: 6px solid white;
+  text-align: left;
+  font-family: underdt;
+  font-weight: 400;
+  font-size: 22px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  --notchSize: 15px;
+  --overstep: -10px;
+  --bigstep: calc(100% - var(--overstep));
+  clip-path: polygon(var(--overstep) var(--notchSize), var(--notchSize) var(--notchSize), var(--notchSize) var(--overstep), calc(100% - var(--notchSize)) var(--overstep), calc(100% - var(--notchSize)) var(--notchSize), var(--bigstep) var(--notchSize), var(--bigstep) calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) var(--bigstep), var(--notchSize) var(--bigstep), var(--notchSize) calc(100% - var(--notchSize)), var(--overstep) calc(100% - var(--notchSize)));
+  /* Blabber */
+  /* - Blabber Normal */
+}
+.mspfa .bchum {
+  font-size: 10px;
+  font-family: 'fontstuck';
+  border: 3px solid #001244;
+  border-style: hidden solid solid solid;
+  background-color: #318FB5;
+  text-align: left;
+  padding: 10px 22px 5px 22px;
+  margin: -3px 0px 0px 0px;
+}
+.mspfa .bchum::before {
+  content: "  BLABBERLOG: ";
+}
+.mspfa .bchum > div {
+  color: #747474;
+  font-weight: light;
+  font-size: 14px;
+  font-family: 'Courier New';
+  padding: 8px 4px 8px 4px;
+  margin: 5px -8px 5px -8px;
+  outline: 3px solid #005086;
+  background-color: white;
+  /* - Blabbername */
+}
+.mspfa .bname {
+  font-weight: 500;
+  border: 3px solid #001244;
+  border-style: solid solid hidden solid;
+  font-size: 14px;
+  font-family: 'Courier New';
+  background-color: #005086 !important;
+  text-align: center;
+  padding: 6px;
+  color: white;
+  /* - Blabberquest */
+}
+.mspfa .bquest {
+  font-size: 10px;
+  font-family: 'fontstuck';
+  border: 3px solid #001244;
+  border-style: hidden solid solid solid;
+  background-color: #318FB5;
+  text-align: left;
+  margin: -3px 0px 0px 0px;
+  padding: 6px;
+}
+.mspfa .bquest > div {
+  font-weight: light;
+  font-size: 15px;
+  font-family: 'Courier New';
+  padding: 12px 22px 12px 22px;
+  margin: 2px 8px 2px 8px;
+  outline: 3px solid #005086;
+  background-color: white;
+  /* Friendsim */
+}
+@font-face {
+  font-family: 'Berlinsans';
+  font-smooth: never;
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/Berlin%20Sans%20FB%20Regular.ttf');
+}
+.mspfa .fsim {
+  --colorA: #018184;
+  --colorB: #33D5D2;
+  font-size: 28px;
+  color: white;
+  font-family: 'Berlinsans';
+  text-shadow: 0 0 10px var(--colorB);
+  text-align: left;
+  text-indent: 80px;
+}
+.mspfa .fsiminwrap {
+  display: flex;
+}
+.mspfa .fsiminl {
+  width: 0;
+  height: auto;
+  border-style: solid;
+  border-width: 72px 72px 72px 0;
+  border-color: transparent var(--colorA) transparent transparent;
+  padding: 0px 0px 0px 11px;
+}
+.mspfa .fsimtext {
+  background-color: var(--colorA);
+  flex: 60%;
+  color: white;
+  font-family: 'Berlinsans';
+  font-size: 0.5em;
+  font-weight: normal;
+  text-align: left;
+  padding: 0px 24px 0px 24px;
+  text-shadow: 0 0 0px white;
+}
+.mspfa .fsiminr {
+  width: 0;
+  height: auto;
+  border-style: solid;
+  border-width: 72px 0 72px 72px;
+  border-color: transparent transparent transparent var(--colorA);
+  padding: 0px 11px 0px 0px;
+}
+.mspfa .fsimoutwrap {
+  display: flex;
+  margin: 0px 0px -152px 0px;
+}
+.mspfa .fsimoutl {
+  width: 0;
+  height: auto;
+  border-style: solid;
+  border-width: 80px 80px 80px 0;
+  border-color: transparent var(--colorB) transparent transparent;
+}
+.mspfa .fsimouter {
+  background-color: var(--colorB);
+  flex: 60%;
+}
+.mspfa .fsimoutr {
+  width: 0;
+  height: auto;
+  border-style: solid;
+  border-width: 80px 0 80px 80px;
+  border-color: transparent transparent transparent var(--colorB);
+}
+.mspfa .mspar {
+  text-align: left;
+  background-color: white;
+  font-size: 15px;
+  padding: 12px 32px;
+  border: 4px solid black;
+  /* Discord */
+}
+@font-face {
+  font-family: 'Whitney';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Discord/whitneymedium.otf');
+}
+.mspfa .dcordwrap {
+  margin: 0;
+}
+.mspfa .dcord {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  grid-template-rows: 6px 20px auto;
+  gap: 0px 0px;
+  grid-template-areas: "dcordimg dcordbreak" "dcordimg dcorduser" "dcordimg dcordtext";
+}
+.mspfa .dcord > br, .mspfa .dcordwrap + br {
+  display: none;
+}
+.mspfa .dcord {
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Whitney';
+  background-color: #36393F;
+  color: white;
+  font-size: 0;
+}
+.mspfa .dcordbreak, .mspfa .dcordimg, .mspfa .dcorduser, .mspfa .dcordtext, .mspfa .dcorduser time, .mspfa .dcordimg img {
+  font-size: 14px;
+  padding: 4px;
+}
+.mspfa .dcordbreak {
+  grid-area: dcordbreak;
+}
+.mspfa .dcordimg {
+  grid-area: dcordimg;
+}
+.mspfa .dcordimg img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.mspfa .dcorduser {
+  display: flex;
+  grid-area: dcorduser;
+}
+.mspfa .dcorduser time {
+  color: #6E7679;
+  font-size: 11px;
+  margin: 0px;
+  line-height: 12px;
+}
+.mspfa .dcordtext {
+  font-weight: normal;
+  grid-area: dcordtext;
+  padding: 8px 5px 10px 5px;
+  /* Openbound */
+}
+.mspfa .openb {
+  padding: 26px;
+  border: 6px solid #BDBDBD;
+  text-align: left;
+  border-radius: 10px;
+  background: #cfcfcf;
+  background: linear-gradient(180deg, #d4d4d4 0%, #eee 80%);
+}
+.mspfa .openbhashalt {
+  padding: 8px 26px 8px 26px;
+  border: 6px solid #BDBDBD;
+  text-align: left;
+  border-radius: 10px;
+  background: #cfcfcf;
+  background: linear-gradient(180deg, #d4d4d4 0%, #eee 80%);
+  margin: -18px 0px 0px 0px;
+}
+.mspfa .openbhash {
+  padding: 8px 26px 8px 26px;
+  border: 6px solid #BDBDBD;
+  text-align: left;
+  border-radius: 10px;
+  background: #E6E6E6;
+  margin: -18px 0px 0px 0px;
+  /* Mother3 */
+}
+.mspfa .mom3battle {
+  font-weight: normal;
+  font-family: 'Mother';
+  font-size: 20px;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 6px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/M3border.png) 30 stretch;
+  border-image-width: 20px;
+  background-color: #E0D0C8;
+  color: black;
+  line-height: 40px;
+}
+.mspfa .mom3head {
+  font-weight: normal;
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/M3head.png);
+  height: 32px;
+  font-family: 'Mother';
+  background-size: contain;
+  font-size: 20px;
+  color: white;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding: 10px 10px 10px 15px;
+}
+.mspfa .mom3body {
+  font-weight: normal;
+  font-family: 'Mother';
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-color: black;
+  margin: -20px 0px 0px 0px;
+  padding: 15px 40px 5px 40px;
+  /* Fortuna */
+}
+@font-face {
+  font-family: 'Gillsans';
+  font-smooth: never;
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/Gill%20Sans%20Light.otf');
+}
+@font-face {
+  font-family: 'PoiretOne';
+  font-smooth: never;
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/PoiretOne-Regular.ttf');
+}
+.mspfa .fortuna {
+  color: white;
+  font-size: 1.5em;
+  text-align: left;
+  font-family: 'PoiretOne';
+  background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/Fortuna%20header.png);
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+.mspfa .fortuna > div {
+  font-weight: 400;
+  font-family: "Gillsans";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.2px;
+  background-color: #414142;
+  border-radius: 0px 0px 8px 8px;
+  border: 3.5px solid #DBDBDB;
+  border-style: hidden solid solid solid;
+  color: #00C6FF;
+  margin: 8px -10px -10px -10px;
+  padding: 4px 8px 8px 8px;
+}
+.mspfa .fortunades {
+  font-family: 'Gillsans';
+  color: #00c6ff;
+  background: #414142;
+  padding: 0.1em 0.2em;
+  border: solid #DCDCDC;
+  border-radius: 0.25em;
+  min-height: 5em;
+  font-weight: 400;
+  text-align: left;
+}
+.mspfa .fortunapatron {
+  position: relative;
+  width: 850px;
+  margin: auto;
+  height: 125px;
+  font-weight: 400;
+  text-align: left;
+}
+.mspfa .fortunapatron > br {
+  display: none;
+}
+.mspfa .fortunapatron img {
+  float: left;
+  width: 125px;
+  height: 125px;
+}
+.mspfa .fortunapatron p {
+  margin-left: 150px;
+  width: 648px;
+  font-family: "Gillsans", "Times New Roman", serif;
+  color: #212121;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  /* BG */
+}
+.mspfa .bground {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  --slide: 890;
+  --imgh: 675;
+  --imgw: 1200;
+  --margin: 0;
+  --rat: calc(var(--imgh) / var(--imgw));
+  height: calc(var(--rat) * var(--slide) * 1px);
+  width: calc(var(--slide) * 1px);
+  margin: 0px -25px calc(var(--margin) * -1px) -25px;
+}
+.mspfa .bgpad {
+  padding: 0px 20px 0px 20px;
+  /* Trollian */
+}
+.mspfa .tquest {
+  font-weight: 400;
+  background: linear-gradient(165deg, #e90013 20%, #be1304 45%);
+  background-image: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Trollbanner.png'), linear-gradient(165deg, #e90013 20%, #be1304 45%);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px 20px 20px 20px;
+  color: white;
+  margin: 0px 0px 0px 0px;
+}
+.mspfa .tquest::before {
+  content: "  trolling: ";
+}
+.mspfa .tquest > div {
+  font-weight: 600;
+  --blood: #626262;
+  color: var(--blood);
+  background-color: white;
+  border-radius: 10px;
+  border: 4px solid var(--blood);
+  font-weight: light;
+  font-size: 15px;
+  font-family: 'Courier New';
+  padding: 15px;
+  margin: 5px -10px -10px -10px;
+}
+.mspfa .tquestalt {
+  font-weight: 400;
+  background: linear-gradient(165deg, #e90013 20%, #be1304 45%);
+  background-image: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Trollbanner.png'), linear-gradient(165deg, #e90013 20%, #be1304 45%);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  color: white;
+  margin: 0px 0px 0px 0px;
+}
+.mspfa .tquestalt > div {
+  font-weight: 600;
+  --blood: #626262;
+  color: var(--blood);
+  background-color: white;
+  border-radius: 10px;
+  border: 4px solid var(--blood);
+  font-weight: light;
+  font-size: 15px;
+  font-family: 'Courier New';
+  padding: 15px;
+  margin: 0px;
+  /* Pesterchum */
+}
+@font-face {
+  font-family: 'fontstuck';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/fontstuck.ttf');
+  /* - Pesterchum Normal */
+}
+.mspfa .pchum {
+  font-size: 10px;
+  font-family: 'fontstuck';
+  border: 3px solid #F2F012;
+  background-color: #FDB302;
+  text-align: left;
+  padding: 10px 22px 5px 22px;
+  margin: -3px 0px 0px 0px;
+}
+.mspfa .pname ~ .pchum {
+  border-style: hidden solid solid solid;
+}
+.mspfa .pchum::before {
+  content: "  PESTERLOG: ";
+  color: black;
+  font-weight: 400;
+}
+.mspfa .pchum > div {
+  color: black;
+  font-weight: light;
+  font-size: 14px;
+  font-family: 'Courier New';
+  padding: 8px 4px 8px 4px;
+  margin: 5px -8px 5px -8px;
+  outline: 3px solid #CB9514;
+  background-color: white;
+  /* - Pesterchum custom */
+}
+.mspfa .pchumnew {
+  --colorbg: #FDB302;
+  --colorout: #F2F012;
+  --colorin: #CB9514;
+  font-size: 10px;
+  font-family: 'fontstuck';
+  border: 3px solid var(--colorout);
+  border-style: hidden solid solid solid;
+  background-color: var(--colorbg);
+  text-align: left;
+  padding: 10px 22px 5px 22px;
+  margin: -3px 0px 0px 0px;
+}
+.mspfa .pchumnew > div {
+  color: #747474;
+  font-weight: light;
+  font-size: 14px;
+  font-family: 'Courier New';
+  padding: 8px 4px 8px 4px;
+  margin: 5px -8px 5px -8px;
+  outline: 3px solid var(--colorin);
+  background-color: white;
+}
+.mspfa .pnamenew {
+  --colorout: #F2F012;
+  --colorin: #CB9514;
+  font-weight: 500;
+  border: 3px solid var(--colorout);
+  border-style: solid solid hidden solid;
+  font-size: 14px;
+  font-family: 'Courier New';
+  background-color: var(--colorin) !important;
+  text-align: center;
+  padding: 6px;
+  color: white;
+}
+.mspfa .pnamenew + br {
+  display: none;
+  /* - Pestername */
+}
+.mspfa .pname {
+  font-weight: 500;
+  border: 3px solid #F2F012;
+  border-style: solid solid hidden solid;
+  font-size: 14px;
+  font-family: 'Courier New';
+  background-color: #C28A05 !important;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+.mspfa .pname + br {
+  display: none;
+  /* - Pesterquest */
+}
+.mspfa .pquest {
+  font-size: 10px;
+  font-family: 'fontstuck';
+  border: 3px solid #F2F012;
+  background-color: #FDB302;
+  text-align: left;
+  margin: -3px 0px 0px 0px;
+  padding: 6px;
+}
+.mspfa .pquest > div {
+  font-weight: light;
+  font-size: 15px;
+  font-family: 'Courier New';
+  padding: 12px 22px 12px 22px;
+  margin: 2px 8px 2px 8px;
+  outline: 3px solid #CB9514;
+  background-color: white;
+}
+.mspfa .pname ~ .pquest {
+  border-style: hidden solid solid solid;
+  /* Earthbound textbox */
+}
+@font-face {
+  font-family: 'Mother';
+  font-smooth: never;
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/EarthMommaRegular-ZGrK.ttf');
+}
+.mspfa .earthb {
+  font-weight: normal;
+  font-family: 'Mother';
+  font-size: 1.45em;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/EBCssborderplain.png) 30 stretch;
+  border-image-width: 20px;
+  background-color: black;
+  color: white;
+  line-height: 40px;
+  margin: 0px;
+}
+.mspfa .earthbmint {
+  font-weight: normal;
+  font-family: 'Mother';
+  font-size: 1.45em;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/EBCssborder.png) 30 stretch;
+  border-image-width: 20px;
+  background-color: #290829;
+  color: #E8E6B1;
+  line-height: 40px;
+  margin: 0px;
+}
+.mspfa .earthbbana {
+  font-weight: normal;
+  font-family: 'Mother';
+  font-size: 1.45em;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/EBCssborderbana.png) 30 stretch;
+  border-image-width: 20px;
+  background-color: #290829;
+  color: #E8E6B1;
+  line-height: 40px;
+  margin: 0px;
+}
+.mspfa .earthbstrw {
+  font-weight: normal;
+  font-family: 'Mother';
+  font-size: 1.45em;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/EBCssborderstrw.png) 30 stretch;
+  border-image-width: 20px;
+  background-color: #290829;
+  color: #E8E6B1;
+  line-height: 40px;
+  margin: 0px;
+}
+.mspfa .earthbpea {
+  font-weight: normal;
+  font-family: 'Mother';
+  font-size: 1.45em;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/EBCssborderpea.png) 30 stretch;
+  border-image-width: 20px;
+  background-color: #290829;
+  color: #E8E6B1;
+  line-height: 40px;
+  margin: 0px;
+  /* Undertale textboxes */
+}
+@font-face {
+  font-family: 'underdt';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/undertale-determination-overworld.ttf');
+}
+@font-face {
+  font-family: 'sans';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/undertale-comic-sans-overworld.ttf');
+}
+@font-face {
+  font-family: 'papy';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/papyrus-font-undertale.ttf');
+}
+@font-face {
+  font-family: 'wing';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20undertale/Fonts/undertale-wingdings.ttf');
+}
+.mspfa .undert {
+  font-weight: normal;
+  font-family: 'underdt';
+  font-size: 20px;
+  text-align: left;
+  border: 7px solid white;
+  padding: 16px;
+  border-image-width: 20px;
+  background-color: black;
+  color: white;
+  line-height: 32px;
+  font-smooth: never;
+  /* Pokemon Gen 1 */
+}
+@font-face {
+  font-family: 'pokeone';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Pokemon%20textboxes/PokemonGb-RAeo.ttf');
+}
+.mspfa .poke {
+  font-family: 'pokeone';
+  font-size: 1.3em;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 25px 5px 0px 10px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Pokemon%20textboxes/pokemonx4.png) 35% round;
+  background-color: white;
+  border-image-width: 20px;
+  line-height: 40px;
+  margin: 0px;
+}
+.mspfa .pokeclean {
+  font-family: 'pokeone';
+  font-size: 1.3em;
+  text-align: left;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Pokemon%20textboxes/pokemonx4.png) 35% round;
+  background-color: white;
+  border-image-width: 20px;
+  line-height: 40px;
+  margin: 0px;
+  /* Omori */
+}
+@font-face {
+  font-family: 'omorifont';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/OMORI_GAME2.ttf');
+}
+.mspfa .omori {
+  font-weight: normal;
+  font-family: 'omorifont';
+  font-size: 32px;
+  text-align: left;
+  border: 3px solid white;
+  outline: 1px solid black;
+  padding: 10px;
+  padding-top: 5px;
+  background-color: black;
+  color: white;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  line-height: 30px;
+  box-shadow: 0px 0px 8px #888888;
+  /* yttd */
+}
+@font-face {
+  font-family: 'm-one';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/mplus-1m-regular.ttf');
+}
+.mspfa .yttd {
+  font-family: 'm-one';
+  font-size: 18px;
+  text-align: left;
+  border: 15px solid transparent;
+  padding: 0px 5px 0px 5px;
+  border-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/yttd.png) 25% round;
+  background-color: black;
+  color: white;
+  border-image-width: 20px;
+  line-height: 40px;
+  margin: 0px;
+  /* Fnf week 6 */
+}
+@font-face {
+  font-family: 'fnf6font';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/pixel.otf');
+}
+.mspfa .fnf6 {
+  font-family: 'fnf6font';
+  background-image: url("https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Omori%20yttd/fnf6x2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 175px;
+  height: 175px;
+  text-align: center !important;
+  margin-top: -15px;
+}
+.mspfa .fnf6 div {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  /* Dangan */
+}
+@font-face {
+  font-family: 'dangfont';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/drangonphobia/SourceSansPro-SemiBold.ttf');
+}
+.mspfa .dangan {
+  font-family: 'dangfont';
+  background-image: url("https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/drangonphobia/PngItem_1149351.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 110px;
+  color: white;
+  text-align: left;
+  margin: 0px;
+  /* Scroll with delay */
+}
+.mspfa .scroll {
+  --time: 1.5;
+  animation-play-state: initial;
+  width: 10px;
+  vertical-align: top;
+  overflow: hidden;
+  animation: typing calc(var(--time) * 1s) steps(40, end) both;
+  animation-delay: calc(var(--delay) * 1s);
+  margin: 0px;
+  white-space: nowrap;
+}
+@keyframes typing {
+  /* Scroll Advance */
+  from {
+    width: 0.1px;
+  }
+  to {
+    width: 100%;
+  }
+}
+.mspfa .scrolladv {
+  width: max-content;
+  display: inline-block;
+  --time: 1.5;
+}
+.mspfa .scrolladv > div {
+  animation-play-state: initial;
+  overflow: hidden;
+  animation: typing calc(var(--time) * 1s) linear both;
+  animation-delay: calc(var(--delay) * 1s);
+  margin: 0px;
+  white-space: nowrap;
+  margin-bottom: -5px;
+}
+.mspfa .scrolladv + br {
+  display: none;
+}
+.mspfa .scrolladv > div br {
+  display: none;
+  /* Captcha card menu screen */
+}
+@font-face {
+  font-family: 'sylladex';
+  src: url('https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/SylladexFanon.ttf');
+}
+.mspfa .capnavbar {
+  --color1: #FF0A74;
+  --color2: #992345;
+  font-family: 'sylladex';
+  color: #0EDEFB;
+  font-size: 22px;
+  text-indent: 10px;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 96px;
+  background: var(--color2);
+  background: linear-gradient(180deg, var(--color2) 22%, var(--color1) 22%);
+  border-top: solid 4px black;
+  z-index: 10;
+}
+.mspfa .capnavbar br {
+  display: none;
+}
+.mspfa .capnavbar > div {
+  color: var(--color1);
+  text-align: center;
+  direction: rtl;
+}
+.mspfa .capnavbar > div * {
+  direction: ltr;
+}
+.mspfa .itemwrap {
+  --itemno: 1;
+  display: inline;
+  /* capicon */
+}
+.mspfa .capicon {
+  margin: auto;
+  --scale: 0.2;
+  --colorimg: var(--color2);
+  position: relative;
+  display: inline-block;
+  height: calc(var(--scale) * 323px);
+  width: calc(var(--scale) * 233px);
+  top: calc(var(--scale) * 39px);
+  z-index: -1;
+}
+.mspfa .capicon::before {
+  content: '';
+  background: var(--colorimg);
+  display: block;
+  position: absolute;
+  height: calc(var(--scale) * 323px);
+  width: calc(var(--scale) * 233px);
+  clip-path: polygon(57% 0%, 61.8% 4.7%, 61.8% 7.4%, 84.1% 7.4%, 88.8% 11.7%, 88.8% 28%, 95.7% 28%, 100% 31.2%, 100% 100%, 2.7% 100%, 0% 97.6%, 0% 0%);
+}
+.mspfa .capicon > div {
+  background: white;
+  width: 95.7%;
+  height: 97.2%;
+  clip-path: polygon(0% 0%, 59.6% 0%, 59.6% 7.6%, 87.8% 7.6%, 87.8% 28.9%, 100% 28.9%, 100% 100%, 0% 100%);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mspfa .capicon > div img {
+  position: absolute;
+  width: calc(var(--scale) * 170px);
+  left: calc(var(--scale) * 20px);
+  bottom: calc(var(--scale) * 30px);
+  pointer-events: none;
+}
+.mspfa input[name=capopen]:checked ~ .capicon > div {
+  position: absolute;
+  animation: cimgtickback 50ms steps(1, end) forwards;
+}
+.mspfa input[name=capopen]:checked ~ .capicon {
+  --colorimg: var(--colorback);
+}
+@keyframes cimgtickback {
+  /* Imported from OG captchacard */
+  0% {
+    left: calc(var(--scale) * 12px);
+    top: calc(var(--scale) * 12px);
+  }
+  100% {
+    left: calc(var(--scale) * 8px);
+    top: calc(var(--scale) * 8px);
+  }
+}
+.mspfa .captchaback {
+  text-align: left;
+  --scale: 0.6;
+  width: calc(var(--scale) * 323px);
+  height: calc(var(--scale) * 410px);
+  position: fixed;
+  top: calc((var(--itemno) - 1) * 29.5px + 8px);
+  left: calc((var(--itemno) - 1) * 29.5px + 8px);
+  font-family: 'sylladex';
+  color: #BBFFFF;
+  line-height: calc(var(--scale) * 760px);
+  font-size: calc(var(--scale) * 50px);
+  text-indent: calc(var(--scale) * 40px);
+}
+@media only screen and (max-width: 600px) {
+  /* Captcha back */
+  .mspfa .captchaback {
+    --scale: 0.3;
+  }
+}
+.mspfa .captchaback::before {
+  content: '';
+  display: block;
+  background: black;
+  width: calc(var(--scale) * 323px);
+  height: calc(var(--scale) * 410px);
+  clip-path: polygon(69.6% 0%, 72.2% 2.12%, 72.2% 10.7%, 83% 10.7%, 85.5% 12.7%, 85.5% 21.2%, 97.3% 21.2%, 100% 23.6%, 100% 100%, 2.7% 100%, 0% 97.6%, 0% 0%);
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.mspfa .captchaback > div {
+  background: var(--color1);
+  width: calc(var(--scale) * 314px);
+  height: calc(var(--scale) * 401px);
+  clip-path: polygon(0% 0%, 71.7% 0%, 71.7% 10.8%, 85.3% 10.8%, 85.3% 21.6%, 100% 21.6%, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mspfa .captchaback > div::after {
+  line-height: 20px;
+  content: 'captchalogue';
+  position: absolute;
+  transform: rotate(-90deg);
+  right: calc(var(--scale) * -97px);
+  top: calc(var(--scale) * 250px);
+  /* captchaimg */
+}
+.mspfa .captchaimg {
+  position: absolute;
+  height: calc(var(--scale) * 323px);
+  width: calc(var(--scale) * 233px);
+  top: calc(var(--scale) * 39px);
+  left: calc(var(--scale) * 28px);
+}
+.mspfa .captchaimg::before {
+  content: '';
+  background: var(--color2);
+  display: block;
+  position: absolute;
+  height: calc(var(--scale) * 323px);
+  width: calc(var(--scale) * 233px);
+  clip-path: polygon(57% 0%, 61.8% 4.7%, 61.8% 7.4%, 84.1% 7.4%, 88.8% 11.7%, 88.8% 28%, 95.7% 28%, 100% 31.2%, 100% 100%, 2.7% 100%, 0% 97.6%, 0% 0%);
+}
+.mspfa .captchaimg > div {
+  background: white;
+  width: 95.7%;
+  height: 97.2%;
+  clip-path: polygon(0% 0%, 59.6% 0%, 59.6% 7.6%, 87.8% 7.6%, 87.8% 28.9%, 100% 28.9%, 100% 100%, 0% 100%);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mspfa .captchaimg > div img {
+  position: absolute;
+  width: calc(var(--scale) * 170px);
+  left: calc(var(--scale) * 20px);
+  bottom: calc(var(--scale) * 30px);
+  pointer-events: none;
+}
+.mspfa .captchaimg:hover > div {
+  position: absolute;
+  animation: cimgtickback 50ms steps(1, end) forwards;
+}
+.mspfa .captchaimg:hover {
+  --color2: var(--color1);
+  /* Animation */
+}
+.mspfa input[name=capopen]:checked ~ .captchaback {
+  animation: hovertickback 50ms steps(1, end) forwards;
+}
+@keyframes hovertickback {
+  0% {
+    left: auto;
+    right: 4px;
+  }
+  100% {
+    left: auto;
+    right: 8px;
+  }
+}
+.mspfa input[name=capopen] {
+  --scale: 0.2;
+  height: calc(var(--scale) * 313px);
+  width: calc(var(--scale) * 233px);
+  z-index: 100;
+  margin-left: -49px;
+  opacity: 0;
+  cursor: pointer;
+}
+.mspfa .p1 #infobox tr:last-of-type td::after {
+  content: " - Adventure using Flare's CSS textboxes";
+  opacity: 0.5;
+}

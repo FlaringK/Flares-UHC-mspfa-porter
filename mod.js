@@ -31,8 +31,10 @@ const portSettings = {
   adventureSummary: "This is a test adventure for Flare's MSPFA porter."
 }
 
-const mspfaHtml = `<div class="mspfa">
-<body cz-shortcut-listen="true" class="p__pageNumber__">
+const mspfaHtml = `
+<div class="mspfa">
+  <body cz-shortcut-listen="true" class="p__pageNumber__">
+    
     <div id="main">
         <header>
             <div class="umcontainer">
@@ -155,8 +157,30 @@ const mspfaHtml = `<div class="mspfa">
 </body>
 </div>`
 
+let formatPageRanges = cssString => {
+  let pageRangeUses = cssString.match(/\.p(\d+)-(?:(\d+))((.|\n)*?\})/g)
+  
+  if (pageRangeUses) {
+    pageRangeUses.forEach(rangeCss => {
+      let regexGroups = rangeCss.match(/\.p(\d+)-(?:(\d+))((.|\n)*?\})/)
+    
+      let startPage = regexGroups[1]
+      let endPage = regexGroups[2]
+      let cssContent = regexGroups[3]
+      
+      console.log(startPage, endPage, cssContent)
+      
+      for (let i = startPage; i <= endPage; i++) {
+        cssString += "\n.p" + i + cssContent
+      }
+    })
+  }
+  
+  return cssString
+}
+
 String.prototype.replaceAll = function(search, replacement) {
-  var target = this;
+  let target = this;
   return target.replace(new RegExp(search, 'g'), replacement);
 };
 
@@ -234,6 +258,7 @@ module.exports = {
 
     let adventurePages = {}
 
+    // Create Adventure pages
     for (let i = 0; i < adventureData.p.length; i++) {
       // CREATE ADVENTURE PAGE
       const pageData = adventureData.p[i]
@@ -272,13 +297,13 @@ module.exports = {
 
       // Set Go back link (Straight from mspfa.js)
       let backid = 0
-      for(var j = p-1; j >= 0; j--) {
+      for(let j = p-1; j >= 0; j--) {
         if(adventureData.p[j].n.indexOf(p) != -1) {
           backid = j+1;
         }
       }
       if(!backid) {
-        for(var j = p+1; j < adventureData.p.length; j++) {
+        for(let j = p+1; j < adventureData.p.length; j++) {
           if(adventureData.p[j].n.indexOf(p) != -1) backid = j+1;
         }
       }
@@ -304,16 +329,27 @@ module.exports = {
           title: () => adventureData.n,
           next: () => "/" + adventureUrl + nextPageArrowIndex,
           template: pageHtml
-        }
+        },
+        scss: ""
       }
 
     }
+
+    // Format CSS
+    let adventureCSS = adventureData.y
+    adventureCSS = formatPageRanges(adventureCSS) // Apply page ranges
+    adventureCSS = adventureCSS.replace(/@.+;/g, "") // remove imports and custom JS
+    adventureCSS = ".mspfa " + adventureCSS.replace(/{({(.|\n)*?}|.|\n)*?}/g, "$& .mspfa ") + "{}" // Format everything under .mspfa
+    adventureCSS = adventureCSS.replace(/\.mspfa[^{}]*?@/g, "@") // Fix formatting with @keyframes
+
+    api.logger.info(adventureCSS)
 
     return {
 
       styles: [
         { source: "./mspfa.css" },
         { source: "./custom.css" },
+        { body: adventureCSS },
       ],
       
       edit(archive) {
