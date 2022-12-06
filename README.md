@@ -11,8 +11,3 @@ This mod contains a template adventure that you can replace with your own.
 4. Edit the mod info in the mod.js folder within the portSettings object
 
 After that you should have a viewable MSPFA, which can be found at the bottom of the UHC home page.
-
-You can also add custom CSS in the custom.css file BUT
-- All adventure CSS should be scoped under .mspfa, I recommend using complied SCSS for this
-- MSPFA page ranges (i.e. pX-Y classes) will not work
-- Styles effecting spoiler buttons will not be identical (See mspfa.css to see how buttons are styled)
