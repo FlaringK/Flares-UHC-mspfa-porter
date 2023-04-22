@@ -51,8 +51,7 @@ const mspfaHtml = `
 
                 <div class="heart"></div>
 
-                <a href="/map" style="color: #2cff4b;">UHC Map</a> <span class="vbar">|</span> <a href="/log" style="color: #2cff4b;">UHC Log</a> <span class="vbar">|</span>
-                <a href="/search" style="color: #2cff4b;">UHC Search</a>
+                <a href="/__loglink__" style="color: #2cff4b;">Log</a>
 
                 <div class="heart"></div>
 
@@ -258,27 +257,43 @@ module.exports = {
 
     let adventurePages = {}
 
+    // Create base format with standard aventure info
+    let baseHtml = mspfaHtml
+
+    baseHtml = baseHtml.replaceAll("__title__", adventureData.n)
+    baseHtml = baseHtml.replaceAll("__icon__", adventureData.o ? sourceImg(adventureData.o) : "assets://images/mspfa/random.png")
+    baseHtml = baseHtml.replaceAll("__authorsite__", adventureData.w)
+    baseHtml = baseHtml.replaceAll("__author__", adventureData.a)
+    baseHtml = baseHtml.replaceAll("__mspfasite__", "https://mspfa.com/user/?u=" + adventureData.c)
+    baseHtml = baseHtml.replaceAll("__mirror__", adventureData.a)
+    baseHtml = baseHtml.replaceAll("__adventureinfo__", processBBcode(adventureData.r, true))
+    baseHtml = baseHtml.replaceAll("__loglink__", adventureUrl + "log")
+
+    // Set tags
+    let tagText = ""
+    adventureData.t.forEach(tag => tagText += tag + ", ")
+    baseHtml = baseHtml.replaceAll("__tags__", tagText)
+
+    // Set lates pages
+    let latePageHtml = ""
+    for (let j = 0; j < Math.min(30, adventureData.p.length); j++) {
+      let latePageIndex = adventureData.p.length - j
+      let latePageData = adventureData.p[latePageIndex - 1]
+      let latePageDate = new Date(latePageData.d)
+      let latePageDateSrting = months[latePageDate.getMonth()] + " " + latePageDate.getDate() + " " + latePageDate.getFullYear()
+      latePageHtml += `<br /><span> ${latePageDateSrting} - <a href="/${adventureUrl + latePageIndex}">"<span>${latePageData.c}</span>"</a> </span>`
+    }
+    baseHtml = baseHtml.replaceAll("__latepages__", latePageHtml)
+
     // Create Adventure pages
     for (let i = 0; i < adventureData.p.length; i++) {
       // CREATE ADVENTURE PAGE
       const pageData = adventureData.p[i]
       const p = i+1
-      let pageHtml = mspfaHtml
+      let pageHtml = baseHtml
 
-      // Set Icon & author/adventure info
+      // Set page number
       pageHtml = pageHtml.replaceAll("__pageNumber__", p)
-      pageHtml = pageHtml.replaceAll("__title__", adventureData.n)
-      pageHtml = pageHtml.replaceAll("__icon__", adventureData.o ? sourceImg(adventureData.o) : "assets://images/mspfa/random.png")
-      pageHtml = pageHtml.replaceAll("__authorsite__", adventureData.w)
-      pageHtml = pageHtml.replaceAll("__author__", adventureData.a)
-      pageHtml = pageHtml.replaceAll("__mspfasite__", "https://mspfa.com/user/?u=" + adventureData.c)
-      pageHtml = pageHtml.replaceAll("__mirror__", adventureData.a)
-      pageHtml = pageHtml.replaceAll("__adventureinfo__", processBBcode(adventureData.r, true))
-
-      // Set tags
-      let tagText = ""
-      adventureData.t.forEach(tag => tagText += tag + ", ")
-      pageHtml = pageHtml.replaceAll("__tags__", tagText)
 
       // Set page content
       pageHtml = pageHtml.replaceAll("__command__", processBBcode(pageData.c))
@@ -313,17 +328,6 @@ module.exports = {
       pageHtml = pageHtml.replaceAll("__startover__", adventureUrl + 1)
       if (p == 1) pageHtml = pageHtml.replaceAll("__prevstyle__", "display: none")
 
-      // Set lates pages
-      let latePageHtml = ""
-      for (let j = 0; j < Math.min(30, adventureData.p.length); j++) {
-        let latePageIndex = adventureData.p.length - j
-        let latePageData = adventureData.p[latePageIndex - 1]
-        let latePageDate = new Date(latePageData.d)
-        let latePageDateSrting = months[latePageDate.getMonth()] + " " + latePageDate.getDate() + " " + latePageDate.getFullYear()
-        latePageHtml += `<br /><span> ${latePageDateSrting} - <a href="/${adventureUrl + latePageIndex}">"<span>${latePageData.c}</span>"</a> </span>`
-      }
-      pageHtml = pageHtml.replaceAll("__latepages__", latePageHtml)
-
       adventurePages[adventureUrl.toUpperCase() + (i + 1)] = {
         component: {
           title: () => adventureData.n,
@@ -333,6 +337,47 @@ module.exports = {
         scss: ""
       }
 
+    }
+
+    // Create log page
+    let logHtml = baseHtml
+
+    // Set lates pages
+    let logListHtml = ""
+    for (let j = 0; j < adventureData.p.length; j++) {
+      let logPageIndex = adventureData.p.length - j
+      let logPageData = adventureData.p[logPageIndex - 1]
+      let logPageDate = new Date(logPageData.d)
+      let logPageDateSrting = months[logPageDate.getMonth()] + " " + logPageDate.getDate() + " " + logPageDate.getFullYear()
+      logListHtml += `<br /><span> ${logPageDateSrting} - <a href="/${adventureUrl + logPageIndex}">"<span>${logPageData.c}</span>"</a> </span>`
+    }
+
+    logHtml = logHtml.replaceAll("__command__", processBBcode("ADVENTURE LOG"))
+    logHtml = logHtml.replaceAll("__content__", `<div style="text-align: left;">${logListHtml}</div>`)
+    logHtml = logHtml.replaceAll(`<div id="foot">
+                    <div id="links">
+                        __links__
+                    </div>
+                    <br />
+                    <br />
+                    <span id="prevlinks" style="__prevstyle__">
+                        <span class="footlinks">
+                            <a id="startover" href="__startover__">Start Over</a>
+                            <span style=""> | <a id="goback" href="__goback__">Go Back</a></span>
+                        </span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <br />
+                    <br />
+                </div>`, "")
+
+    adventurePages[adventureUrl.toUpperCase() + "LOG"] = {
+      component: {
+        title: () => adventureData.n,
+        next: () => "/" + adventureUrl,
+        template: logHtml
+      },
+      scss: ""
     }
 
     // Format CSS
