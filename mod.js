@@ -27,7 +27,7 @@ const portSettings = {
   description: "Template",
 
   // MSPFA porter settings
-  useOfflineImages: true,
+  useOfflineImages: false,
   adventureSummary: "This is a test adventure for Flare's MSPFA porter."
 }
 
@@ -90,9 +90,6 @@ const mspfaHtml = `
                         </span>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </span>
-                    <span id="gamelinks" style="">
-                        <span class="footlinks"> <a id="savegame">Save Game</a> | <a id="loadgame">Load Game</a> | <a id="deletegame">Delete Game Data</a> </span>
-                    </span>
                     <br />
                     <br />
                 </div>
@@ -100,8 +97,7 @@ const mspfaHtml = `
 
             <div id="info">
                 <span id="infobox">
-                    <div class="spoiler open">
-                        <input type="checkbox" class="spoilButton" id="advSpoil" name="advSpoil"><label for="advSpoil"></label>
+                    <details class="spoiler"><summary><span>Show Adventure Info</span><span>Hide Adventure Info</span></summary>
                         <div>
                             <table>
                                 <tbody>
@@ -121,12 +117,10 @@ const mspfaHtml = `
                                         </td>
                                         <td id="latestpages" rowspan="2" style="max-width: 253px; width: 253px; font-size: 10px; font-weight: bold;">
                                             <span>
-                                                <div class="spoiler open">
-                                                    <input type="checkbox" class="spoilButton" id="lateSpoil" name="lateSpoil"><label for="lateSpoil"></label>
-                                                    <div>
+                                                <details class="spoiler"><summary><span>Show Latest Pages</span><span>Hide Latest Pages</span></summary>
                                                         Latest Pages:
                                                         __latepages__
-                                                </div>
+                                                </details>
                                             </span>
                                             <br />
                                             <br />
@@ -143,7 +137,7 @@ const mspfaHtml = `
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </details>
                 </span>
             </div>
         </div>
@@ -203,9 +197,15 @@ const BBcode = [
   [/\[url\]([^"]*?)\[\/url\]/gi, "<a href=\"$1\">$1</a>"],
   [/\[url=("?)([^"]*?)\1\]((?:(?!\[url(?:=.*?)\]).)*?)\[\/url\]/gi, "<a href=\"$2\">$3</a>"],
   [/\[alt=("?)([^"]*?)\1\]((?:(?!\[alt(?:=.*?)\]).)*?)\[\/alt\]/gi, "<span title=\"$2\">$3</span>"],
-  [/\[spoiler\]((?:(?!\[spoiler(?: .*?)?\]).)*?)\[\/spoiler\]/gi, "<div class=\"spoiler open\"><div></div><input type=\"checkbox\" class=\"spoilButton\" id=\"pageSpoil\" name=\"pageSpoil\"><label for=\"pageSpoil\"></label><div>$1</div></div>"],
-  [/\[spoiler open=("?)([^"]*?)\1 close=("?)([^"]*?)\3\]((?:(?!\[spoiler(?: .*?)?\]).)*?)\[\/spoiler\]/gi, "<div class=\"spoiler open\" style=\"--showText: '$2'; --hideText:'$4'\"><div></div><input type=\"checkbox\" class=\"spoilButton\" id=\"pageSpoil\" name=\"pageSpoil\"><label for=\"pageSpoil\"></label><div>$5</div></div>"],
-  [/\[spoiler close=("?)([^"]*?)\1 open=("?)([^"]*?)\3\]((?:(?!\[spoiler(?: .*?)?\]).)*?)\[\/spoiler\]/gi, "<div class=\"spoiler open\" style=\"--showText: '$4'; --hideText:'$2'\"><div></div><input type=\"checkbox\" class=\"spoilButton\" id=\"pageSpoil\" name=\"pageSpoil\"><label for=\"pageSpoil\"></label><div>$5</div></div>"],
+
+  // SPOILER BUTTONS (Edited from MSPFA)
+  [/\[spoiler\]((?:(?!\[spoiler(?: .*?)?\]).)*?)\[\/spoiler\]/gi, `<details class="spoiler"><summary><span>Show Pesterlog</span><span>Hide Pesterlog</span></summary>$1</details>`],
+  [/\[spoiler open=("?)([^"]*?)\1 close=("?)([^"]*?)\3\]((?:(?!\[spoiler(?: .*?)?\]).)*?)\[\/spoiler\]/gi, `<details class="spoiler"><summary><span>$2</span><span>$4</span></summary>$5</details>`],
+  [/\[spoiler close=("?)([^"]*?)\1 open=("?)([^"]*?)\3\]((?:(?!\[spoiler(?: .*?)?\]).)*?)\[\/spoiler\]/gi, `<details class="spoiler"><summary><span>$4</span><span>$2</span></summary>$5</details>`],
+
+  // Clean up spoilers 
+  [/<\/summary>(<br>)+/gi, "</summary>"],
+
   [/<\/label><div>(<br>)+/gi, "</label><div>"],
   [/\[flash=(\d*?)x(\d*?)\](.*?)\[\/flash\]/gi, "<object type=\"application/x-shockwave-flash\" data=\"$3\" width=\"$1\" height=\"$2\"></object>"],
   [/\[user\](.+?)\[\/user\]/gi, "<a class=\"usertag\" href=\"/user/?u=$1\" data-userid=\"$1\">@...</a>"],
@@ -338,12 +338,13 @@ module.exports = {
     // Format CSS
     let adventureCSS = adventureData.y
     adventureCSS = formatPageRanges(adventureCSS) // Apply page ranges
-    adventureCSS = adventureCSS.replace(/@.+;/g, "") // remove imports and custom JS
+    adventureCSS = adventureCSS.replace(/@import.+;/g, "") // remove imports and custom JS
     adventureCSS = ".mspfa " + adventureCSS.replace(/{({(.|\n)*?}|.|\n)*?}/g, "$& .mspfa ") + "{}" // Format everything under .mspfa
     adventureCSS = adventureCSS.replace(/\.mspfa[^{}]*?@/g, "@") // Fix formatting with @keyframes
 
     api.logger.info(adventureCSS)
 
+    // Set Mod title and description
     return {
 
       styles: [

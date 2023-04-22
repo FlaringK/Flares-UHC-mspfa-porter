@@ -7,7 +7,61 @@
 }
 
 /* Custom SpoilButton code */
-.mspfa .spoiler {
+
+/* == */
+
+.mspfa details.spoiler {
+	background: #eee;
+	border: 1px dashed gray;
+
+	padding: 2px 35px;
+	font-family: Courier New,Courier,monospace;
+	font-weight: bold;
+	text-align: left;
+	list-style: none;
+}
+
+.mspfa details.spoiler[open=""] {
+	padding: 2px 5% 12px;
+}
+
+.mspfa details.spoiler[open=""] > summary {
+	margin-bottom: 12px;
+}
+
+.mspfa details.spoiler > summary {
+	list-style: none;
+	text-align: center;
+	color: transparent;
+}
+
+.mspfa details.spoiler[open=""] > summary span:first-of-type {
+	display: none;
+}
+
+.mspfa details.spoiler:not([open=""]) > summary span:last-of-type {
+	display: none;
+}
+
+.mspfa details.spoiler summary span {
+	display: inline-block;
+	font: 400 13.3333px Arial;
+	background-color: #e9e9ed;
+	border: 1px solid #8f8f9d;
+	padding: 2px 6px 1px;
+	border-radius: 4px;
+	color: black;
+}
+
+.mspfa details.spoiler > summary span:hover {
+	background-color: #d0d0d7;
+}
+
+.mspfa details.spoiler > summary span:active {
+	background-color: #b1b1b9;
+}
+
+/* .mspfa .spoiler {
   --showText: "Show";
   --hideText: "Hide";
 
@@ -78,7 +132,7 @@
 .mspfa #latestpages .spoiler {
   --showText: "Show Latest Pages";
   --hideText: "Hide Latest Pages";
-}
+} */
 
 /* Normal Mspfa CSS */
 
@@ -538,7 +592,7 @@
 	border: 1px solid #a2a2a2;
 }
 
-.mspfa .spoiler {
+/* .mspfa .spoiler {
 	border: 1px dashed gray;
 	padding: 1px;
 }
@@ -551,7 +605,7 @@
 
 .mspfa .spoiler.closed > div:last-child {
 	display: none;
-}
+} */
 
 .mspfa #container {
 	font-weight: 700;
