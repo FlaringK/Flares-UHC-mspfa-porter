@@ -260,7 +260,7 @@ module.exports = {
     // Create base format with standard aventure info
     let baseHtml = mspfaHtml
 
-    baseHtml = baseHtml.replaceAll("__title__", adventureData.n)
+    baseHtml = baseHtml.replaceAll("__title__", adventureData.n.toUpperCase())
     baseHtml = baseHtml.replaceAll("__icon__", adventureData.o ? sourceImg(adventureData.o) : "assets://images/mspfa/random.png")
     baseHtml = baseHtml.replaceAll("__authorsite__", adventureData.w)
     baseHtml = baseHtml.replaceAll("__author__", adventureData.a)
@@ -270,9 +270,7 @@ module.exports = {
     baseHtml = baseHtml.replaceAll("__loglink__", adventureUrl + "log")
 
     // Set tags
-    let tagText = ""
-    adventureData.t.forEach(tag => tagText += tag + ", ")
-    baseHtml = baseHtml.replaceAll("__tags__", tagText)
+    baseHtml = baseHtml.replaceAll("__tags__", adventureData.t.join(","))
 
     // Set lates pages
     let latePageHtml = ""
